@@ -71,8 +71,6 @@
 \RequirePackage{calc}
 \RequirePackage{amssymb}
 \RequirePackage{upgreek}
-
-
 \if@ustc@numerical
   \PassOptionsToPackage{sort&compress}{natbib}
 \fi
