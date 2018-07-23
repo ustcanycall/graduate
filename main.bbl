@@ -1,10 +1,146 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{134}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
 \providecommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
   \urlstyle{same}\fi
+
+\bibitem[McCulloch\ et~al.(1943)McCulloch and Pitts]{mcculloch1943logical}
+MCCULLOCH W~S, PITTS W.
+\newblock A logical calculus of the ideas immanent in nervous
+  activity\allowbreak[J].
+\newblock The bulletin of mathematical biophysics, 1943, 5\penalty0 (4):
+  115-133.
+
+\bibitem[Hebb(1963)]{hebb1963organizations}
+HEBB D~O.
+\newblock The organizations of behavior: a neuropsychological
+  theory\allowbreak[M].
+\newblock Lawrence Erlbaum, 1963.
+
+\bibitem[Gerstner\ et~al.(2002)Gerstner and Kistler]{gerstner2002mathematical}
+GERSTNER W, KISTLER W~M.
+\newblock Mathematical formulations of hebbian learning\allowbreak[J].
+\newblock Biological cybernetics, 2002, 87\penalty0 (5-6): 404-415.
+
+\bibitem[Hodgkin\ et~al.(1952)Hodgkin and Huxley]{hodgkin1952quantitative}
+HODGKIN A~L, HUXLEY A~F.
+\newblock A quantitative description of membrane current and its application to
+  conduction and excitation in nerve\allowbreak[J].
+\newblock The Journal of physiology, 1952, 117\penalty0 (4): 500-544.
+
+\bibitem[Taylor(1956)]{taylor1956electrical}
+TAYLOR W~K.
+\newblock Electrical simulation of some nervous system functional
+  activities\allowbreak[J].
+\newblock Information theory, 1956, 3: 314-328.
+
+\bibitem[Rosenblatt(1958)]{rosenblatt1958perceptron}
+ROSENBLATT F.
+\newblock The perceptron: a probabilistic model for information storage and
+  organization in the brain.\allowbreak[J].
+\newblock Psychological review, 1958, 65\penalty0 (6): 386.
+
+\bibitem[Widrow\ et~al.(1960)Widrow and Hoff]{widrow1960adaptive}
+WIDROW B, HOFF M~E.
+\newblock Adaptive switching circuits\allowbreak[R].
+\newblock Stanford Univ Ca Stanford Electronics Labs, 1960.
+
+\bibitem[FitzHugh(1961)]{fitzhugh1961impulses}
+FITZHUGH R.
+\newblock Impulses and physiological states in theoretical models of nerve
+  membrane\allowbreak[J].
+\newblock Biophysical journal, 1961, 1\penalty0 (6): 445-466.
+
+\bibitem[Minsky(1967)]{minsky1967computation}
+MINSKY M~L.
+\newblock Computation: finite and infinite machines\allowbreak[M].
+\newblock Prentice-Hall, Inc., 1967.
+
+\bibitem[Minsky(5)]{minsky5paper}
+MINSKY M.
+\newblock Paper, s.(1969). perceptrons\allowbreak[Z].
+\newblock MIT Press, Cambridge, 5.
+
+\bibitem[Cainiello(1961)]{cainiello1961outline}
+CAINIELLO E.
+\newblock Outline of a theory of thought-processes and thinking
+  machines\allowbreak[J].
+\newblock J. Theoretical Biology, 1961, 2: 2204-2235.
+
+\bibitem[Nagumo\ et~al.(1972)Nagumo and Sato]{nagumo1972response}
+NAGUMO J, SATO S.
+\newblock On a response characteristic of a mathematical neuron
+  model\allowbreak[J].
+\newblock Kybernetik, 1972, 10\penalty0 (3): 155-164.
+
+\bibitem[Hopfield(1982)]{hopfield1982neural}
+HOPFIELD J~J.
+\newblock Neural networks and physical systems with emergent collective
+  computational abilities\allowbreak[J].
+\newblock Proceedings of the national academy of sciences, 1982, 79\penalty0
+  (8): 2554-2558.
+
+\bibitem[Zurada\ et~al.(1996)Zurada, Cloete, and Van~der
+  Poel]{zurada1996generalized}
+ZURADA J~M, CLOETE I, VAN~DER POEL E.
+\newblock Generalized hopfield networks for associative memories with
+  multi-valued stable states\allowbreak[J].
+\newblock Neurocomputing, 1996, 13\penalty0 (2-4): 135-149.
+
+\bibitem[Hindmarsh\ et~al.(1984)Hindmarsh and Rose]{hindmarsh1984model}
+HINDMARSH J~L, ROSE R.
+\newblock A model of neuronal bursting using three coupled first order
+  differential equations\allowbreak[J].
+\newblock Proc. R. Soc. Lond. B, 1984, 221\penalty0 (1222): 87-102.
+
+\bibitem[Ackley\ et~al.(1985)Ackley, Hinton, and Sejnowski]{ackley1985learning}
+ACKLEY D~H, HINTON G~E, SEJNOWSKI T~J.
+\newblock A learning algorithm for boltzmann machines\allowbreak[J].
+\newblock Cognitive science, 1985, 9\penalty0 (1): 147-169.
+
+\bibitem[Kirkpatrick\ et~al.(1983)Kirkpatrick, Gelatt, and
+  Vecchi]{kirkpatrick1983optimization}
+KIRKPATRICK S, GELATT C~D, VECCHI M~P.
+\newblock Optimization by simulated annealing\allowbreak[J].
+\newblock science, 1983, 220\penalty0 (4598): 671-680.
+
+\bibitem[{\v{C}}ern{\`y}(1985)]{vcerny1985thermodynamical}
+{\v{C}}ERN{\`Y} V.
+\newblock Thermodynamical approach to the traveling salesman problem: An
+  efficient simulation algorithm\allowbreak[J].
+\newblock Journal of optimization theory and applications, 1985, 45\penalty0
+  (1): 41-51.
+
+\bibitem[Rumelhart\ et~al.(1986)Rumelhart, Hinton, and
+  Williams]{rumelhart1986learning}
+RUMELHART D~E, HINTON G~E, WILLIAMS R~J.
+\newblock Learning representations by back-propagating errors\allowbreak[J].
+\newblock nature, 1986, 323\penalty0 (6088): 533.
+
+\bibitem[MacKay(1992)]{mackay1992practical}
+MACKAY D~J.
+\newblock A practical bayesian framework for backpropagation
+  networks\allowbreak[J].
+\newblock Neural computation, 1992, 4\penalty0 (3): 448-472.
+
+\bibitem[Bishop\ et~al.(1995)Bishop, Bishop, et~al.]{bishop1995neural}
+BISHOP C, BISHOP C~M, et~al.
+\newblock Neural networks for pattern recognition\allowbreak[M].
+\newblock Oxford university press, 1995.
+
+\bibitem[Williams\ et~al.(1996)Williams and Rasmussen]{williams1996gaussian}
+WILLIAMS C~K, RASMUSSEN C~E.
+\newblock Gaussian processes for
+  regression\allowbreak[C]//\allowbreak{}Advances in neural information
+  processing systems.
+\newblock 1996: 514-520.
+
+\bibitem[Vapnik(1998)]{vapnik1998statistical}
+VAPNIK V.
+\newblock Statistical learning theory. 1998: volume~3\allowbreak[M].
+\newblock Wiley, New York, 1998.
 
 \bibitem[Krizhevsky\ et~al.(2012)Krizhevsky, Sutskever, and
   Hinton]{krizhevsky2012imagenet}
@@ -13,6 +149,467 @@ KRIZHEVSKY A, SUTSKEVER I, HINTON G~E.
   networks\allowbreak[C]//\allowbreak{}Advances in neural information
   processing systems.
 \newblock 2012: 1097-1105.
+
+\bibitem[Simonyan\ et~al.(2014)Simonyan and Zisserman]{simonyan2014very}
+SIMONYAN K, ZISSERMAN A.
+\newblock Very deep convolutional networks for large-scale image
+  recognition\allowbreak[J].
+\newblock arXiv preprint arXiv:1409.1556, 2014.
+
+\bibitem[Ren\ et~al.(2015)Ren, He, Girshick, and Sun]{ren2015faster}
+REN S, HE K, GIRSHICK R, et~al.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks\allowbreak[C]//\allowbreak{}Advances in neural information
+  processing systems.
+\newblock 2015: 91-99.
+
+\bibitem[Hinton\ et~al.(2012)Hinton, Deng, Yu, Dahl, Mohamed, Jaitly, Senior,
+  Vanhoucke, Nguyen, Sainath, et~al.]{hinton2012deep}
+HINTON G, DENG L, YU D, et~al.
+\newblock Deep neural networks for acoustic modeling in speech recognition: The
+  shared views of four research groups\allowbreak[J].
+\newblock IEEE Signal processing magazine, 2012, 29\penalty0 (6): 82-97.
+
+\bibitem[Amodei\ et~al.(2015)Amodei, Anubhai, Battenberg, Case, Casper,
+  Catanzaro, Chen, Chrzanowski, Coates, Diamos, et~al.]{amodei2015deep}
+AMODEI D, ANUBHAI R, BATTENBERG E, et~al.
+\newblock Deep speech 2: End-to-end speech recognition in english and
+  mandarin\allowbreak[J].
+\newblock arXiv preprint arXiv:1512.02595, 2015.
+
+\bibitem[Ze\ et~al.(2013)Ze, Senior, and Schuster]{ze2013statistical}
+ZE H, SENIOR A, SCHUSTER M.
+\newblock Statistical parametric speech synthesis using deep neural
+  networks\allowbreak[C]//\allowbreak{}Acoustics, Speech and Signal Processing
+  (ICASSP), 2013 IEEE International Conference on.
+\newblock IEEE, 2013: 7962-7966.
+
+\bibitem[Conneau\ et~al.(2016)Conneau, Schwenk, Barrault, and
+  Lecun]{conneau2016very}
+CONNEAU A, SCHWENK H, BARRAULT L, et~al.
+\newblock Very deep convolutional networks for natural language
+  processing\allowbreak[J].
+\newblock arXiv preprint arXiv:1606.01781, 2016.
+
+\bibitem[Moyer(2016)]{moyer2016google}
+MOYER C.
+\newblock How google’s alphago beat a go world champion\allowbreak[J].
+\newblock The Atlantic, 2016, 28.
+
+\bibitem[Deng\ et~al.(2009)Deng, Dong, Socher, Li, Li, and
+  Fei-Fei]{deng2009imagenet}
+DENG J, DONG W, SOCHER R, et~al.
+\newblock Imagenet: A large-scale hierarchical image
+  database\allowbreak[C]//\allowbreak{}Computer Vision and Pattern Recognition,
+  2009. CVPR 2009. IEEE Conference on.
+\newblock Ieee, 2009: 248-255.
+
+\bibitem[Szegedy\ et~al.(2015)Szegedy, Liu, Jia, Sermanet, Reed, Anguelov,
+  Erhan, Vanhoucke, and Rabinovich]{szegedy2015going}
+SZEGEDY C, LIU W, JIA Y, et~al.
+\newblock Going deeper with
+  convolutions\allowbreak[C]//\allowbreak{}Proceedings of the IEEE conference
+  on computer vision and pattern recognition.
+\newblock 2015: 1-9.
+
+\bibitem[He\ et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
+HE K, ZHANG X, REN S, et~al.
+\newblock Deep residual learning for image
+  recognition\allowbreak[C]//\allowbreak{}Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition.
+\newblock 2016: 770-778.
+
+\bibitem[Girshick\ et~al.(2014)Girshick, Donahue, Darrell, and
+  Malik]{girshick2014rich}
+GIRSHICK R, DONAHUE J, DARRELL T, et~al.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation\allowbreak[C]//\allowbreak{}Proceedings of the IEEE conference
+  on computer vision and pattern recognition.
+\newblock 2014: 580-587.
+
+\bibitem[Girshick(2015)]{girshick2015fast}
+GIRSHICK R.
+\newblock Fast r-cnn\allowbreak[C]//\allowbreak{}Proceedings of the IEEE
+  international conference on computer vision.
+\newblock 2015: 1440-1448.
+
+\bibitem[He\ et~al.(2014{\natexlab{a}})He, Zhang, Ren, and Sun]{he2014spatial}
+HE K, ZHANG X, REN S, et~al.
+\newblock Spatial pyramid pooling in deep convolutional networks for visual
+  recognition\allowbreak[C]//\allowbreak{}European conference on computer
+  vision.
+\newblock Springer, 2014{\natexlab{a}}: 346-361.
+
+\bibitem[He\ et~al.(2017)He, Gkioxari, Doll{\'a}r, and Girshick]{he2017mask}
+HE K, GKIOXARI G, DOLL{\'A}R P, et~al.
+\newblock Mask r-cnn\allowbreak[C]//\allowbreak{}Computer Vision (ICCV), 2017
+  IEEE International Conference on.
+\newblock IEEE, 2017: 2980-2988.
+
+\bibitem[Redmon\ et~al.(2016)Redmon, Divvala, Girshick, and
+  Farhadi]{redmon2016you}
+REDMON J, DIVVALA S, GIRSHICK R, et~al.
+\newblock You only look once: Unified, real-time object
+  detection\allowbreak[C]//\allowbreak{}Proceedings of the IEEE conference on
+  computer vision and pattern recognition.
+\newblock 2016: 779-788.
+
+\bibitem[Gupta\ et~al.(2015)Gupta, Agrawal, Gopalakrishnan, and
+  Narayanan]{gupta2015deep}
+GUPTA S, AGRAWAL A, GOPALAKRISHNAN K, et~al.
+\newblock Deep learning with limited numerical
+  precision\allowbreak[C]//\allowbreak{}International Conference on Machine
+  Learning.
+\newblock 2015: 1737-1746.
+
+\bibitem[Dettmers(2015)]{dettmers20158}
+DETTMERS T.
+\newblock 8-bit approximations for parallelism in deep learning\allowbreak[J].
+\newblock arXiv preprint arXiv:1511.04561, 2015.
+
+\bibitem[Courbariaux\ et~al.(2015)Courbariaux, Bengio, and
+  David]{courbariaux2015binaryconnect}
+COURBARIAUX M, BENGIO Y, DAVID J~P.
+\newblock Binaryconnect: Training deep neural networks with binary weights
+  during propagations\allowbreak[C]//\allowbreak{}Advances in neural
+  information processing systems.
+\newblock 2015: 3123-3131.
+
+\bibitem[Rastegari\ et~al.(2016)Rastegari, Ordonez, Redmon, and
+  Farhadi]{rastegari2016xnor}
+RASTEGARI M, ORDONEZ V, REDMON J, et~al.
+\newblock Xnor-net: Imagenet classification using binary convolutional neural
+  networks\allowbreak[C]//\allowbreak{}European Conference on Computer Vision.
+\newblock Springer, 2016: 525-542.
+
+\bibitem[Zhou\ et~al.(2017)Zhou, Yao, Guo, Xu, and Chen]{zhou2017incremental}
+ZHOU A, YAO A, GUO Y, et~al.
+\newblock Incremental network quantization: Towards lossless cnns with
+  low-precision weights\allowbreak[J].
+\newblock arXiv preprint arXiv:1702.03044, 2017.
+
+\bibitem[Reed(1993)]{reed1993pruning}
+REED R.
+\newblock Pruning algorithms-a survey\allowbreak[J].
+\newblock IEEE transactions on Neural Networks, 1993, 4\penalty0 (5): 740-747.
+
+\bibitem[LeCun\ et~al.(1989)LeCun, Denker, Solla, Howard, and
+  Jackel]{lecun1989optimal}
+LECUN Y, DENKER J~S, SOLLA S~A, et~al.
+\newblock Optimal brain damage.\allowbreak[C]//\allowbreak{}NIPs: volume~2.
+\newblock 1989: 598-605.
+
+\bibitem[Miche\ et~al.(2010)Miche, Sorjamaa, Bas, Simula, Jutten, and
+  Lendasse]{miche2010op}
+MICHE Y, SORJAMAA A, BAS P, et~al.
+\newblock Op-elm: optimally pruned extreme learning machine\allowbreak[J].
+\newblock IEEE transactions on neural networks, 2010, 21\penalty0 (1): 158-162.
+
+\bibitem[Han\ et~al.(2015{\natexlab{a}})Han, Pool, Tran, and
+  Dally]{han2015learning}
+HAN S, POOL J, TRAN J, et~al.
+\newblock Learning both weights and connections for efficient neural
+  network\allowbreak[C]//\allowbreak{}Advances in Neural Information Processing
+  Systems.
+\newblock 2015{\natexlab{a}}: 1135-1143.
+
+\bibitem[Denton\ et~al.(2014)Denton, Zaremba, Bruna, LeCun, and
+  Fergus]{denton2014exploiting}
+DENTON E~L, ZAREMBA W, BRUNA J, et~al.
+\newblock Exploiting linear structure within convolutional networks for
+  efficient evaluation\allowbreak[C]//\allowbreak{}Advances in Neural
+  Information Processing Systems.
+\newblock 2014: 1269-1277.
+
+\bibitem[Lebedev\ et~al.(2014)Lebedev, Ganin, Rakhuba, Oseledets, and
+  Lempitsky]{lebedev2014speeding}
+LEBEDEV V, GANIN Y, RAKHUBA M, et~al.
+\newblock Speeding-up convolutional neural networks using fine-tuned
+  cp-decomposition\allowbreak[J].
+\newblock arXiv preprint arXiv:1412.6553, 2014.
+
+\bibitem[Chakradhar\ et~al.(2010)Chakradhar, Sankaradas, Jakkula, and
+  Cadambi]{chakradhar2010dynamically}
+CHAKRADHAR S, SANKARADAS M, JAKKULA V, et~al.
+\newblock A dynamically configurable coprocessor for convolutional neural
+  networks\allowbreak[C]//\allowbreak{}ACM SIGARCH Computer Architecture News:
+  volume~38.
+\newblock ACM, 2010: 247-257.
+
+\bibitem[Vanhoucke\ et~al.(2011)Vanhoucke, Senior, and
+  Mao]{vanhoucke2011improving}
+VANHOUCKE V, SENIOR A, MAO M~Z.
+\newblock Improving the speed of neural networks on
+  cpus\allowbreak[C]//\allowbreak{}Proc. Deep Learning and Unsupervised Feature
+  Learning NIPS Workshop: volume~1.
+\newblock Citeseer, 2011: 4.
+
+\bibitem[Farabet\ et~al.(2009)Farabet, Poulet, Han, and LeCun]{farabet2009cnp}
+FARABET C, POULET C, HAN J~Y, et~al.
+\newblock Cnp: An fpga-based processor for convolutional
+  networks\allowbreak[C]//\allowbreak{}Field Programmable Logic and
+  Applications, 2009. FPL 2009. International Conference on.
+\newblock IEEE, 2009: 32-37.
+
+\bibitem[Scherer\ et~al.(2010)Scherer, Schulz, and
+  Behnke]{scherer2010accelerating}
+SCHERER D, SCHULZ H, BEHNKE S.
+\newblock Accelerating large-scale convolutional neural networks with parallel
+  graphics multiprocessors\allowbreak[C]//\allowbreak{}International conference
+  on Artificial neural networks.
+\newblock Springer, 2010: 82-91.
+
+\bibitem[Ciresan\ et~al.(2011)Ciresan, Meier, Masci, Maria~Gambardella, and
+  Schmidhuber]{ciresan2011flexible}
+CIRESAN D~C, MEIER U, MASCI J, et~al.
+\newblock Flexible, high performance convolutional neural networks for image
+  classification\allowbreak[C]//\allowbreak{}IJCAI Proceedings-International
+  Joint Conference on Artificial Intelligence: volume~22.
+\newblock Barcelona, Spain, 2011: 1237.
+
+\bibitem[Coates\ et~al.(2013)Coates, Huval, Wang, Wu, Catanzaro, and
+  Andrew]{coates2013deep}
+COATES A, HUVAL B, WANG T, et~al.
+\newblock Deep learning with cots hpc
+  systems\allowbreak[C]//\allowbreak{}Proceedings of The 30th International
+  Conference on Machine Learning.
+\newblock 2013: 1337-1345.
+
+\bibitem[Jia\ et~al.(2014)Jia, Shelhamer, Donahue, Karayev, Long, Girshick,
+  Guadarrama, and Darrell]{jia2014caffe}
+JIA Y, SHELHAMER E, DONAHUE J, et~al.
+\newblock Caffe: Convolutional architecture for fast feature
+  embedding\allowbreak[C]//\allowbreak{}Proceedings of the 22nd ACM
+  international conference on Multimedia.
+\newblock ACM, 2014: 675-678.
+
+\bibitem[Abadi\ et~al.(2016)Abadi, Barham, Chen, Chen, Davis, Dean, Devin,
+  Ghemawat, Irving, Isard, et~al.]{abadi2016tensorflow}
+ABADI M, BARHAM P, CHEN J, et~al.
+\newblock Tensorflow: a system for large-scale machine
+  learning.\allowbreak[C]//\allowbreak{}OSDI: volume~16.
+\newblock 2016: 265-283.
+
+\bibitem[Chen\ et~al.(2015)Chen, Li, Li, Lin, Wang, Wang, Xiao, Xu, Zhang, and
+  Zhang]{chen2015mxnet}
+CHEN T, LI M, LI Y, et~al.
+\newblock Mxnet: A flexible and efficient machine learning library for
+  heterogeneous distributed systems\allowbreak[J].
+\newblock arXiv preprint arXiv:1512.01274, 2015.
+
+\bibitem[Dean\ et~al.(2012)Dean, Corrado, Monga, Chen, Devin, Mao, Senior,
+  Tucker, Yang, Le, et~al.]{dean2012large}
+DEAN J, CORRADO G, MONGA R, et~al.
+\newblock Large scale distributed deep
+  networks\allowbreak[C]//\allowbreak{}Advances in neural information
+  processing systems.
+\newblock 2012: 1223-1231.
+
+\bibitem[Oh\ et~al.(2004)Oh and Jung]{oh2004gpu}
+OH K~S, JUNG K.
+\newblock Gpu implementation of neural networks\allowbreak[J].
+\newblock Pattern Recognition, 2004, 37\penalty0 (6): 1311-1314.
+
+\bibitem[Le(2013)]{le2013building}
+LE Q~V.
+\newblock Building high-level features using large scale unsupervised
+  learning\allowbreak[C]//\allowbreak{}Acoustics, Speech and Signal Processing
+  (ICASSP), 2013 IEEE International Conference on.
+\newblock IEEE, 2013: 8595-8598.
+
+\bibitem[Farabet\ et~al.(2011)Farabet, Martini, Corda, Akselrod, Culurciello,
+  and LeCun]{farabet2011neuflow}
+FARABET C, MARTINI B, CORDA B, et~al.
+\newblock Neuflow: A runtime reconfigurable dataflow processor for
+  vision\allowbreak[C]//\allowbreak{}Computer Vision and Pattern Recognition
+  Workshops (CVPRW), 2011 IEEE Computer Society Conference on.
+\newblock IEEE, 2011: 109-116.
+
+\bibitem[Gokhale\ et~al.(2014)Gokhale, Jin, Dundar, Martini, and
+  Culurciello]{gokhale2014240}
+GOKHALE V, JIN J, DUNDAR A, et~al.
+\newblock A 240 g-ops/s mobile coprocessor for deep neural
+  networks\allowbreak[C]//\allowbreak{}Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition Workshops.
+\newblock 2014: 682-687.
+
+\bibitem[Zhang\ et~al.(2015)Zhang, Li, Sun, Guan, Xiao, and
+  Cong]{zhang2015optimizing}
+ZHANG C, LI P, SUN G, et~al.
+\newblock Optimizing fpga-based accelerator design for deep convolutional
+  neural networks\allowbreak[C]//\allowbreak{}Proceedings of the 2015 ACM/SIGDA
+  International Symposium on Field-Programmable Gate Arrays.
+\newblock ACM, 2015: 161-170.
+
+\bibitem[Suda\ et~al.(2016)Suda, Chandra, Dasika, Mohanty, Ma, Vrudhula, Seo,
+  and Cao]{suda2016throughput}
+SUDA N, CHANDRA V, DASIKA G, et~al.
+\newblock Throughput-optimized opencl-based fpga accelerator for large-scale
+  convolutional neural networks\allowbreak[C]//\allowbreak{}Proceedings of the
+  2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays.
+\newblock ACM, 2016: 16-25.
+
+\bibitem[Qiu\ et~al.(2016)Qiu, Wang, Yao, Guo, Li, Zhou, Yu, Tang, Xu, Song,
+  et~al.]{qiu2016going}
+QIU J, WANG J, YAO S, et~al.
+\newblock Going deeper with embedded fpga platform for convolutional neural
+  network\allowbreak[C]//\allowbreak{}Proceedings of the 2016 ACM/SIGDA
+  International Symposium on Field-Programmable Gate Arrays.
+\newblock ACM, 2016: 26-35.
+
+\bibitem[Rice\ et~al.(2009)Rice, Taha, and Vutsinas]{rice2009scaling}
+RICE K~L, TAHA T~M, VUTSINAS C~N.
+\newblock Scaling analysis of a neocortex inspired cognitive model on the cray
+  xd1\allowbreak[J].
+\newblock The Journal of Supercomputing, 2009, 47\penalty0 (1): 21-43.
+
+\bibitem[Kim\ et~al.(2009)Kim, McAfee, McMahon, and Olukotun]{kim2009highly}
+KIM S~K, MCAFEE L~C, MCMAHON P~L, et~al.
+\newblock A highly scalable restricted boltzmann machine fpga
+  implementation\allowbreak[C]//\allowbreak{}Field Programmable Logic and
+  Applications, 2009. FPL 2009. International Conference on.
+\newblock IEEE, 2009: 367-372.
+
+\bibitem[Lee\ et~al.(1987)Lee and Aggarwal]{lee1987parallel}
+LEE S~Y, AGGARWAL J~K.
+\newblock Parallel 2-d convolution on a mesh connected array
+  processor\allowbreak[J].
+\newblock IEEE Transactions on Pattern Analysis \& Machine Intelligence,
+  1987\penalty0 (4): 590-594.
+
+\bibitem[Stearns\ et~al.(1988)Stearns, Luthi, Ruetz, and
+  Ang]{stearns1988reconfigurable}
+STEARNS C~C, LUTHI D~A, RUETZ A, et~al.
+\newblock A reconfigurable 64-tap transversal
+  filter\allowbreak[C]//\allowbreak{}Custom Integrated Circuits Conference,
+  1988., Proceedings of the IEEE 1988.
+\newblock IEEE, 1988: 8-8.
+
+\bibitem[Kamp\ et~al.(1990)Kamp, Kunemund, Soldner, and
+  Hofer]{kamp1990programmable}
+KAMP W, KUNEMUND R, SOLDNER H, et~al.
+\newblock Programmable 2d linear filter for video applications\allowbreak[J].
+\newblock IEEE Journal of Solid-State Circuits, 1990, 25\penalty0 (3): 735-740.
+
+\bibitem[Hecht\ et~al.(1991)Hecht and Ronner]{hecht1991advanced}
+HECHT V, RONNER K.
+\newblock An advanced programmable 2d-convolution chip for, real time image
+  processing\allowbreak[C]//\allowbreak{}Circuits and Systems, 1991., IEEE
+  International Sympoisum on.
+\newblock IEEE, 1991: 1897-1900.
+
+\bibitem[Lee\ et~al.(2006)Lee and Song]{lee2006super}
+LEE J~J, SONG G~Y.
+\newblock Super-systolic array for 2d
+  convolution\allowbreak[C]//\allowbreak{}TENCON 2006. 2006 IEEE Region 10
+  Conference.
+\newblock IEEE, 2006: 1-4.
+
+\bibitem[Chen\ et~al.(2016{\natexlab{a}})Chen, Chen, Xu, Sun, and
+  Temam]{chen2016diannao}
+CHEN Y, CHEN T, XU Z, et~al.
+\newblock Diannao family: energy-efficient hardware accelerators for machine
+  learning\allowbreak[J].
+\newblock Communications of the ACM, 2016, 59\penalty0 (11): 105-112.
+
+\bibitem[Chen\ et~al.(2014{\natexlab{a}})Chen, Du, Sun, Wang, Wu, Chen, and
+  Temam]{chen2014diannao}
+CHEN T, DU Z, SUN N, et~al.
+\newblock {DianNao: a small-footprint high-throughput accelerator for
+  ubiquitous machine-learning}\allowbreak[C/OL]//\allowbreak{}Proceedings of
+  the 19th international conference on Architectural support for programming
+  languages and operating systems (ASPLOS).
+\newblock 2014{\natexlab{a}}: 269-284.
+\newblock \url{http://dl.acm.org/citation.cfm?id=2541967}.
+
+\bibitem[Liu\ et~al.(2015)Liu, Chen, Liu, Zhou, Zhou, Teman, Feng, Zhou, and
+  Chen]{liu2015pudiannao}
+LIU D, CHEN T, LIU S, et~al.
+\newblock Pudiannao: A polyvalent machine learning
+  accelerator\allowbreak[C]//\allowbreak{}ACM SIGARCH Computer Architecture
+  News: volume~43.
+\newblock ACM, 2015: 369-381.
+
+\bibitem[Du\ et~al.(2015)Du, Fasthuber, Chen, Ienne, Li, Luo, Feng, Chen, and
+  Temam]{du2015shidiannao}
+DU Z, FASTHUBER R, CHEN T, et~al.
+\newblock Shidiannao: Shifting vision processing closer to the
+  sensor\allowbreak[C]//\allowbreak{}ACM SIGARCH Computer Architecture News:
+  volume~43.
+\newblock ACM, 2015: 92-104.
+
+\bibitem[Chen\ et~al.(2016{\natexlab{b}})Chen, Emer, and Sze]{chen2016eyeriss}
+CHEN Y~H, EMER J, SZE V.
+\newblock Eyeriss: A spatial architecture for energy-efficient dataflow for
+  convolutional neural networks\allowbreak[C]//\allowbreak{}ACM SIGARCH
+  Computer Architecture News: volume~44.
+\newblock IEEE Press, 2016{\natexlab{b}}: 367-379.
+
+\bibitem[Jouppi\ et~al.(2017)Jouppi, Young, Patil, Patterson, Agrawal, Bajwa,
+  Bates, Bhatia, Boden, Borchers, et~al.]{jouppi2017tpu}
+JOUPPI N~P, YOUNG C, PATIL N, et~al.
+\newblock In-datacenter performance analysis of a tensor processing
+  unit\allowbreak[C]//\allowbreak{}Proceedings of the 44th Annual International
+  Symposium on Computer Architecture.
+\newblock ACM, 2017: 1-12.
+
+\bibitem[Zhang\ et~al.(2016)Zhang, Du, Zhang, Lan, Liu, Li, Guo, Chen, and
+  Chen]{zhang2016cambricon}
+ZHANG S, DU Z, ZHANG L, et~al.
+\newblock Cambricon-x: An accelerator for sparse neural
+  networks\allowbreak[C]//\allowbreak{}Microarchitecture (MICRO), 2016 49th
+  Annual IEEE/ACM International Symposium on.
+\newblock IEEE, 2016: 1-12.
+
+\bibitem[Chen\ et~al.(2017)Chen, Krishna, Emer, and Sze]{chen2017eyeriss}
+CHEN Y~H, KRISHNA T, EMER J~S, et~al.
+\newblock Eyeriss: An energy-efficient reconfigurable accelerator for deep
+  convolutional neural networks\allowbreak[J].
+\newblock IEEE Journal of Solid-State Circuits, 2017, 52\penalty0 (1): 127-138.
+
+\bibitem[Albericio\ et~al.(2016)Albericio, Judd, Hetherington, Aamodt, Jerger,
+  and Moshovos]{albericio2016cnvlutin}
+ALBERICIO J, JUDD P, HETHERINGTON T, et~al.
+\newblock Cnvlutin: Ineffectual-neuron-free deep neural network
+  computing\allowbreak[C]//\allowbreak{}Computer Architecture (ISCA), 2016
+  ACM/IEEE 43rd Annual International Symposium on.
+\newblock IEEE, 2016: 1-13.
+
+\bibitem[Han\ et~al.(2016)Han, Liu, Mao, Pu, Pedram, Horowitz, and
+  Dally]{han2016eie}
+HAN S, LIU X, MAO H, et~al.
+\newblock Eie: efficient inference engine on compressed deep neural
+  network\allowbreak[C]//\allowbreak{}Proceedings of the 43rd International
+  Symposium on Computer Architecture.
+\newblock IEEE Press, 2016: 243-254.
+
+\bibitem[Han\ et~al.(2017)Han, Kang, Mao, Hu, Li, Li, Xie, Luo, Yao, Wang,
+  et~al.]{han2017ese}
+HAN S, KANG J, MAO H, et~al.
+\newblock Ese: Efficient speech recognition engine with sparse lstm on
+  fpga\allowbreak[C]//\allowbreak{}Proceedings of the 2017 ACM/SIGDA
+  International Symposium on Field-Programmable Gate Arrays.
+\newblock ACM, 2017: 75-84.
+
+\bibitem[Angshuman\ et~al.(2017)Angshuman, Minsoo, Anurag, Antonio,
+  Rangharajan, Brucek, Joe, Stephen, and William]{angshuman2017scnn}
+ANGSHUMAN P, MINSOO R, ANURAG M, et~al.
+\newblock Scnn: An accelerator for compressed-sparse convolutional neural
+  networks\allowbreak[J].
+\newblock In 44th International Symposium on Computer Architecture, 2017.
+
+\bibitem[Han\ et~al.(2015{\natexlab{b}})Han, Mao, and Dally]{han2015deep}
+HAN S, MAO H, DALLY W~J.
+\newblock Deep compression: Compressing deep neural networks with pruning,
+  trained quantization and huffman coding\allowbreak[J].
+\newblock arXiv preprint arXiv:1510.00149, 2015.
+
+\bibitem[Wang\ et~al.(2016)Wang, Xu, You, Tao, and Xu]{wang2016cnnpack}
+WANG Y, XU C, YOU S, et~al.
+\newblock Cnnpack: Packing convolutional neural networks in the frequency
+  domain\allowbreak[C]//\allowbreak{}Advances In Neural Information Processing
+  Systems.
+\newblock 2016: 253-261.
 
 \bibitem[Ioffe\ et~al.(2015)Ioffe and Szegedy]{ioffe2015batch}
 IOFFE S, SZEGEDY C.
@@ -36,14 +633,6 @@ WU Y, HE K.
 \newblock Group normalization\allowbreak[J].
 \newblock arXiv preprint arXiv:1803.08494, 2018.
 
-\bibitem[Gupta\ et~al.(2015)Gupta, Agrawal, Gopalakrishnan, and
-  Narayanan]{gupta2015deep}
-GUPTA S, AGRAWAL A, GOPALAKRISHNAN K, et~al.
-\newblock Deep learning with limited numerical
-  precision\allowbreak[C]//\allowbreak{}International Conference on Machine
-  Learning.
-\newblock 2015: 1737-1746.
-
 \bibitem[Goodfellow\ et~al.(2016)Goodfellow, Bengio, Courville, and
   Bengio]{goodfellow2016deep}
 GOODFELLOW I, BENGIO Y, COURVILLE A, et~al.
@@ -58,31 +647,11 @@ K{\"O}STER U, WEBB T, WANG X, et~al.
   Information Processing Systems.
 \newblock 2017: 1742-1752.
 
-\bibitem[Dettmers(2015)]{dettmers20158}
-DETTMERS T.
-\newblock 8-bit approximations for parallelism in deep learning\allowbreak[J].
-\newblock arXiv preprint arXiv:1511.04561, 2015.
-
-\bibitem[Courbariaux\ et~al.(2015)Courbariaux, Bengio, and
-  David]{courbariaux2015binaryconnect}
-COURBARIAUX M, BENGIO Y, DAVID J~P.
-\newblock Binaryconnect: Training deep neural networks with binary weights
-  during propagations\allowbreak[C]//\allowbreak{}Advances in neural
-  information processing systems.
-\newblock 2015: 3123-3131.
-
 \bibitem[Hu\ et~al.(2018)Hu, Wang, and Cheng]{hu2018hashing}
 HU Q, WANG P, CHENG J.
 \newblock From hashing to cnns: Training binaryweight networks via
   hashing\allowbreak[J].
 \newblock arXiv preprint arXiv:1802.02733, 2018.
-
-\bibitem[Rastegari\ et~al.(2016)Rastegari, Ordonez, Redmon, and
-  Farhadi]{rastegari2016xnor}
-RASTEGARI M, ORDONEZ V, REDMON J, et~al.
-\newblock Xnor-net: Imagenet classification using binary convolutional neural
-  networks\allowbreak[C]//\allowbreak{}European Conference on Computer Vision.
-\newblock Springer, 2016: 525-542.
 
 \bibitem[Russakovsky\ et~al.(2015)Russakovsky, Deng, Su, Krause, Satheesh, Ma,
   Huang, Karpathy, Khosla, Bernstein, et~al.]{russakovsky2015imagenet}
@@ -91,7 +660,7 @@ RUSSAKOVSKY O, DENG J, SU H, et~al.
 \newblock International Journal of Computer Vision, 2015, 115\penalty0 (3):
   211-252.
 
-\bibitem[Li\ et~al.(2016)Li and Liu]{li2016ternary}
+\bibitem[Li\ et~al.(2016{\natexlab{a}})Li and Liu]{li2016ternary}
 LI F, LIU B.
 \newblock Ternary weight networks.(2016)\allowbreak[J].
 \newblock arXiv preprint arXiv:1605.04711, 2016.
@@ -100,12 +669,6 @@ LI F, LIU B.
 ZHU C, HAN S, MAO H, et~al.
 \newblock Trained ternary quantization\allowbreak[J].
 \newblock arXiv preprint arXiv:1612.01064, 2016.
-
-\bibitem[Zhou\ et~al.(2017)Zhou, Yao, Guo, Xu, and Chen]{zhou2017incremental}
-ZHOU A, YAO A, GUO Y, et~al.
-\newblock Incremental network quantization: Towards lossless cnns with
-  low-precision weights\allowbreak[J].
-\newblock arXiv preprint arXiv:1702.03044, 2017.
 
 \bibitem[Wang\ et~al.(2017)Wang and Cheng]{wang2017fixed}
 WANG P, CHENG J.
@@ -132,35 +695,13 @@ CAI Z, HE X, SUN J, et~al.
   quantization\allowbreak[J].
 \newblock arXiv preprint arXiv:1702.00953, 2017.
 
-\bibitem[Han\ et~al.(2015{\natexlab{a}})Han, Pool, Tran, and
-  Dally]{han2015learning}
-HAN S, POOL J, TRAN J, et~al.
-\newblock Learning both weights and connections for efficient neural
-  network\allowbreak[C]//\allowbreak{}Advances in Neural Information Processing
-  Systems.
-\newblock 2015{\natexlab{a}}: 1135-1143.
-
-\bibitem[Han\ et~al.(2016)Han, Liu, Mao, Pu, Pedram, Horowitz, and
-  Dally]{han2016eie}
-HAN S, LIU X, MAO H, et~al.
-\newblock Eie: efficient inference engine on compressed deep neural
-  network\allowbreak[C]//\allowbreak{}Proceedings of the 43rd International
-  Symposium on Computer Architecture.
-\newblock IEEE Press, 2016: 243-254.
-
-\bibitem[Wang\ et~al.(2016)Wang, Xu, You, Tao, and Xu]{wang2016cnnpack}
-WANG Y, XU C, YOU S, et~al.
-\newblock Cnnpack: Packing convolutional neural networks in the frequency
-  domain\allowbreak[C]//\allowbreak{}Advances In Neural Information Processing
-  Systems.
-\newblock 2016: 253-261.
-
-\bibitem[He\ et~al.(2014)He, Fan, Qian, Tan, and Yu]{he2014reshaping}
+\bibitem[He\ et~al.(2014{\natexlab{b}})He, Fan, Qian, Tan, and
+  Yu]{he2014reshaping}
 HE T, FAN Y, QIAN Y, et~al.
 \newblock Reshaping deep neural network for fast decoding by
   node-pruning\allowbreak[C]//\allowbreak{}Acoustics, Speech and Signal
   Processing (ICASSP), 2014 IEEE International Conference on.
-\newblock IEEE, 2014: 245-249.
+\newblock IEEE, 2014{\natexlab{b}}: 245-249.
 
 \bibitem[Srinivas\ et~al.(2015)Srinivas and Babu]{srinivas2015data}
 SRINIVAS S, BABU R~V.
@@ -178,37 +719,12 @@ MARIET Z, SRA S.
 \newblock Diversity networks\allowbreak[J].
 \newblock arXiv preprint arXiv:1511.05077, 2015.
 
-\bibitem[Denton\ et~al.(2014)Denton, Zaremba, Bruna, LeCun, and
-  Fergus]{denton2014exploiting}
-DENTON E~L, ZAREMBA W, BRUNA J, et~al.
-\newblock Exploiting linear structure within convolutional networks for
-  efficient evaluation\allowbreak[C]//\allowbreak{}Advances in Neural
-  Information Processing Systems.
-\newblock 2014: 1269-1277.
-
 \bibitem[Jaderberg\ et~al.(2014)Jaderberg, Vedaldi, and
   Zisserman]{jaderberg2014speeding}
 JADERBERG M, VEDALDI A, ZISSERMAN A.
 \newblock Speeding up convolutional neural networks with low rank
   expansions\allowbreak[J].
 \newblock arXiv preprint arXiv:1405.3866, 2014.
-
-\bibitem[Lebedev\ et~al.(2014)Lebedev, Ganin, Rakhuba, Oseledets, and
-  Lempitsky]{lebedev2014speeding}
-LEBEDEV V, GANIN Y, RAKHUBA M, et~al.
-\newblock Speeding-up convolutional neural networks using fine-tuned
-  cp-decomposition\allowbreak[J].
-\newblock arXiv preprint arXiv:1412.6553, 2014.
-
-\bibitem[Chen\ et~al.(2014{\natexlab{a}})Chen, Du, Sun, Wang, Wu, Chen, and
-  Temam]{chen2014diannao}
-CHEN T, DU Z, SUN N, et~al.
-\newblock {DianNao: a small-footprint high-throughput accelerator for
-  ubiquitous machine-learning}\allowbreak[C/OL]//\allowbreak{}Proceedings of
-  the 19th international conference on Architectural support for programming
-  languages and operating systems (ASPLOS).
-\newblock 2014{\natexlab{a}}: 269-284.
-\newblock \url{http://dl.acm.org/citation.cfm?id=2541967}.
 
 \bibitem[Chen\ et~al.(2014{\natexlab{b}})Chen, Luo, Liu, Zhang, He, Wang, Li,
   Chen, Xu, Sun, et~al.]{chen2014dadiannao}
@@ -218,14 +734,6 @@ CHEN Y, LUO T, LIU S, et~al.
   IEEE/ACM International Symposium on Microarchitecture.
 \newblock IEEE Computer Society, 2014{\natexlab{b}}: 609-622.
 
-\bibitem[Liu\ et~al.(2015)Liu, Chen, Liu, Zhou, Zhou, Teman, Feng, Zhou, and
-  Chen]{liu2015pudiannao}
-LIU D, CHEN T, LIU S, et~al.
-\newblock Pudiannao: A polyvalent machine learning
-  accelerator\allowbreak[C]//\allowbreak{}ACM SIGARCH Computer Architecture
-  News: volume~43.
-\newblock ACM, 2015: 369-381.
-
 \bibitem[Liu\ et~al.(2016)Liu, Du, Tao, Han, Luo, Xie, Chen, and
   Chen]{liu2016cambricon}
 LIU S, DU Z, TAO J, et~al.
@@ -233,67 +741,6 @@ LIU S, DU Z, TAO J, et~al.
   networks\allowbreak[C]//\allowbreak{}ACM SIGARCH Computer Architecture News:
   volume~44.
 \newblock IEEE Press, 2016: 393-405.
-
-\bibitem[Zhang\ et~al.(2016)Zhang, Du, Zhang, Lan, Liu, Li, Guo, Chen, and
-  Chen]{zhang2016cambricon}
-ZHANG S, DU Z, ZHANG L, et~al.
-\newblock Cambricon-x: An accelerator for sparse neural
-  networks\allowbreak[C]//\allowbreak{}Microarchitecture (MICRO), 2016 49th
-  Annual IEEE/ACM International Symposium on.
-\newblock IEEE, 2016: 1-12.
-
-\bibitem[Albericio\ et~al.(2016)Albericio, Judd, Hetherington, Aamodt, Jerger,
-  and Moshovos]{albericio2016cnvlutin}
-ALBERICIO J, JUDD P, HETHERINGTON T, et~al.
-\newblock Cnvlutin: Ineffectual-neuron-free deep neural network
-  computing\allowbreak[C]//\allowbreak{}Computer Architecture (ISCA), 2016
-  ACM/IEEE 43rd Annual International Symposium on.
-\newblock IEEE, 2016: 1-13.
-
-\bibitem[Han\ et~al.(2017)Han, Kang, Mao, Hu, Li, Li, Xie, Luo, Yao, Wang,
-  et~al.]{han2017ese}
-HAN S, KANG J, MAO H, et~al.
-\newblock Ese: Efficient speech recognition engine with sparse lstm on
-  fpga\allowbreak[C]//\allowbreak{}Proceedings of the 2017 ACM/SIGDA
-  International Symposium on Field-Programmable Gate Arrays.
-\newblock ACM, 2017: 75-84.
-
-\bibitem[Du\ et~al.(2015)Du, Fasthuber, Chen, Ienne, Li, Luo, Feng, Chen, and
-  Temam]{du2015shidiannao}
-DU Z, FASTHUBER R, CHEN T, et~al.
-\newblock Shidiannao: Shifting vision processing closer to the
-  sensor\allowbreak[C]//\allowbreak{}ACM SIGARCH Computer Architecture News:
-  volume~43.
-\newblock ACM, 2015: 92-104.
-
-\bibitem[Chen\ et~al.(2017)Chen, Krishna, Emer, and Sze]{chen2017eyeriss}
-CHEN Y~H, KRISHNA T, EMER J~S, et~al.
-\newblock Eyeriss: An energy-efficient reconfigurable accelerator for deep
-  convolutional neural networks\allowbreak[J].
-\newblock IEEE Journal of Solid-State Circuits, 2017, 52\penalty0 (1): 127-138.
-
-\bibitem[Jouppi\ et~al.(2017)Jouppi, Young, Patil, Patterson, Agrawal, Bajwa,
-  Bates, Bhatia, Boden, Borchers, et~al.]{jouppi2017tpu}
-JOUPPI N~P, YOUNG C, PATIL N, et~al.
-\newblock In-datacenter performance analysis of a tensor processing
-  unit\allowbreak[C]//\allowbreak{}Proceedings of the 44th Annual International
-  Symposium on Computer Architecture.
-\newblock ACM, 2017: 1-12.
-
-\bibitem[Farabet\ et~al.(2011)Farabet, Martini, Corda, Akselrod, Culurciello,
-  and LeCun]{farabet2011neuflow}
-FARABET C, MARTINI B, CORDA B, et~al.
-\newblock Neuflow: A runtime reconfigurable dataflow processor for
-  vision\allowbreak[C]//\allowbreak{}Computer Vision and Pattern Recognition
-  Workshops (CVPRW), 2011 IEEE Computer Society Conference on.
-\newblock IEEE, 2011: 109-116.
-
-\bibitem[Angshuman\ et~al.(2017)Angshuman, Minsoo, Anurag, Antonio,
-  Rangharajan, Brucek, Joe, Stephen, and William]{angshuman2017scnn}
-ANGSHUMAN P, MINSOO R, ANURAG M, et~al.
-\newblock Scnn: An accelerator for compressed-sparse convolutional neural
-  networks\allowbreak[J].
-\newblock In 44th International Symposium on Computer Architecture, 2017.
 
 \bibitem[Srivastava\ et~al.(2014{\natexlab{a}})Srivastava, Hinton, Krizhevsky,
   Sutskever, and Salakhutdinov]{srivastava2014dropout}
@@ -349,12 +796,6 @@ LEE H, BATTLE A, RAINA R, et~al.
 \newblock Efficient sparse coding algorithms\allowbreak[J].
 \newblock Advances in neural information processing systems, 2007, 19: 801.
 
-\bibitem[Simonyan\ et~al.(2014)Simonyan and Zisserman]{simonyan2014very}
-SIMONYAN K, ZISSERMAN A.
-\newblock Very deep convolutional networks for large-scale image
-  recognition\allowbreak[J].
-\newblock arXiv preprint arXiv:1409.1556, 2014.
-
 \bibitem[Henneaux\ et~al.(1992)Henneaux and
   Teitelboim]{henneaux1992quantization}
 HENNEAUX M, TEITELBOIM C.
@@ -366,18 +807,6 @@ MACKAY D~J.
 \newblock Information theory, inference and learning algorithms\allowbreak[M].
 \newblock Cambridge university press, 2003.
 
-\bibitem[Han\ et~al.(2015{\natexlab{b}})Han, Mao, and Dally]{han2015deep}
-HAN S, MAO H, DALLY W~J.
-\newblock Deep compression: Compressing deep neural networks with pruning,
-  trained quantization and huffman coding\allowbreak[J].
-\newblock arXiv preprint arXiv:1510.00149, 2015.
-
-\bibitem[jbi(1993)]{jbig}
-Coded representation of picture and audio information progressive bi-level
-  image compression\allowbreak[C]//\allowbreak{}ISO/IEC International Standard
-  11544:ITU-T Rec.T.82.
-\newblock 1993.
-
 \bibitem[Huffman(1952)]{huffman1952method}
 HUFFMAN D~A.
 \newblock A method for the construction of minimum-redundancy
@@ -388,6 +817,12 @@ HUFFMAN D~A.
 WITTEN I~H, NEAL R~M, CLEARY J~G.
 \newblock Arithmetic coding for data compression\allowbreak[J].
 \newblock Communications of the ACM, 1987, 30\penalty0 (6): 520-540.
+
+\bibitem[jbi(1993)]{jbig}
+Coded representation of picture and audio information progressive bi-level
+  image compression\allowbreak[C]//\allowbreak{}ISO/IEC International Standard
+  11544:ITU-T Rec.T.82.
+\newblock 1993.
 
 \bibitem[LeCun\ et~al.(1998)LeCun, Bottou, Bengio, and
   Haffner]{lecun1998gradient}
@@ -409,17 +844,69 @@ KRIZHEVSKY A.
   convolutional neural networks\allowbreak[Z].
 \newblock 2012.
 
-\bibitem[He\ et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
-HE K, ZHANG X, REN S, et~al.
-\newblock Deep residual learning for image
-  recognition\allowbreak[C]//\allowbreak{}Proceedings of the IEEE Conference on
-  Computer Vision and Pattern Recognition.
-\newblock 2016: 770-778.
-
 \bibitem[Sak\ et~al.(2014)Sak, Senior, and Beaufays]{sak2014long}
 SAK H, SENIOR A~W, BEAUFAYS F.
 \newblock Long short-term memory recurrent neural network architectures for
   large scale acoustic modeling.\allowbreak[C]//\allowbreak{}Interspeech.
 \newblock 2014: 338-342.
+
+\bibitem[Muralimanohar\ et~al.(2007)Muralimanohar, Balasubramonian, and
+  Jouppi]{muralimanohar2007optimizing}
+MURALIMANOHAR N, BALASUBRAMONIAN R, JOUPPI N.
+\newblock Optimizing nuca organizations and wiring alternatives for large
+  caches with cacti 6.0\allowbreak[C]//\allowbreak{}Proceedings of the 40th
+  Annual IEEE/ACM International Symposium on Microarchitecture.
+\newblock IEEE Computer Society, 2007: 3-14.
+
+\bibitem[Duff\ et~al.(2002)Duff, Heroux, and Pozo]{duff2002overview}
+DUFF I~S, HEROUX M~A, POZO R.
+\newblock An overview of the sparse basic linear algebra subprograms: The new
+  standard from the blas technical forum\allowbreak[J].
+\newblock ACM Transactions on Mathematical Software (TOMS), 2002, 28\penalty0
+  (2): 239-267.
+
+\bibitem[Yu\ et~al.(2017)Yu, Lukefahr, Palframan, Dasika, Das, and
+  Mahlke]{yu2017scalpel}
+YU J, LUKEFAHR A, PALFRAMAN D, et~al.
+\newblock Scalpel: Customizing dnn pruning to the underlying hardware
+  parallelism\allowbreak[C]//\allowbreak{}Proceedings of the 44th Annual
+  International Symposium on Computer Architecture.
+\newblock ACM, 2017: 548-560.
+
+\bibitem[Hill\ et~al.(2017)Hill, Jain, Hill, Zamirai, Hsu, Laurenzano, Mahlke,
+  Tang, and Mars]{hill2017deftnn}
+HILL P, JAIN A, HILL M, et~al.
+\newblock Deftnn: addressing bottlenecks for dnn execution on gpus via synapse
+  vector elimination and near-compute data
+  fission\allowbreak[C]//\allowbreak{}Proceedings of the 50th Annual IEEE/ACM
+  International Symposium on Microarchitecture.
+\newblock ACM, 2017: 786-799.
+
+\bibitem[Wen\ et~al.(2016)Wen, Wu, Wang, Chen, and Li]{wen2016learning}
+WEN W, WU C, WANG Y, et~al.
+\newblock Learning structured sparsity in deep neural
+  networks\allowbreak[C]//\allowbreak{}Advances in Neural Information
+  Processing Systems.
+\newblock 2016: 2074-2082.
+
+\bibitem[Lebedev\ et~al.(2016)Lebedev and Lempitsky]{lebedev2016fast}
+LEBEDEV V, LEMPITSKY V.
+\newblock Fast convnets using group-wise brain
+  damage\allowbreak[C]//\allowbreak{}Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition.
+\newblock 2016: 2554-2564.
+
+\bibitem[Li\ et~al.(2016{\natexlab{b}})Li, Kadav, Durdanovic, Samet, and
+  Graf]{li2016pruning}
+LI H, KADAV A, DURDANOVIC I, et~al.
+\newblock Pruning filters for efficient convnets\allowbreak[J].
+\newblock arXiv preprint arXiv:1608.08710, 2016.
+
+\bibitem[Mao\ et~al.(2017)Mao, Han, Pool, Li, Liu, Wang, and
+  Dally]{mao2017exploring}
+MAO H, HAN S, POOL J, et~al.
+\newblock Exploring the regularity of sparse structure in convolutional neural
+  networks\allowbreak[J].
+\newblock arXiv preprint arXiv:1705.08922, 2017.
 
 \end{thebibliography}
