@@ -62,7 +62,7 @@ out_{x,y} = max(in_{x*sx,y*sy}:in_{x*sx+kx,y*sy+ky})
 out_{x,y}=mean(in_{x*sx,y*sy}:in_{x*sx+kx,y*sy+ky})
 \end{equation}
 
-ROI Pooling层主要是针对ROIs的池化操作，主要应用于物体检测领域的Fast RCNN和Faster RCNN网络中，它的特点是输入特征图尺寸不固定，但是输出特征图的尺寸固定。ROI Pooling的输入包含两部分，第一部分是特征图，在Fast RCNN中，它位于ROI Pooling之前；在Faster RCNN中，它是与RPN共享的那个特征图。第二部分是ROIS，在Fast RCNN中，指的是Selective Search的输出；在Faster RCNN中指的是RPN的输出，是一系列的矩阵候选框，每一个矩阵候选框用四个坐标和索引来表示。ROI Pooling的输出则是batch个三维向量（$C \times W\times H$），其中batch的值为ROI的数量。因此ROI Pooling的过程可以总结为将大小不同的矩阵框映射为大小固定的矩阵框。
+ROI Pooling层主要是针对ROIs的池化操作，主要应用于目标检测领域的Fast RCNN和Faster RCNN网络中，它的特点是输入特征图尺寸不固定，但是输出特征图的尺寸固定。ROI Pooling的输入包含两部分，第一部分是特征图，在Fast RCNN中，它位于ROI Pooling之前；在Faster RCNN中，它是与RPN共享的那个特征图。第二部分是ROIS，在Fast RCNN中，指的是Selective Search的输出；在Faster RCNN中指的是RPN的输出，是一系列的矩阵候选框，每一个矩阵候选框用四个坐标和索引来表示。ROI Pooling的输出则是batch个三维向量（$C \times W\times H$），其中batch的值为ROI的数量。因此ROI Pooling的过程可以总结为将大小不同的矩阵框映射为大小固定的矩阵框。
  
 
 \subsection{归一化层}
@@ -110,13 +110,6 @@ ReLU是目前非常流行的激活函数，它是分段线性函数，所有的�
 
 \subsection{LSTM}
 
-\begin{figure}[b]
-  \centering
-  \includegraphics[width=0.7\columnwidth]{lstm.pdf}
-  \caption{\footnotesize 一个基于LSTM的RNN架构.}
-  \label{fig:lstm}
-\end{figure}
-
 \begin{figure}[h]
 \centering
 \begin{minipage}[b]{0.45\columnwidth}
@@ -126,13 +119,13 @@ ReLU是目前非常流行的激活函数，它是分段线性函数，所有的�
 \begin{minipage}[b]{0.45\columnwidth}
 \includegraphics[width=\columnwidth]{gru.pdf}
 \end{minipage}
-\caption{\footnotesize (a) LSTM (b) A sparse MLP.}
+\caption{\footnotesize (a) LSTM (b) GRU}
 \label{fig:RNN}
 \end{figure}
 
 现代大规模自动语音识别（automatic speech recognition，简称ASR）系统利用基于LSTM的RNN作为其声学模型。LSTM模型由一系列大规模矩阵组成，这是ASR的所有步骤中计算量最大的部分。在基于LSTM的RNN中，时刻T的输入取决于时刻T-1的输出。
-一个经典的LSTM模型如图~\ref{fig:lstm}所示。
-LSTM模型包含特殊存储单元（图~\ref{fig:lstm}中的$cell$）和三个特殊的门（图~\ref{fig:lstm}中的$i$，$o$，$f$），其中$cell$用于存储网络的时间状态信息，门用于执行特殊的乘法运算，包括输入门（input gate）、输出门（output gate）和遗忘门（forget gate）。输入门$i$控制输入到存储单元中的输入量；输出门$o$控制输出值；遗忘门$f$自适应地遗忘$cell$中存储的信息，从而控制前一状态对现状态的影响。除了基本的三个众所周知的门和$cell$之外，该LSTM模型还引入了窥视孔（peephole）和投影层（projection layer），以便更好地学习。窥视孔将缩放后的$cell$状态添加到三个门，其中缩放尺度由三个对角矩阵决定。投影层线性地将输出转换为低维形式。
+一个经典的LSTM模型如图~\ref{fig:rnn} (a) 所示。
+LSTM模型包含特殊存储单元（图~\ref{fig:RNN} (a) 中的$cell$）和三个特殊的门（图~\ref{fig:rnn} (a) 中的$i$，$o$，$f$），其中$cell$用于存储网络的时间状态信息，门用于执行特殊的乘法运算，包括输入门（input gate）、输出门（output gate）和遗忘门（forget gate）。输入门$i$控制输入到存储单元中的输入量；输出门$o$控制输出值；遗忘门$f$自适应地遗忘$cell$中存储的信息，从而控制前一状态对现状态的影响。除了基本的三个众所周知的门和$cell$之外，该LSTM模型还引入了窥视孔（peephole）和投影层（projection layer），以便更好地学习。窥视孔将缩放后的$cell$状态添加到三个门，其中缩放尺度由三个对角矩阵决定。投影层线性地将输出转换为低维形式。
 
 LSTM模型的接收一个输入序列$X=(x_1;x_2;x_3;...;x_T)$（其中$x_t$是t时刻的输入向量）和上一个状态的输出序列$Y^{T-1}=(y_0;y_1;y_2;...;y_{T-1})i$（其中$y_{t-1}$是t-1时刻的输出向量）。利用下列公式从t=1到T计算输出序列$Y=(y1;y2;y3;...;y_T)$:
 \begin{gather}
@@ -149,13 +142,7 @@ y_t=W_{ym}m_t
 其中符号$i$、$f$、$o$、$c$、$m$和$y$分别是输入门、遗忘门、输出门、$cell$状态、$cell$输出和投影输出；$\odot$表示向量逐元素乘积，$W$表示权值矩阵（例如$W_ix$是从输入向量$X_t$到输入门的权值矩阵），$b$表示偏置向量。值得注意的是$W_ic$、$W_fc$和$W_oc$是用于peephole连接的对角矩阵，因此它们本质上是向量。$\delta$是Sigmoid激活函数，$h$是用户自定义的激活函数，通常情况下会采用$tanh$激活函数。
 
 \subsection{GRU}
-\begin{figure}[b]
-  \centering
-  \includegraphics[width=0.7\columnwidth]{gru.pdf}
-  \caption{\footnotesize 一个基于GRU的RNN架构.}
-  \label{fig:gru}
-\end{figure}
-GRU是LSTM的变体，它把遗忘门和输入门组合成一个更新门（update gate）。它还合并了$cell$状态和隐藏状态，并进行了一些其他更改。GRU架构如图~\ref{fig:gru}所示。类似地，它遵循如下的公式从t＝1到T进行迭代计算：
+GRU是LSTM的变体，它把遗忘门和输入门组合成一个更新门（update gate）。它还合并了$cell$状态和隐藏状态，并进行了一些其他更改。GRU架构如图~\ref{fig:rnn} (b) 所示。类似地，它遵循如下的公式从t＝1到T进行迭代计算：
 \begin{gather}
 z_t=\delta(W_{zx}x_t+W_{zc}c_{t-1}+b_z),\\
 r_t=\delta(W_{rx}x_t+W_{rc}c_{t-1}+b_r),\\
@@ -217,8 +204,24 @@ c_t=(1-z_t) \odot c_{t-1} + z_t \odot \tilde{c_t}
 \end{figure}
 
 \subsection{现有神经网络加速器架构}
-由于严峻的能耗约束和高性能要求，定制加速器成为CPU和GPU等传统处理平台的替代品。近几年出现了数据流和结构各异的神经网络加速器。神经网络加速器按照数据流的形式可以分为两类，分别是基于向量算子数据流的加速器和和基于乘加算子（multiply-and-accumulate，简称MAC）空间数据流的加速器。基于向量算子的加速器将神经网络的运算转化为向量运算，主要是将矩阵操作转化为一系列的向量操作（通常是内积操作）。如图~\ref{fig:dataflow} (a) 所示的结构中，n个乘法器和一个n输入的加法树就能够完成两个n维向量的内积操作。基于乘加算子的加速器（如图~\ref{fig:dataflow}（b））通常具有一系列的规则分布的处理单元，其中每一个处理单元能够完成一次MAC操作。处理单元之间采用一种规律的方式进行连接（如二维矩阵），神经元和权值采用某种规律的方式在处理单元之间进行移动，如经典的脉动阵列形式（systolic design），因此这种形式又称为空间数据流形式。表~\ref{tab:dataflow}总结了近年来出现的神经网络加速器和它们的数据流形式。
-基于向量算子的神经网络加速器包括DianNao~\cite{chen2014diannao},DaDianNao~\cite{chen2014dadiannao},PuDianNao~\cite{liu2015pudiannao},Cambricon~\cite{liu2016cambricon},Cambricon-X~\cite{zhang2016cambricon},Cnvlutin~\cite{albericio2016cnvlutin}, EIE~\cite{han2016eie}和ESE~\cite{han2017ese}。基于乘加算子空间数据流的加速器包括ShiDianNao~\cite{du2015shidiannao}, Eyeriss~\cite{chen2017eyeriss}, TPU~\cite{jouppi2017tpu}, Neuflow~\cite{farabet2011neuflow}和SCNN~\cite{angshuman2017scnn}。
+由于严峻的能耗约束和高性能要求，定制加速器成为CPU和GPU等传统处理平台的替代品。近几年出现了数据流和结构各异的神经网络加速器。神经网络加速器按照数据流的形式可以分为两类，分别是基于向量算子数据流的加速器和和基于乘加算子（multiply-and-accumulate，简称MAC）空间数据流的加速器。
+
+基于向量算子的加速器将神经网络的运算转化为向量运算，主要是将矩阵操作转化为一系列的向量操作（通常是内积操作）。如图~\ref{fig:dataflow} (a) 所示的结构中，n个乘法器和一个n输入的加法树就能够完成两个n维向量的内积操作。
+
+基于乘加算子的加速器（如图~\ref{fig:dataflow}（b））通常具有一系列的规则分布的处理单元，其中每一个处理单元能够完成一次MAC操作。处理单元之间采用一种规律的方式进行连接（如二维矩阵），神经元和权值采用某种规律的方式在处理单元之间进行移动，如经典的脉动阵列形式（systolic design），因此这种形式又称为空间数据流形式。
+
+脉动阵列，本身的核心概念就是让数据在运算单元的阵列中进行流动，减少访存的次数，并且使得结构更加规整，布线更加统一，提高频率。图~\ref{fig:systolic}描述了是一个规模为$3\times 3$的脉动阵列完成两个规模为$3\times 3$的矩阵乘法的过程。阵列中的每一个处理单元（processing element, PE）由一个乘加器（MAC unit）和寄存器组成，其中乘加器执行两个数的乘法操作，将相乘结果与寄存器中存储的数进行累加，并将计算结果写回寄存器中。值得注意的是，在使用脉动矩阵进行矩阵计算的时候需要对数据调整好形式，按照一定顺序，分时进入脉动阵列。如图~\ref{fig:systolic}所示，PE之间存在规则的数据通路，其中$PE_{i,j}$能够从$PE_{i-1,j}$（即上方邻居）获得矩阵B的第$j$列的输入，并在下一个cycle将该输入发送给$PE_{i+1,j}$（即下方邻居）；同时$PE_{i,j}$能够从$PE_{i,j-1}$（即左方邻居）获得A矩阵的第$i$列的输入，并在下一个cycle将该输入发送给$PE_{i,j+1}$（即右方邻居）。在第一个cycle，$a_{11}$和$b_{11}$分别从左方和上方流入$PE_{1,1}$，同时$PE_{1,1}$完成$a_{11}*b_{11}$的操作。第二个cycle，$a_{11}$和$b_{11}$分别沿着水平向右和竖直向下的方向流入$PE_{1,2}$和$PE_{2,1}$，同时$a_{1,2}$，$a_{2,1}$，$b_{2,1}$和$b_{1,2}$分别流入$PE_{1,1}$，$PE_{2,1}$，$PE_{1,1}$和$PE_{1,2}$；然后$PE_{1,1}$中完成$a_{12}*b_{21}$，同时将结果与$a_{11}*b_{11}$累加，即$PE_{i,1}$中寄存器的结果为$a_{11}*b_{11}+a_{12}*b_{21}$，同时$PE_{1,2}$和$PE_{2,1}$寄存器中的结果分别为$a_{11}*b_{12}$和$a_{21}*b_{11}$。最终两个规模为$3\times 3$的矩阵乘法能够在五个周期内完成。
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.7\columnwidth]{systolic.pdf}
+  \caption{\footnotesize 脉动阵列完成矩阵乘法操作}
+  \label{fig:systolic}
+\end{figure}
+
+
+表~\ref{tab:dataflow}总结了近年来出现的神经网络加速器和它们的数据流形式。
+基于向量算子的神经网络加速器包括DianNao~\cite{chen2014diannao}, DaDianNao~\cite{chen2014dadiannao}, PuDianNao~\cite{liu2015pudiannao}, Cambricon~\cite{liu2016cambricon}, Cambricon-X~\cite{zhang2016cambricon}, Cnvlutin~\cite{albericio2016cnvlutin}, EIE~\cite{han2016eie}和ESE~\cite{han2017ese}。基于乘加算子空间数据流的加速器包括ShiDianNao~\cite{du2015shidiannao}, Eyeriss~\cite{chen2017eyeriss}, TPU~\cite{jouppi2017tpu}, Neuflow~\cite{farabet2011neuflow}和SCNN~\cite{angshuman2017scnn}。
 
 
 \begin{figure}[t]
@@ -229,7 +232,7 @@ c_t=(1-z_t) \odot c_{t-1} + z_t \odot \tilde{c_t}
 \end{figure}
 
 \subsection{基于向量算子的神经网络处理器}
-DianNao是世界上首个深度神经网络处理器，它的结构如图~\ref{fig:diannao}所示。DianNao包含以下的主要模块：一个控制器(Control Processor,简称CP)，一个神经功能单元(Neural Functional Unit, 简称NFU)，三个片上缓存（NBin，NBout和SB）和外部存储接口(Memory Interface)。CP采用自定义的指令控制DianNao的运行。NBin，NBout和SB分别用来缓存输入神经元，输出神经元和权值。NFU包含$T_n$个计算单元，每个计算单元包含$T_n$个乘法器和一个$T_n$输入的加法树。在计算过程中每个计算单元共享输入神经元，接收不同的权值，从而计算不同的输出神经元。因此NFU最多读取$T_n$个输入神经元，$T_nxT_n$个权值，计算$T_n$个输出神经元。在TSMC65nm工艺下，采用$T_n$=16的配置，DianNao的面积，功耗和吞吐率分别为$3.02mm^2$，$485mW$和$452GOP/s$，对比与一个2GHz的CPU，能够获得117倍的性能提升，并且降低21倍的能耗。
+DianNao是世界上首个深度神经网络处理器，它的结构如图~\ref{fig:diannao}所示。DianNao包含以下的主要模块：一个控制器(Control Processor,简称CP)，一个神经功能单元(Neural Functional Unit, 简称NFU)，三个片上缓存（NBin，NBout和SB）和外部存储接口(Memory Interface)。CP采用自定义的指令控制DianNao的运行。NBin，NBout和SB分别用来缓存输入神经元，输出神经元和权值。NFU包含$T_n$个计算单元，每个计算单元包含$T_n$个乘法器和一个$T_n$输入的加法树。在计算过程中每个计算单元共享输入神经元，接收不同的权值，从而计算不同的输出神经元。因此NFU最多读取$T_n$个输入神经元，$T_nxT_n$个权值，计算$T_n$个输出神经元。在TSMC65nm工艺下，采用$T_n=16$的配置，DianNao的面积，功耗和吞吐率分别为$3.02mm^2$，$485mW$和$452GOP/s$，对比与一个$2GHz$的CPU，能够获得117倍的性能提升，并且降低21倍的能耗。
 
 DadianNao是DianNao的多核版本，一个NFU与外围的存储模块构成一个tile，多个tile通过fat-tree进行局部互联组成一个node，最终多个node通过HyperTransport2.0互联形成DaDianNao。DaDianNao使用eDRAM来提供足够的片上缓存用来存储权值和神经元，从而减少片外访存开销，进而有效地处理大规模神经网络。实验显示，在ST28nm的工艺下，64核的DaDianNao的面积和功耗分别是$67.73mm^2$和$15.97W$，对比Nvidia K20，平均性能提升21.38倍，平均能耗降低了330.56倍。
 
