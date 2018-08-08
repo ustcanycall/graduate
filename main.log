@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.7.4)  24 JUL 2018 16:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.7.4)  6 AUG 2018 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2205,14 +2205,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Underfull \vbox (badness 4699) has occurred while \output is active []
-
- [5])
+[5])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-[6] (./chapters/introduction.tex
+ [6] (./chapters/introduction.tex
 第1章
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2239,33 +2236,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-LaTeX Font Info:    Calculating math sizes for size <9.03365> on input line 125
+LaTeX Font Info:    Calculating math sizes for size <9.03365> on input line 139
 .
 
-[8]
-Overfull \hbox (7.09816pt too wide) in paragraph at lines 139--140
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Overfull \hbox (7.09816pt too wide) in paragraph at lines 153--154
 []\EU1/FandolSong-Regular(0)/m/n/12.04486 除 了 \EU1/TimesNewRoman(0)/m/n/12.0448
 6 DianNao \EU1/FandolSong-Regular(0)/m/n/12.04486 系 列 神 经 网 络 加 速 器，|  最 近 还 涌 
 现 出 越 来 越 多 的 加 速 器，|  如 \EU1/TimesNewRoman(0)/m/n/12.04486 Fara-
  []
 
 File: figures/idea.pdf Graphic file (type QTm)
-<use  "figures/idea.pdf" > [9]
+<use  "figures/idea.pdf" >
+Underfull \vbox (badness 1721) has occurred while \output is active []
+
+ [9]
+[10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10])
-(./chapters/background.tex [11]
+ [11])
+(./chapters/background.tex [12]
 第2章
 File: figures/fc.pdf Graphic file (type QTm)
 <use  "figures/fc.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12
+ [13
 
 ]
 File: figures/conv.pdf Graphic file (type QTm)
 
-<use  "figures/conv.pdf" > [13]
+<use  "figures/conv.pdf" > [14]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -2273,224 +2276,263 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 37.
+nput line 38.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (4.87227pt too wide) in paragraph at lines 46--47
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
 
- [14]
+[15] [16]
 File: figures/norm.pdf Graphic file (type QTm)
+ <use  "figures/norm.pdf" >
+Underfull \vbox (badness 4886) has occurred while \output is active []
 
-<use  "figures/norm.pdf" > [15] [16]
+ [17]
 File: figures/lstm.pdf Graphic file (type QTm)
- <use  "figures/lstm.pdf" >
-File: figures/gru.pdf Graphic file (type QTm)
 
-<use  "figures/gru.pdf" >
+<use  "figures/lstm.pdf" >
 
-LaTeX Warning: Reference `fig:rnn' on page 17 undefined on input line 127.
-
-
-LaTeX Warning: Reference `fig:rnn' on page 17 undefined on input line 128.
-
-[17]
-
-LaTeX Warning: Reference `fig:rnn' on page 18 undefined on input line 145.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+File: figures/gru.pdf Graphic file (type QTm)
+ <use  "figures/gru.pdf" >
+Underfull \vbox (badness 1221) has occurred while \output is active []
 
  [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-File: figures/dataflow.pdf Graphic file (type QTm)
-
-<use  "figures/dataflow.pdf" >
+[20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-[22]
-File: figures/systolic.pdf Graphic file (type QTm)
- <use  "figures/systolic.pdf" >
-File: figures/diannao.pdf Graphic file (type QTm)
- <use  "figures/diannao.pdf" >
+File: figures/pruning.pdf Graphic file (type QTm)
+
+<use  "figures/pruning.pdf" > [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
+File: figures/dataflow.pdf Graphic file (type QTm)
+
+<use  "figures/dataflow.pdf" > [24]
+File: figures/systolic.pdf Graphic file (type QTm)
+ <use  "figures/systolic.pdf" > [25]
+File: figures/diannao.pdf Graphic file (type QTm)
+
+<use  "figures/diannao.pdf" >
+File: figures/dadiannao.pdf Graphic file (type QTm)
+ <use  "figures/dadiannao.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26]
+Underfull \vbox (badness 1642) has occurred while \output is active []
+
+ [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [28]
+File: figures/IM.pdf Graphic file (type QTm)
 
- [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26])
-(./chapters/compression.tex [27]
+<use  "figures/IM.pdf" > [29]) (./chapters/compression.tex [30]
 第3章
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28
+ [31
 
 ]
 File: figures/sparse_network.pdf Graphic file (type QTm)
 
-<use  "figures/sparse_network.pdf" > [29]
+<use  "figures/sparse_network.pdf" > [32]
 File: figures/WE.pdf Graphic file (type QTm)
- <use  "figures/WE.pdf" > [30]
+ <use  "figures/WE.pdf" > [33]
 File: figures/huffman.pdf Graphic file (type QTm)
 
-<use  "figures/huffman.pdf" > [31]
-File: figures/local_convergence.pdf Graphic file (type QTm)
- <use  "figures/local_convergence.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-File: figures/CDF.eps Graphic file (type eps)
-
-<figures/CDF.eps>
-File: figures/compression_flow.pdf Graphic file (type QTm)
- <use  "figures/compression_flow.pdf" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-File: figures/fc_pruning.pdf Graphic file (type QTm)
-
-<use  "figures/fc_pruning.pdf" >
+<use  "figures/huffman.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [34]
-Overfull \hbox (27.28929pt too wide) in paragraph at lines 140--141
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
+ [35]
+File: figures/local_convergence.pdf Graphic file (type QTm)
+
+<use  "figures/local_convergence.pdf" > [36]
+File: figures/CDF.eps Graphic file (type eps)
+ <figures/CDF.eps>
+File: figures/compression_flow.pdf Graphic file (type QTm)
+
+<use  "figures/compression_flow.pdf" > [37]
+File: figures/fc_pruning.pdf Graphic file (type QTm)
+ <use  "figures/fc_pruning.pdf" >
+File: figures/conv_pruning.pdf Graphic file (type QTm)
+
+<use  "figures/conv_pruning.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (27.28929pt too wide) in paragraph at lines 168--169
 \EU1/FandolSong-Regular(0)/m/n/12.04486 中 的 神 经 元。|  因 此，|  卷 积 层 中 的 权 值 可 以 表
  示 为 一 个 四 维 张 量，|  即 $\OT1/cmr/m/n/12.04486 (\OML/cmm/m/it/12.04486 N[]; N[]; 
 K[]; K[]\OT1/cmr/m/n/12.04486 )$\EU1/FandolSong-Regular(0)/m/n/12.04486 ，|
  []
 
-File: figures/conv_pruning.pdf Graphic file (type QTm)
-<use  "figures/conv_pruning.pdf" > [35]
-File: figures/avg_max.eps Graphic file (type eps)
- <figures/avg_max.eps> [36]
-Underfull \vbox (badness 4467) has occurred while \output is active []
-
- [37]
-File: figures/LQ.pdf Graphic file (type QTm)
-
-<use  "figures/LQ.pdf" >
+[38]
+File: figures/index_saving.pdf Graphic file (type QTm)
+ <use  "figures/index_saving.pdf" > [39]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
-LaTeX Font Info:    Calculating math sizes for size <7.52803> on input line 274
-.
+File: figures/avg_max.eps Graphic file (type eps)
 
-[41]) (./chapters/acc.tex [42]
-第4章
-File: figures/connection.pdf Graphic file (type QTm)
-<use  "figures/connection.pdf" >
-Overfull \hbox (24.87512pt too wide) in paragraph at lines 27--28
-[]\EU1/FandolSong-Regular(0)/m/n/12.04486 首 先，|  多 个 输 出 神 经 元 之 间 共 享 索 引 信 息。
-|  如 图 []\EU1/TimesNewRoman(0)/m/n/12.04486 4.1[]\EU1/FandolSong-Regular(0)/m/n
-/12.04486 所 示，|  输 入 神 经 元 $\OML/cmm/m/it/12.04486 n\OT1/cmr/m/n/12.04486 1\OML
-/cmm/m/it/12.04486 ; n\OT1/cmr/m/n/12.04486 2\OML/cmm/m/it/12.04486 ; n\OT1/cmr
-/m/n/12.04486 5\OML/cmm/m/it/12.04486 ; n\OT1/cmr/m/n/12.04486 6$
- []
+<figures/avg_max.eps> [41]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 2671) has occurred while \output is active []
+
+ [42]
+File: figures/LQ.pdf Graphic file (type QTm)
+
+<use  "figures/LQ.pdf" > [43]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43
+ [44]
+LaTeX Font Info:    Calculating math sizes for size <7.52803> on input line 319
+.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+[46]) (./chapters/acc.tex [47]
+第4章
+File: figures/connection.pdf Graphic file (type QTm)
+<use  "figures/connection.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
+ [49]
 File: figures/ACC.pdf Graphic file (type QTm)
 
-<use  "figures/ACC.pdf" > [45]
+<use  "figures/ACC.pdf" > [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
+ [51]
 File: figures/NSM.pdf Graphic file (type QTm)
 
-<use  "figures/NSM.pdf" > [47]
+<use  "figures/NSM.pdf" > [52]
 File: figures/PE.pdf Graphic file (type QTm)
- <use  "figures/PE.pdf" > [48]
+ <use  "figures/PE.pdf" > [53]
 File: figures/SSM.pdf Graphic file (type QTm)
 
 <use  "figures/SSM.pdf" >
 File: figures/PEFU.pdf Graphic file (type QTm)
  <use  "figures/PEFU.pdf" >
-File: figures/encoder.pdf Graphic file (type QTm)
-
-<use  "figures/encoder.pdf" > [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
-File: figures/FSM.pdf Graphic file (type QTm)
-
-<use  "figures/FSM.pdf" > [51]
-File: figures/Htree.pdf Graphic file (type QTm)
- <use  "figures/Htree.pdf" > [52]
-File: figures/framework.pdf Graphic file (type QTm)
-
-<use  "figures/framework.pdf" > [53]
-File: figures/compiler.pdf Graphic file (type QTm)
- <use  "figures/compiler.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[54] [55]
-Overfull \hbox (68.03705pt too wide) in paragraph at lines 208--208
+[54]
+File: figures/encoder.pdf Graphic file (type QTm)
+ <use  "figures/encoder.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 3872) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+File: figures/FSM.pdf Graphic file (type QTm)
+
+<use  "figures/FSM.pdf" > [58]
+File: figures/Htree.pdf Graphic file (type QTm)
+ <use  "figures/Htree.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+File: figures/framework.pdf Graphic file (type QTm)
+
+<use  "figures/framework.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+File: figures/compiler.pdf Graphic file (type QTm)
+
+<use  "figures/compiler.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
+[62]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 241.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 241.
+
+
+Overfull \hbox (68.03705pt too wide) in paragraph at lines 241--241
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56])
-(./chapters/experiment.tex [57]
+ [63])
+(./chapters/simulator.tex [64]
 第5章
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58
+ [65
 
 ]
+File: figures/event.pdf Graphic file (type QTm)
 
-LaTeX Warning: Reference `' on page 59 undefined on input line 16.
-
+<use  "figures/event.pdf" >
 File: figures/simulator.pdf Graphic file (type QTm)
-<use  "figures/simulator.pdf" >
+ <use  "figures/simulator.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]
+ [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
+ [68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
-Overfull \hbox (0.33606pt too wide) in paragraph at lines 81--83
+ [69]
+Overfull \hbox (0.33606pt too wide) in paragraph at lines 109--111
 \EU1/FandolSong-Regular(0)/m/n/12.04486 其 中 $\OML/cmm/m/it/12.04486 t[]$ \EU1/F
 andolSong-Regular(0)/m/n/12.04486 是 \EU1/TimesNewRoman(0)/m/n/12.04486 Store \E
 U1/FandolSong-Regular(0)/m/n/12.04486 事 件 执 行 事 件，| $\OML/cmm/m/it/12.04486 t[]
@@ -2499,92 +2541,120 @@ Off-chip Memory \EU1/FandolSong-Regular(0)/m/n/12.04486 的 启 动 时 间，| 
 /it/12.04486 Data[]$
  []
 
-
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
- [62]
+[70]
 File: figures/simulation.pdf Graphic file (type QTm)
-
-<use  "figures/simulation.pdf" > [63]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [64]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [65]
-
-LaTeX Warning: Reference `subsubsec:encoidng_hw ' on page 66 undefined on input
- line 148.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66]
-File: figures/total_performance.eps Graphic file (type eps)
-
-<figures/total_performance.eps> [67]
-File: figures/conv_performance.eps Graphic file (type eps)
- <figures/conv_performance.eps>
-File: figures/fc_performance.eps Graphic file (type eps)
-
-<figures/fc_performance.eps> [68]
-File: figures/energy.eps Graphic file (type eps)
- <figures/energy.eps>
-File: figures/energy_breakdown.eps Graphic file (type eps)
-
-<figures/energy_breakdown.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[69]
-File: figures/energy_breakdown2.eps Graphic file (type eps)
- <figures/energy_breakdown2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70]
-File: figures/sensitivity.eps Graphic file (type eps)
-
-<figures/sensitivity.eps> [71]
-Overfull \hbox (0.75885pt too wide) in paragraph at lines 269--270
-[]\EU1/FandolSong-Regular(0)/m/n/12.04486 最 近 有 不 少 类 似 于 粗 粒 度 稀 疏 的 研 究，|  例 
-如 \EU1/TimesNewRoman(0)/m/n/12.04486 SIMD-aware weight pruning [[]]\EU1/FandolS
-ong-Regular(0)/m/n/12.04486 ，|
- []
-
-
+ <use  "figures/simulation.pdf" > [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [72]
-[73]) (./chapters/conclusion.tex [74]
+File: figures/simulator.eps Graphic file (type eps)
+
+<figures/simulator.eps>) (./chapters/experiment.tex [73]
 第6章
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75
+ [74
 
 ]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76])
-(./main.bbl [77]
+ [75]
+File: figures/total_performance.eps Graphic file (type eps)
+
+<figures/total_performance.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78
+ [76]
+File: figures/conv_performance.eps Graphic file (type eps)
 
-]
+<figures/conv_performance.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/fc_performance.eps Graphic file (type eps)
+<figures/fc_performance.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
+ [77]
+File: figures/energy.eps Graphic file (type eps)
+
+<figures/energy.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/energy_breakdown.eps Graphic file (type eps)
+<figures/energy_breakdown.eps>
+Underfull \vbox (badness 6741) has occurred while \output is active []
+
+ [78]
+File: figures/energy_breakdown2.eps Graphic file (type eps)
+
+<figures/energy_breakdown2.eps> [79]
+File: figures/sensitivity.eps Graphic file (type eps)
+ <figures/sensitivity.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [81]
-Underfull \hbox (badness 1521) in paragraph at lines 446--451
+Overfull \hbox (0.75885pt too wide) in paragraph at lines 158--159
+[]\EU1/FandolSong-Regular(0)/m/n/12.04486 最 近 有 不 少 类 似 于 粗 粒 度 稀 疏 的 研 究，|  例 
+如 \EU1/TimesNewRoman(0)/m/n/12.04486 SIMD-aware weight pruning [[]]\EU1/FandolS
+ong-Regular(0)/m/n/12.04486 ，|
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82])
+(./chapters/conclusion.tex [83]
+第7章
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85])
+(./main.bbl [86]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [88]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90]
+Underfull \hbox (badness 1521) in paragraph at lines 453--458
 \EU1/TimesNewRoman(0)/m/n/10.53937 accelerator for large-scale convolutional ne
 ural networks[C]//Proceedings of the 2016
  []
@@ -2592,11 +2662,11 @@ ural networks[C]//Proceedings of the 2016
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
+ [91]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
-Underfull \hbox (badness 1281) in paragraph at lines 669--672
+ [92]
+Underfull \hbox (badness 1281) in paragraph at lines 676--679
 []\EU1/TimesNewRoman(0)/m/n/10.53937 ZHU C, HAN S, MAO H, et al.  Trained terna
 ry quantization[J].  arXiv preprint
  []
@@ -2604,44 +2674,39 @@ ry quantization[J].  arXiv preprint
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
+ [93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85]
-Underfull \hbox (badness 1320) in paragraph at lines 893--898
+ [94]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95]
+Underfull \hbox (badness 1320) in paragraph at lines 920--925
 []\EU1/TimesNewRoman(0)/m/n/10.53937 LEBEDEV V, LEMPITSKY V.  Fast convnets usi
 ng group-wise brain damage[C]//
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [86])
-[87] (./chapters/acknowledgements.tex) (./chapters/publications.tex [88
+) [96] (./chapters/acknowledgements.tex) (./chapters/publications.tex [97
 
 
 ])
-[89
+[98
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 67.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 43375 strings out of 493638
- 850695 string characters out of 6146797
- 834982 words of memory out of 5000000
- 46071 multiletter control sequences out of 15000+600000
+ 43430 strings out of 493638
+ 852630 string characters out of 6146797
+ 835545 words of memory out of 5000000
+ 46120 multiletter control sequences out of 15000+600000
  42658 words of font info for 234 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  70i,16n,107p,10499b,1109s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (101 pages).
+Output written on main.pdf (110 pages).

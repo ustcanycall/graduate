@@ -1,4 +1,4 @@
-\begin{thebibliography}{134}
+\begin{thebibliography}{138}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -312,6 +312,13 @@ HAN S, POOL J, TRAN J, et~al.
   network\allowbreak[C]//\allowbreak{}Advances in Neural Information Processing
   Systems.
 \newblock 2015{\natexlab{a}}: 1135-1143.
+
+\bibitem[Guo\ et~al.(2016)Guo, Yao, and Chen]{guo2016dynamic}
+GUO Y, YAO A, CHEN Y.
+\newblock Dynamic network surgery for efficient
+  dnns\allowbreak[C]//\allowbreak{}Advances In Neural Information Processing
+  Systems.
+\newblock 2016: 1379-1387.
 
 \bibitem[Denton\ et~al.(2014)Denton, Zaremba, Bruna, LeCun, and
   Fergus]{denton2014exploiting}
@@ -849,6 +856,26 @@ SAK H, SENIOR A~W, BEAUFAYS F.
 \newblock Long short-term memory recurrent neural network architectures for
   large scale acoustic modeling.\allowbreak[C]//\allowbreak{}Interspeech.
 \newblock 2014: 338-342.
+
+\bibitem[Volder(1959)]{Volder1959The}
+VOLDER J~E.
+\newblock The cordic trigonometric computing technique\allowbreak[J].
+\newblock Electronic Computers Ire Transactions on, 1959, EC-8\penalty0 (3):
+  330-334.
+
+\bibitem[Walther(1971)]{Walther1971A}
+WALTHER S.
+\newblock A unified algorithm for elementary
+  functions\allowbreak[C]//\allowbreak{}May 18-20, 1971, Spring Joint Computer
+  Conference.
+\newblock 1971: 379-385.
+
+\bibitem[Temam(2012)]{Temam2012A}
+TEMAM O.
+\newblock A defect-tolerant accelerator for emerging high-performance
+  applications\allowbreak[J].
+\newblock Acm Sigarch Computer Architecture News, 2012, 40\penalty0 (3):
+  356-367.
 
 \bibitem[Muralimanohar\ et~al.(2007)Muralimanohar, Balasubramonian, and
   Jouppi]{muralimanohar2007optimizing}

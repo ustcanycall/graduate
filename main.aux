@@ -48,8 +48,6 @@
 \FN@pp@footnotehinttrue 
 \FN@pp@footnotehinttrue 
 \FN@pp@footnotehinttrue 
-\citation{mcculloch1943logical}
-\citation{hebb1963organizations,gerstner2002mathematical}
 \HyPL@Entry{12<</S/D>>}
 \FN@pp@footnotehinttrue 
 \@writefile{toc}{\contentsline {chapter}{\numberline {第1章\hspace  {0.3em}}绪论}{1}{chapter.1}}
@@ -57,7 +55,8 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}神经网络算法发展历程}{1}{section.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}第一个时期（1940年代到50年代）}{1}{subsection.1.1.1}}
+\citation{mcculloch1943logical}
+\citation{hebb1963organizations,gerstner2002mathematical}
 \citation{hodgkin1952quantitative}
 \citation{taylor1956electrical}
 \citation{rosenblatt1958perceptron}
@@ -67,10 +66,11 @@
 \citation{minsky5paper}
 \citation{cainiello1961outline}
 \citation{nagumo1972response}
-\citation{hopfield1982neural}
-\citation{zurada1996generalized}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}第一个时期（1940年代到50年代）}{2}{subsection.1.1.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}第二个时期 (1960年代到70年代)}{2}{subsection.1.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}第三个时期（1980年代到90年代）}{2}{subsection.1.1.3}}
+\citation{hopfield1982neural}
+\citation{zurada1996generalized}
 \citation{hindmarsh1984model}
 \citation{ackley1985learning}
 \citation{kirkpatrick1983optimization,vcerny1985thermodynamical}
@@ -91,7 +91,6 @@
 \citation{he2016deep}
 \citation{girshick2014rich}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1}神经网络在图像分类领域的应用}{4}{subsubsection.1.1.4.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}神经网络在目标检测领域的应用}{4}{subsubsection.1.1.4.2}}
 \citation{girshick2015fast}
 \citation{he2014spatial}
 \citation{ren2015faster}
@@ -102,9 +101,10 @@
 \citation{courbariaux2015binaryconnect}
 \citation{rastegari2016xnor}
 \citation{zhou2017incremental}
-\citation{reed1993pruning,lecun1989optimal,miche2010op,han2015learning}
-\citation{denton2014exploiting,lebedev2014speeding}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}神经网络在目标检测领域的应用}{5}{subsubsection.1.1.4.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3}神经网络的低能耗技术}{5}{subsubsection.1.1.4.3}}
+\citation{reed1993pruning,lecun1989optimal,miche2010op,han2015learning,guo2016dynamic}
+\citation{denton2014exploiting,lebedev2014speeding}
 \citation{chakradhar2010dynamically,vanhoucke2011improving}
 \citation{farabet2009cnp,scherer2010accelerating,ciresan2011flexible,coates2013deep}
 \citation{jia2014caffe}
@@ -114,18 +114,18 @@
 \citation{dean2012large}
 \citation{oh2004gpu}
 \citation{scherer2010accelerating}
-\citation{le2013building}
-\citation{coates2013deep}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}神经网络计算平台发展}{6}{section.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}通用处理器CPU和GPU}{6}{subsection.1.2.1}}
+\citation{le2013building}
+\citation{coates2013deep}
 \citation{farabet2009cnp}
 \citation{farabet2011neuflow}
 \citation{gokhale2014240}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}FPGA}{7}{subsection.1.2.2}}
 \citation{zhang2015optimizing}
 \citation{suda2016throughput}
 \citation{zhang2015optimizing}
 \citation{qiu2016going}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}FPGA}{7}{subsection.1.2.2}}
 \citation{rice2009scaling}
 \citation{kim2009highly}
 \citation{lee1987parallel}
@@ -133,15 +133,12 @@
 \citation{kamp1990programmable}
 \citation{hecht1991advanced}
 \citation{lee2006super}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}ASIC}{8}{subsection.1.2.3}}
 \citation{chen2016diannao}
 \citation{chen2014diannao}
 \citation{chen2014diannao}
 \citation{liu2015pudiannao}
 \citation{du2015shidiannao}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}ASIC}{8}{subsection.1.2.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces DianNao Family详细参数\relax }}{8}{table.caption.4}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:diannao_family}{{1.1}{8}{DianNao Family详细参数\relax }{table.caption.4}{}}
 \citation{farabet2011neuflow}
 \citation{chen2016eyeriss}
 \citation{jouppi2017tpu}
@@ -153,45 +150,53 @@
 \citation{han2016eie}
 \citation{han2017ese}
 \citation{angshuman2017scnn}
-\citation{han2015learning,han2015deep,wang2016cnnpack,zhou2017incremental}
-\citation{chen2017eyeriss,zhang2016cambricon,albericio2016cnvlutin,han2016eie,han2017ese,angshuman2017scnn}
+\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces DianNao Family详细参数\relax }}{9}{table.caption.4}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:diannao_family}{{1.1}{9}{DianNao Family详细参数\relax }{table.caption.4}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1.2}{\ignorespaces 现有支持稀疏的神经网络加速器的比较\relax }}{9}{table.caption.5}}
 \newlabel{tab:comp}{{1.2}{9}{现有支持稀疏的神经网络加速器的比较\relax }{table.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}主要研究内容及贡献}{9}{section.1.3}}
+\citation{han2015learning,han2015deep,wang2016cnnpack,zhou2017incremental}
+\citation{chen2017eyeriss,zhang2016cambricon,albericio2016cnvlutin,han2016eie,han2017ese,angshuman2017scnn}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}主要研究内容及贡献}{10}{section.1.3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces 本文主要研究内容和创新点\relax }}{10}{figure.caption.6}}
 \newlabel{fig:idea}{{1.1}{10}{本文主要研究内容和创新点\relax }{figure.caption.6}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.4}论文的组织结构}{11}{section.1.4}}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{\numberline {第2章\hspace  {0.3em}}神经网络简介}{12}{chapter.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第2章\hspace  {0.3em}}神经网络简介}{13}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}神经网络算法基础}{12}{section.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}全连接层}{12}{subsection.2.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 全连接层\relax }}{12}{figure.caption.7}}
-\newlabel{fig:fc_layer}{{2.1}{12}{\footnotesize 全连接层\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}卷积层}{13}{subsection.2.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 卷积层\relax }}{13}{figure.caption.8}}
-\newlabel{fig:conv_layer}{{2.2}{13}{\footnotesize 卷积层\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}神经网络算法基础}{13}{section.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}全连接层}{13}{subsection.2.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 全连接层\relax }}{13}{figure.caption.7}}
+\newlabel{fig:fc_layer}{{2.1}{13}{\footnotesize 全连接层\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}卷积层}{14}{subsection.2.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 卷积层\relax }}{14}{figure.caption.8}}
+\newlabel{fig:conv_layer}{{2.2}{14}{\footnotesize 卷积层\relax }{figure.caption.8}{}}
 \citation{angshuman2017scnn}
-\newlabel{list:convcode}{{2.1}{14}{六层卷积循环}{lstlisting.2.1}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.1}六层卷积循环}{14}{lstlisting.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}池化层}{14}{subsection.2.1.3}}
+\newlabel{list:convcode}{{2.1}{15}{七层卷积循环}{lstlisting.2.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.1}七层卷积循环}{15}{lstlisting.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}池化层}{15}{subsection.2.1.3}}
+\citation{girshick2014rich}
+\citation{ren2015faster}
 \citation{krizhevsky2012imagenet}
 \citation{ioffe2015batch}
 \citation{ba2016layer}
 \citation{dmitry2016instance}
 \citation{wu2018group}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}归一化层}{15}{subsection.2.1.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 归一化方法。每一个子图显示的是一个feature map，其中N为batch轴，C为channel轴，（H,W）为空间轴。蓝色的像素表示归一化的范围。\relax }}{15}{figure.caption.9}}
-\newlabel{fig:norm}{{2.3}{15}{\footnotesize 归一化方法。每一个子图显示的是一个feature map，其中N为batch轴，C为channel轴，（H,W）为空间轴。蓝色的像素表示归一化的范围。\relax }{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}激活层}{16}{subsection.2.1.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}归一化层}{16}{subsection.2.1.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 归一化方法。每一个子图显示的是一个feature map，其中N为batch轴，C为channel轴，（H,W）为空间轴。蓝色的像素表示归一化的范围。\relax }}{17}{figure.caption.9}}
+\newlabel{fig:norm}{{2.3}{17}{\footnotesize 归一化方法。每一个子图显示的是一个feature map，其中N为batch轴，C为channel轴，（H,W）为空间轴。蓝色的像素表示归一化的范围。\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}激活层}{17}{subsection.2.1.5}}
 \citation{krizhevsky2012imagenet}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}LSTM}{17}{subsection.2.1.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (a) LSTM (b) GRU\relax }}{17}{figure.caption.10}}
-\newlabel{fig:RNN}{{2.4}{17}{\footnotesize (a) LSTM (b) GRU\relax }{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.7}GRU}{18}{subsection.2.1.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}LSTM}{18}{subsection.2.1.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip LSTM\relax }}{19}{figure.caption.10}}
+\newlabel{fig:lstm}{{2.4}{19}{\footnotesize LSTM\relax }{figure.caption.10}{}}
 \citation{le2013building,coates2013deep}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.7}GRU}{20}{subsection.2.1.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip GRU\relax }}{20}{figure.caption.11}}
+\newlabel{fig:gru}{{2.5}{20}{\footnotesize GRU\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}神经网络低能耗的技术}{20}{section.2.2}}
 \citation{gupta2015deep}
 \citation{goodfellow2016deep}
 \citation{gupta2015deep}
@@ -205,16 +210,19 @@
 \citation{zhu2016trained}
 \citation{zhou2017incremental}
 \citation{wang2017fixed}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}神经网络低能耗的技术}{19}{section.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}神经网络的低精度计算}{19}{subsection.2.2.1}}
 \citation{hubara2016binarized}
 \citation{rastegari2016xnor}
 \citation{zhou2016dorefa}
 \citation{cai2017deep}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}神经网络的低精度计算}{21}{subsection.2.2.1}}
 \citation{han2015learning}
-\citation{han2016eie}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}神经网络压缩模型}{20}{subsection.2.2.2}}
+\citation{han2015deep}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}神经网络裁剪技术}{22}{subsection.2.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (a) 剪枝流程 (b)剪枝前后神经网络\relax }}{22}{figure.caption.12}}
+\newlabel{fig:pruning1}{{2.6}{22}{\footnotesize (a) 剪枝流程 (b)剪枝前后神经网络\relax }{figure.caption.12}{}}
 \citation{wang2016cnnpack}
+\citation{han2015learning,han2015deep,wang2016cnnpack}
+\citation{guo2016dynamic}
 \citation{he2014reshaping,srinivas2015data,hu2016network,mariet2015diversity}
 \citation{srinivas2015data}
 \citation{han2015learning}
@@ -225,6 +233,11 @@
 \citation{jaderberg2014speeding}
 \citation{jaderberg2014speeding}
 \citation{lebedev2014speeding}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}权值矩阵变换}{23}{subsection.2.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}神经网络加速器}{24}{section.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}现有神经网络加速器架构}{24}{subsection.2.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 现有的加速器架构.\relax }}{24}{figure.caption.13}}
+\newlabel{fig:dataflow}{{2.7}{24}{\footnotesize 现有的加速器架构.\relax }{figure.caption.13}{}}
 \citation{chen2014diannao}
 \citation{chen2014dadiannao}
 \citation{liu2015pudiannao}
@@ -238,12 +251,8 @@
 \citation{jouppi2017tpu}
 \citation{farabet2011neuflow}
 \citation{angshuman2017scnn}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}神经网络加速器}{21}{section.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}现有神经网络加速器架构}{21}{subsection.2.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 现有的加速器架构.\relax }}{22}{figure.caption.12}}
-\newlabel{fig:dataflow}{{2.5}{22}{\footnotesize 现有的加速器架构.\relax }{figure.caption.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 现有神经网络加速器的数据流形式\relax }}{22}{table.caption.11}}
-\newlabel{tab:dataflow}{{2.1}{22}{\footnotesize 现有神经网络加速器的数据流形式\relax }{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 脉动阵列完成矩阵乘法操作\relax }}{25}{figure.caption.14}}
+\newlabel{fig:systolic}{{2.8}{25}{\footnotesize 脉动阵列完成矩阵乘法操作\relax }{figure.caption.14}{}}
 \citation{chen2014diannao}
 \citation{chen2014dadiannao}
 \citation{liu2015pudiannao}
@@ -257,20 +266,28 @@
 \citation{jouppi2017tpu}
 \citation{farabet2011neuflow}
 \citation{angshuman2017scnn}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 脉动阵列完成矩阵乘法操作\relax }}{23}{figure.caption.13}}
-\newlabel{fig:systolic}{{2.6}{23}{\footnotesize 脉动阵列完成矩阵乘法操作\relax }{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}基于向量算子的神经网络处理器}{23}{subsection.2.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip （a）DianNao加速器结构。（b）DaDianNao一个tile的结构。 （c）DaDianNao一个node的结构\relax }}{24}{figure.caption.14}}
-\newlabel{fig:diannao}{{2.7}{24}{\footnotesize （a）DianNao加速器结构。（b）DaDianNao一个tile的结构。 （c）DaDianNao一个node的结构\relax }{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 现有神经网络加速器的数据流形式\relax }}{26}{table.caption.15}}
+\newlabel{tab:dataflow}{{2.1}{26}{\footnotesize 现有神经网络加速器的数据流形式\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}基于向量算子的神经网络处理器}{26}{subsection.2.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip DianNao加速器结构\relax }}{26}{figure.caption.16}}
+\newlabel{fig:diannao}{{2.9}{26}{\footnotesize DianNao加速器结构\relax }{figure.caption.16}{}}
+\citation{liu2016cambricon}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip （a）DaDianNao中一个tile的结构 （b）DaDianNao中一个node结构\relax }}{27}{figure.caption.17}}
+\newlabel{fig:dadiannao}{{2.10}{27}{\footnotesize （a）DaDianNao中一个tile的结构 （b）DaDianNao中一个node结构\relax }{figure.caption.17}{}}
+\citation{farabet2011neuflow}
+\citation{chen2016eyeriss}
+\citation{jouppi2017tpu}
 \citation{chen2017eyeriss,zhang2016cambricon,albericio2016cnvlutin,han2016eie,han2017ese,angshuman2017scnn}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}基于乘加算子空间数据流的神经网络处理器}{25}{subsection.2.3.3}}
 \citation{chen2017eyeriss}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}基于乘加算子空间数据流的神经网络处理器}{28}{subsection.2.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}稀疏神经网络处理器}{28}{subsection.2.3.4}}
 \citation{zhang2016cambricon}
 \citation{albericio2016cnvlutin}
 \citation{han2017ese}
 \citation{han2016eie}
 \citation{angshuman2017scnn}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}稀疏神经网络处理器}{26}{subsection.2.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Cambricon-X中的IM模块\relax }}{29}{figure.caption.18}}
+\newlabel{fig:IM}{{2.11}{29}{\footnotesize Cambricon-X中的IM模块\relax }{figure.caption.18}{}}
 \FN@pp@footnotehinttrue 
 \citation{srivastava2014dropout}
 \citation{han2015learning}
@@ -278,70 +295,74 @@
 \citation{rastegari2016xnor}
 \citation{venkataramani2014axnn}
 \citation{pillai2001real}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第3章\hspace  {0.3em}}一种新的神经网络压缩方法}{31}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}背景}{31}{section.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}稀疏神经网络}{31}{subsection.3.1.1}}
 \citation{olshausen1996emergence}
 \citation{boureau2008sparse,lee2008sparse}
 \citation{lee2007efficient}
 \citation{han2015learning}
 \citation{krizhevsky2012imagenet}
 \citation{simonyan2014very}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第3章\hspace  {0.3em}}一种新的神经网络压缩方法}{28}{chapter.3}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}背景}{28}{section.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}神经网络中的稀疏特性}{29}{subsection.3.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces  (a) 稠密神经网络 (b) 静态权值稀疏 (c) 静态神经元稀疏 (d) 动态神经元稀疏\relax }}{29}{figure.caption.15}}
-\newlabel{fig:sparsity}{{3.1}{29}{(a) 稠密神经网络 (b) 静态权值稀疏 (c) 静态神经元稀疏 (d) 动态神经元稀疏\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces  (a) 稠密神经网络 (b) 静态权值稀疏 (c) 静态神经元稀疏 (d) 动态神经元稀疏\relax }}{32}{figure.caption.19}}
+\newlabel{fig:sparsity}{{3.1}{32}{(a) 稠密神经网络 (b) 静态权值稀疏 (c) 静态神经元稀疏 (d) 动态神经元稀疏\relax }{figure.caption.19}{}}
 \citation{henneaux1992quantization}
 \citation{mackay2003information}
 \citation{han2015deep}
 \citation{wang2016cnnpack}
-\citation{}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}权值编码}{30}{subsection.3.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces 权值编码过程\relax }}{30}{figure.caption.16}}
-\newlabel{fig:weight_encoding}{{3.2}{30}{权值编码过程\relax }{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}量化}{30}{subsubsection.3.1.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}权值编码}{33}{subsection.3.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces 权值编码过程\relax }}{33}{figure.caption.20}}
+\newlabel{fig:weight_encoding}{{3.2}{33}{权值编码过程\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}量化}{33}{subsubsection.3.1.2.1}}
 \citation{huffman1952method}
 \citation{witten1987arithmetic}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}熵编码}{31}{subsubsection.3.1.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 哈弗曼树\relax }}{31}{figure.caption.17}}
-\newlabel{fig:huffman}{{3.3}{31}{哈弗曼树\relax }{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}熵编码}{34}{subsubsection.3.1.2.2}}
 \citation{zhang2016cambricon}
 \citation{zhang2016cambricon,albericio2016cnvlutin,han2016eie,han2017ese,angshuman2017scnn}
 \citation{zhang2016cambricon}
 \citation{albericio2016cnvlutin}
 \citation{han2016eie}
 \citation{angshuman2017scnn}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}不规则性}{32}{subsection.3.1.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}局部收敛 (local convergence)}{33}{section.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 全连接层中的局部收敛现象（白点表示大权值，绝对值大于其余$90\%$的权值）\relax }}{33}{figure.caption.18}}
-\newlabel{fig:local_convergence}{{3.4}{33}{全连接层中的局部收敛现象（白点表示大权值，绝对值大于其余$90\%$的权值）\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces 较大权值的累计分布\relax }}{34}{figure.caption.19}}
-\newlabel{fig:cdf}{{3.5}{34}{较大权值的累计分布\relax }{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 新的压缩神经网络步骤\relax }}{34}{figure.caption.20}}
-\newlabel{fig:compression_flow}{{3.6}{34}{新的压缩神经网络步骤\relax }{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}压缩神经网络}{34}{section.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}粗粒度剪枝}{34}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}剪枝策略}{34}{subsubsection.3.3.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 哈弗曼树\relax }}{35}{figure.caption.21}}
+\newlabel{fig:huffman}{{3.3}{35}{哈弗曼树\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}不规则性}{35}{subsection.3.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}局部收敛}{36}{section.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 全连接层中的局部收敛现象（白点表示大权值，绝对值大于其余$90\%$的权值）\relax }}{36}{figure.caption.22}}
+\newlabel{fig:local_convergence}{{3.4}{36}{全连接层中的局部收敛现象（白点表示大权值，绝对值大于其余$90\%$的权值）\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces 较大权值的累计分布\relax }}{37}{figure.caption.23}}
+\newlabel{fig:cdf}{{3.5}{37}{较大权值的累计分布\relax }{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}压缩神经网络}{37}{section.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 新的压缩神经网络步骤\relax }}{37}{figure.caption.24}}
+\newlabel{fig:compression_flow}{{3.6}{37}{新的压缩神经网络步骤\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}粗粒度剪枝}{38}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}剪枝策略}{38}{subsubsection.3.3.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces 全连接层上的粗粒度剪枝\relax }}{38}{figure.caption.25}}
+\newlabel{fig:fc_pruning}{{3.7}{38}{全连接层上的粗粒度剪枝\relax }{figure.caption.25}{}}
 \citation{han2015learning}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces 全连接层上的粗粒度剪枝\relax }}{35}{figure.caption.21}}
-\newlabel{fig:fc_pruning}{{3.7}{35}{全连接层上的粗粒度剪枝\relax }{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces 卷积层上的粗粒度剪枝\relax }}{35}{figure.caption.22}}
-\newlabel{fig:conv_pruning}{{3.8}{35}{卷积层上的粗粒度剪枝\relax }{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}剪枝块大小}{35}{subsubsection.3.3.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces 卷积层上的粗粒度剪枝\relax }}{39}{figure.caption.26}}
+\newlabel{fig:conv_pruning}{{3.8}{39}{卷积层上的粗粒度剪枝\relax }{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces 粗粒度剪枝减少非零权值索引信息\relax }}{39}{figure.caption.27}}
+\newlabel{fig:index_saving}{{3.9}{39}{粗粒度剪枝减少非零权值索引信息\relax }{figure.caption.27}{}}
 \citation{han2015deep}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}最大值剪枝 vs. 平均值剪枝}{36}{subsubsection.3.3.1.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces  不同剪枝块大小情况下AlexNet网络的稀疏度和压缩比（C: 卷积层；F： 全连接层; S: 稀疏度; $r_c$ 压缩比）\relax }}{36}{table.caption.23}}
-\newlabel{tab:blocksize}{{3.1}{36}{不同剪枝块大小情况下AlexNet网络的稀疏度和压缩比（C: 卷积层；F： 全连接层; S: 稀疏度; $r_c$ 压缩比）\relax }{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}剪枝块规模}{40}{subsubsection.3.3.1.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces  不同剪枝块大小情况下AlexNet网络的稀疏度和压缩比（C: 卷积层；F： 全连接层; S: 稀疏度; $r_c$ 压缩比）\relax }}{41}{table.caption.28}}
+\newlabel{tab:blocksize}{{3.1}{41}{不同剪枝块大小情况下AlexNet网络的稀疏度和压缩比（C: 卷积层；F： 全连接层; S: 稀疏度; $r_c$ 压缩比）\relax }{table.caption.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}最大值剪枝 vs. 平均值剪枝}{41}{subsubsection.3.3.1.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Cifar10快速模型上的最大值剪枝和平均值剪枝\relax }}{41}{figure.caption.29}}
+\newlabel{fig:max_or_avg_pruning}{{3.10}{41}{Cifar10快速模型上的最大值剪枝和平均值剪枝\relax }{figure.caption.29}{}}
 \citation{jbig}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Cifar10快速模型上的最大值剪枝和平均值剪枝\relax }}{37}{figure.caption.24}}
-\newlabel{fig:max_or_avg_pruning}{{3.9}{37}{Cifar10快速模型上的最大值剪枝和平均值剪枝\relax }{figure.caption.24}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}不规则性的评估方法}{37}{subsubsection.3.3.1.4}}
 \citation{han2015deep}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5}神经元稀疏}{38}{subsubsection.3.3.1.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}局部量化}{38}{subsection.3.3.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 神经网络中的稀疏性 （C: 卷积层; F：全连接层; SSS： 静态权值稀疏; SNS: 静态神经元稀疏; DNS： 动态神经元稀疏）.\relax }}{38}{table.caption.25}}
-\newlabel{tab:sparsities}{{3.2}{38}{\footnotesize 神经网络中的稀疏性 （C: 卷积层; F：全连接层; SSS： 静态权值稀疏; SNS: 静态神经元稀疏; DNS： 动态神经元稀疏）.\relax }{table.caption.25}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}不规则性的评估方法}{42}{subsubsection.3.3.1.4}}
+\newlabel{subsubsec:irregularity}{{4}{42}{不规则性的评估方法}{subsubsection.3.3.1.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5}神经元稀疏}{42}{subsubsection.3.3.1.5}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 神经网络中的稀疏性 （C: 卷积层; F：全连接层; SSS： 静态权值稀疏; SNS: 静态神经元稀疏; DNS： 动态神经元稀疏）.\relax }}{43}{table.caption.30}}
+\newlabel{tab:sparsities}{{3.2}{43}{\footnotesize 神经网络中的稀疏性 （C: 卷积层; F：全连接层; SSS： 静态权值稀疏; SNS: 静态神经元稀疏; DNS： 动态神经元稀疏）.\relax }{table.caption.30}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}局部量化}{43}{subsection.3.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces 局部量化\relax }}{43}{figure.caption.31}}
+\newlabel{fig:local_quantization}{{3.11}{43}{局部量化\relax }{figure.caption.31}{}}
 \citation{huffman1952method}
 \citation{witten1987arithmetic}
 \citation{lecun1998gradient}
@@ -353,138 +374,173 @@
 \citation{sak2014long}
 \citation{han2015deep}
 \citation{wang2016cnnpack}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces 局部量化\relax }}{39}{figure.caption.26}}
-\newlabel{fig:local_quantization}{{3.10}{39}{局部量化\relax }{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}熵编码}{39}{subsection.3.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}压缩实验结果}{39}{subsection.3.3.4}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces 压缩后神经网络的稀疏度，压缩比和不规则性减少量 ($W_p$: 粗粒度剪枝后权值规模 ; $W_q$: 粗粒度剪枝，局部量化后权值规模; $W_c$: 粗粒度剪枝，局部量化，熵编码后权值规模; L: \emph  {LSTM}层 ; C: 卷积层; F: 全连接层; W: 权值; I：权值索引；$r_p$: 粗粒度剪枝后压缩比; $r_q$: 粗粒度剪枝，局部量化后压缩比; $r_c$: 粗粒度剪枝，局部量化，熵编码后压缩比; $R(Irr)$: 不规则性减少量)。\relax }}{40}{table.caption.27}}
-\newlabel{tab:compression}{{3.3}{40}{压缩后神经网络的稀疏度，压缩比和不规则性减少量 ($W_p$: 粗粒度剪枝后权值规模 ; $W_q$: 粗粒度剪枝，局部量化后权值规模; $W_c$: 粗粒度剪枝，局部量化，熵编码后权值规模; L: \emph {LSTM}层 ; C: 卷积层; F: 全连接层; W: 权值; I：权值索引；$r_p$: 粗粒度剪枝后压缩比; $r_q$: 粗粒度剪枝，局部量化后压缩比; $r_c$: 粗粒度剪枝，局部量化，熵编码后压缩比; $R(Irr)$: 不规则性减少量)。\relax }{table.caption.27}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}熵编码}{44}{subsection.3.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}压缩实验结果}{44}{subsection.3.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}压缩比}{44}{subsubsection.3.3.4.1}}
 \citation{han2015deep}
 \citation{wang2016cnnpack}
-\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip CNNPack, Deep Compression 与我们的压缩方法的对比 (S\%: 稀疏度; $r_c$: 压缩比).\relax }}{41}{table.caption.28}}
-\newlabel{tab:deepratio}{{3.4}{41}{\footnotesize CNNPack, Deep Compression 与我们的压缩方法的对比 (S\%: 稀疏度; $r_c$: 压缩比).\relax }{table.caption.28}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces AlexNet压缩特征 (W: 权值; S\%: 稀疏度 I: 权值索引).\relax }}{41}{table.caption.29}}
-\newlabel{tab:AlexNet}{{3.5}{41}{AlexNet压缩特征 (W: 权值; S\%: 稀疏度 I: 权值索引).\relax }{table.caption.29}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces 压缩后神经网络的稀疏度，压缩比和不规则性减少量 ($W_p$: 粗粒度剪枝后权值规模 ; $W_q$: 粗粒度剪枝，局部量化后权值规模; $W_c$: 粗粒度剪枝，局部量化，熵编码后权值规模; L: \emph  {LSTM}层 ; C: 卷积层; F: 全连接层; W: 权值; I：权值索引；$r_p$: 粗粒度剪枝后压缩比; $r_q$: 粗粒度剪枝，局部量化后压缩比; $r_c$: 粗粒度剪枝，局部量化，熵编码后压缩比; $R(Irr)$: 不规则性减少量)。\relax }}{45}{table.caption.32}}
+\newlabel{tab:compression}{{3.3}{45}{压缩后神经网络的稀疏度，压缩比和不规则性减少量 ($W_p$: 粗粒度剪枝后权值规模 ; $W_q$: 粗粒度剪枝，局部量化后权值规模; $W_c$: 粗粒度剪枝，局部量化，熵编码后权值规模; L: \emph {LSTM}层 ; C: 卷积层; F: 全连接层; W: 权值; I：权值索引；$r_p$: 粗粒度剪枝后压缩比; $r_q$: 粗粒度剪枝，局部量化后压缩比; $r_c$: 粗粒度剪枝，局部量化，熵编码后压缩比; $R(Irr)$: 不规则性减少量)。\relax }{table.caption.32}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}精度}{45}{subsubsection.3.3.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}不规则度}{45}{subsubsection.3.3.4.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip CNNPack, Deep Compression 与我们的压缩方法的对比 (S\%: 稀疏度; $r_c$: 压缩比).\relax }}{46}{table.caption.33}}
+\newlabel{tab:deepratio}{{3.4}{46}{\footnotesize CNNPack, Deep Compression 与我们的压缩方法的对比 (S\%: 稀疏度; $r_c$: 压缩比).\relax }{table.caption.33}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}AlexNet网络详细压缩特性}{46}{subsubsection.3.3.4.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces AlexNet压缩特征 (W: 权值; S\%: 稀疏度 I: 权值索引).\relax }}{46}{table.caption.34}}
+\newlabel{tab:AlexNet}{{3.5}{46}{AlexNet压缩特征 (W: 权值; S\%: 稀疏度 I: 权值索引).\relax }{table.caption.34}{}}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{\numberline {第4章\hspace  {0.3em}}粗粒度稀疏神经网络加速器}{43}{chapter.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第4章\hspace  {0.3em}}粗粒度稀疏神经网络加速器}{48}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}设计原则}{43}{section.4.1}}
-\newlabel{sec:principle}{{4.1}{43}{设计原则}{section.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}设计原则}{48}{section.4.1}}
+\newlabel{sec:principle}{{4.1}{48}{设计原则}{section.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 粗粒度稀疏的全连接层\relax }}{49}{figure.caption.35}}
+\newlabel{fig:connection}{{4.1}{49}{粗粒度稀疏的全连接层\relax }{figure.caption.35}{}}
 \citation{han2017ese}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 粗粒度稀疏的全连接层\relax }}{44}{figure.caption.30}}
-\newlabel{fig:connection}{{4.1}{44}{粗粒度稀疏的全连接层\relax }{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}加速器架构}{45}{section.4.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces 加速器整体架构\relax }}{45}{figure.caption.31}}
-\newlabel{fig:acc}{{4.2}{45}{加速器整体架构\relax }{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}稀疏处理单元}{46}{subsection.4.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}Indexing}{46}{subsubsection.4.2.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}NSM}{47}{subsubsection.4.2.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces NSM结构\relax }}{47}{figure.caption.32}}
-\newlabel{fig:NSM}{{4.3}{47}{NSM结构\relax }{figure.caption.32}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}NFU}{48}{subsubsection.4.2.1.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces PE结构\relax }}{48}{figure.caption.33}}
-\newlabel{fig:PE}{{4.4}{48}{PE结构\relax }{figure.caption.33}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces (a) SSM结构 (b) PEFU结构\relax }}{49}{figure.caption.34}}
-\newlabel{fig:PEFU}{{4.5}{49}{(a) SSM结构 (b) PEFU结构\relax }{figure.caption.34}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}Encoder}{49}{subsubsection.4.2.1.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Encoder架构\relax }}{49}{figure.caption.35}}
-\newlabel{fig:encoder}{{4.6}{49}{Encoder架构\relax }{figure.caption.35}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}存储模块}{50}{subsection.4.2.2}}
-\newlabel{subsec:storage}{{4.2.2}{50}{存储模块}{subsection.4.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Cambricon-S的架构}{50}{section.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Cambricon-S整体架构\relax }}{50}{figure.caption.36}}
+\newlabel{fig:acc}{{4.2}{50}{Cambricon-S整体架构\relax }{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}稀疏处理}{51}{subsection.4.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}Indexing}{52}{subsubsection.4.2.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}NSM}{52}{subsubsection.4.2.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces NSM结构\relax }}{52}{figure.caption.37}}
+\newlabel{fig:NSM}{{4.3}{52}{NSM结构\relax }{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}NFU}{53}{subsubsection.4.2.1.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces PE结构\relax }}{53}{figure.caption.38}}
+\newlabel{fig:PE}{{4.4}{53}{PE结构\relax }{figure.caption.38}{}}
+\citation{Volder1959The}
+\citation{Walther1971A}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces SSM结构\relax }}{54}{figure.caption.39}}
+\newlabel{fig:SSM}{{4.5}{54}{SSM结构\relax }{figure.caption.39}{}}
+\citation{Temam2012A,chen2014diannao}
+\citation{Temam2012A}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces PEFU结构\relax }}{55}{figure.caption.40}}
+\newlabel{fig:PEFU}{{4.6}{55}{PEFU结构\relax }{figure.caption.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}Encoder}{55}{subsubsection.4.2.1.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Encoder架构\relax }}{56}{figure.caption.41}}
+\newlabel{fig:encoder}{{4.7}{56}{Encoder架构\relax }{figure.caption.41}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}存储模块}{56}{subsection.4.2.2}}
+\newlabel{subsec:storage}{{4.2.2}{56}{存储模块}{subsection.4.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}NBin}{56}{subsubsection.4.2.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}NBout}{56}{subsubsection.4.2.2.2}}
 \citation{chen2014dadiannao,han2016eie}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}控制}{51}{subsection.4.2.3}}
-\newlabel{subsec:control}{{4.2.3}{51}{控制}{subsection.4.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces CP的有限状态机\relax }}{51}{figure.caption.36}}
-\newlabel{fig:FSM}{{4.7}{51}{CP的有限状态机\relax }{figure.caption.36}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}片上互联}{52}{subsection.4.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces H树互联结构\relax }}{52}{figure.caption.37}}
-\newlabel{fig:Htree}{{4.8}{52}{H树互联结构\relax }{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}SB}{57}{subsubsection.4.2.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}NIBin和SIB}{57}{subsubsection.4.2.2.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5}缓存大小}{57}{subsubsection.4.2.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}控制}{58}{subsection.4.2.3}}
+\newlabel{subsec:control}{{4.2.3}{58}{控制}{subsection.4.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}状态机}{58}{subsubsection.4.2.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces CP的有限状态机\relax }}{58}{figure.caption.42}}
+\newlabel{fig:FSM}{{4.8}{58}{CP的有限状态机\relax }{figure.caption.42}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}多发射控制器}{58}{subsubsection.4.2.3.2}}
 \citation{jia2014caffe}
 \citation{abadi2016tensorflow}
 \citation{chen2015mxnet}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}编程模型}{53}{section.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}基于库的编程模型}{53}{subsection.4.3.1}}
-\newlabel{list:conv}{{4.1}{53}{卷积层库函数接口}{lstlisting.4.1}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.1}卷积层库函数接口}{53}{lstlisting.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces 编程框架\relax }}{54}{figure.caption.38}}
-\newlabel{fig:framework}{{4.9}{54}{编程框架\relax }{figure.caption.38}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}编译器}{54}{subsection.4.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}片上互联}{59}{subsection.4.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces H树互联结构\relax }}{59}{figure.caption.43}}
+\newlabel{fig:Htree}{{4.9}{59}{H树互联结构\relax }{figure.caption.43}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}编程模型}{60}{section.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}基于库的编程模型}{60}{subsection.4.3.1}}
+\newlabel{list:conv}{{4.1}{60}{卷积层库函数接口}{lstlisting.4.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.1}卷积层库函数接口}{60}{lstlisting.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces 编程框架\relax }}{61}{figure.caption.44}}
+\newlabel{fig:framework}{{4.10}{61}{编程框架\relax }{figure.caption.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}编译器}{61}{subsection.4.3.2}}
 \citation{chen2017eyeriss}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces 源文件编译成为加速器可执行代码的过程\relax }}{55}{figure.caption.39}}
-\newlabel{fig:compiler}{{4.10}{55}{源文件编译成为加速器可执行代码的过程\relax }{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}loop tiling}{55}{subsection.4.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces 源文件编译成为加速器可执行代码的过程\relax }}{62}{figure.caption.45}}
+\newlabel{fig:compiler}{{4.11}{62}{源文件编译成为加速器可执行代码的过程\relax }{figure.caption.45}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}loop tiling}{62}{subsection.4.3.3}}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{\numberline {第5章\hspace  {0.3em}}性能验证和实验结果}{58}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第5章\hspace  {0.3em}}针对新型加速器性能模拟器}{65}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}新型加速器性能验证}{58}{section.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}背景}{58}{subsection.5.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}加速器专用性能模拟器}{59}{subsection.5.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}加速器的高层次抽象}{59}{subsubsection.5.1.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces 加速器的抽象结构\relax }}{60}{figure.caption.40}}
-\newlabel{fig:simulator}{{5.1}{60}{加速器的抽象结构\relax }{figure.caption.40}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}事件分类}{61}{subsubsection.5.1.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}事件执行时间}{62}{subsubsection.5.1.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}事件的依赖关系}{63}{subsubsection.5.1.2.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5}模拟过程}{63}{subsubsection.5.1.2.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces 性能模拟器模拟神经网络在加速器上的执行过程\relax }}{63}{figure.caption.41}}
-\newlabel{fig:simulation}{{5.2}{63}{性能模拟器模拟神经网络在加速器上的执行过程\relax }{figure.caption.41}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}背景}{65}{section.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces 时间触发模拟器和事件触发模拟器\relax }}{66}{figure.caption.46}}
+\newlabel{fig:event}{{5.1}{66}{时间触发模拟器和事件触发模拟器\relax }{figure.caption.46}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}加速器专用性能模拟器}{66}{section.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}加速器的高层次抽象}{66}{subsection.5.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces 加速器的抽象结构\relax }}{67}{figure.caption.47}}
+\newlabel{fig:simulator}{{5.2}{67}{加速器的抽象结构\relax }{figure.caption.47}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}Main Block}{67}{subsubsection.5.2.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}Sub Block}{68}{subsubsection.5.2.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}Off-chip}{68}{subsubsection.5.2.1.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}数据通路}{68}{subsubsection.5.2.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}事件分类}{68}{subsection.5.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}Load事件}{69}{subsubsection.5.2.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}Compute事件}{69}{subsubsection.5.2.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}Store事件}{69}{subsubsection.5.2.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}Synchronize事件}{69}{subsubsection.5.2.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}事件执行时间}{69}{subsection.5.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}对Load事件进行建模}{70}{subsubsection.5.2.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}对Compute事件进行建模}{70}{subsubsection.5.2.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}对Store事件进行建模}{70}{subsubsection.5.2.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}事件的依赖关系}{71}{subsection.5.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}模拟过程}{71}{subsection.5.2.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces 性能模拟器模拟神经网络在加速器上的执行过程\relax }}{71}{figure.caption.48}}
+\newlabel{fig:simulation}{{5.3}{71}{性能模拟器模拟神经网络在加速器上的执行过程\relax }{figure.caption.48}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}优化模拟器的性能和误差}{73}{section.5.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces 优化的模拟器与周期精确模拟器的对比\relax }}{73}{figure.caption.49}}
+\newlabel{fig:simulator1}{{5.4}{73}{优化的模拟器与周期精确模拟器的对比\relax }{figure.caption.49}{}}
+\FN@pp@footnotehinttrue 
 \citation{muralimanohar2007optimizing}
 \citation{jia2014caffe}
 \citation{duff2002overview}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}实验方法}{65}{section.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Baseline}{65}{subsection.5.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}CPU}{65}{subsubsection.5.2.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}GPU}{65}{subsubsection.5.2.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}硬件加速器}{65}{subsubsection.5.2.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Benchmark}{66}{subsection.5.2.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}实验结果}{66}{section.5.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}硬件属性}{66}{subsection.5.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}性能}{66}{subsection.5.3.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces 加速器详细属性\relax }}{67}{table.caption.42}}
-\newlabel{tab:hardware}{{5.1}{67}{加速器详细属性\relax }{table.caption.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces 新型加速器与CPU，GPU，DianNao，Cambricon-X的性能对比\relax }}{67}{figure.caption.43}}
-\newlabel{fig:total_performance}{{5.3}{67}{新型加速器与CPU，GPU，DianNao，Cambricon-X的性能对比\relax }{figure.caption.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces 新型加速器与CPU，GPU，DianNao，Cambricon-X在卷积层上的性能对比\relax }}{68}{figure.caption.44}}
-\newlabel{fig:conv_performance}{{5.4}{68}{新型加速器与CPU，GPU，DianNao，Cambricon-X在卷积层上的性能对比\relax }{figure.caption.44}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces 新型加速器与CPU，GPU，DianNao，Cambricon-X在全连接层上的性能对比\relax }}{68}{figure.caption.45}}
-\newlabel{fig:fc_performance}{{5.5}{68}{新型加速器与CPU，GPU，DianNao，Cambricon-X在全连接层上的性能对比\relax }{figure.caption.45}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}能耗}{69}{subsection.5.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces 新型加速器与GPU，DianNao，Cambricon-X在能耗的对比\relax }}{69}{figure.caption.46}}
-\newlabel{fig:energy}{{5.6}{69}{新型加速器与GPU，DianNao，Cambricon-X在能耗的对比\relax }{figure.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces 加速器在benchmark上的能耗分布（包括片外访存能耗）\relax }}{70}{figure.caption.47}}
-\newlabel{fig:energy_breakdown}{{5.7}{70}{加速器在benchmark上的能耗分布（包括片外访存能耗）\relax }{figure.caption.47}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces 加速器在benchmark上的能耗分布（不包括片外访存能耗）\relax }}{70}{figure.caption.48}}
-\newlabel{fig:energy_breakdown2}{{5.8}{70}{加速器在benchmark上的能耗分布（不包括片外访存能耗）\relax }{figure.caption.48}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}讨论}{71}{subsection.5.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}熵编码和熵解码模块}{71}{subsubsection.5.3.4.1}}
-\newlabel{subsubsec:encoding_hw}{{1}{71}{熵编码和熵解码模块}{subsubsection.5.3.4.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}稀疏度与性能}{71}{subsubsection.5.3.4.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces 神经网络稀疏度对加速器性能的影响\relax }}{71}{figure.caption.49}}
-\newlabel{fig:sensitivity}{{5.9}{71}{神经网络稀疏度对加速器性能的影响\relax }{figure.caption.49}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第6章\hspace  {0.3em}}实验方法和实验结果}{74}{chapter.6}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}实验方法}{74}{section.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Baseline}{74}{subsection.6.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}CPU}{74}{subsubsection.6.1.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}GPU}{74}{subsubsection.6.1.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}硬件加速器}{75}{subsubsection.6.1.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Benchmark}{75}{subsection.6.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}实验结果}{75}{section.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}硬件属性}{75}{subsection.6.2.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces 加速器详细属性\relax }}{76}{table.caption.50}}
+\newlabel{tab:hardware}{{6.1}{76}{加速器详细属性\relax }{table.caption.50}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}性能}{76}{subsection.6.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Cambricon-S与CPU，GPU，DianNao，Cambricon-X的性能对比\relax }}{77}{figure.caption.51}}
+\newlabel{fig:total_performance}{{6.1}{77}{Cambricon-S与CPU，GPU，DianNao，Cambricon-X的性能对比\relax }{figure.caption.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Cambricon-S与CPU，GPU，DianNao，Cambricon-X在卷积层上的性能对比\relax }}{78}{figure.caption.52}}
+\newlabel{fig:conv_performance}{{6.2}{78}{Cambricon-S与CPU，GPU，DianNao，Cambricon-X在卷积层上的性能对比\relax }{figure.caption.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Cambricon-S与CPU，GPU，DianNao，Cambricon-X在全连接层上的性能对比\relax }}{78}{figure.caption.53}}
+\newlabel{fig:fc_performance}{{6.3}{78}{Cambricon-S与CPU，GPU，DianNao，Cambricon-X在全连接层上的性能对比\relax }{figure.caption.53}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}能耗}{78}{subsection.6.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces 新型加速器与GPU，DianNao，Cambricon-X在能耗的对比\relax }}{79}{figure.caption.54}}
+\newlabel{fig:energy}{{6.4}{79}{新型加速器与GPU，DianNao，Cambricon-X在能耗的对比\relax }{figure.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces 加速器在benchmark上的能耗分布（包括片外访存能耗）\relax }}{79}{figure.caption.55}}
+\newlabel{fig:energy_breakdown}{{6.5}{79}{加速器在benchmark上的能耗分布（包括片外访存能耗）\relax }{figure.caption.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces 加速器在benchmark上的能耗分布（不包括片外访存能耗）\relax }}{79}{figure.caption.56}}
+\newlabel{fig:energy_breakdown2}{{6.6}{79}{加速器在benchmark上的能耗分布（不包括片外访存能耗）\relax }{figure.caption.56}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}讨论}{80}{subsection.6.2.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1}熵编码和熵解码模块}{80}{subsubsection.6.2.4.1}}
+\newlabel{subsubsec:encoding_hw}{{1}{80}{熵编码和熵解码模块}{subsubsection.6.2.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2}稀疏度与性能}{80}{subsubsection.6.2.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces 神经网络稀疏度对加速器性能的影响\relax }}{81}{figure.caption.57}}
+\newlabel{fig:sensitivity}{{6.7}{81}{神经网络稀疏度对加速器性能的影响\relax }{figure.caption.57}{}}
 \citation{yu2017scalpel}
 \citation{hill2017deftnn}
 \citation{wen2016learning,lebedev2016fast}
 \citation{li2016pruning}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}减少的不规则度}{72}{subsubsection.5.3.4.3}}
 \citation{mao2017exploring}
 \citation{han2016eie}
 \citation{zhang2016cambricon}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}类似粗粒度稀疏的方法}{73}{subsubsection.5.3.4.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5}其他稀疏神经网络加速器}{73}{subsubsection.5.3.4.5}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip 与EIE的性能比较 \emph  {(microsecond)}.\relax }}{73}{table.caption.50}}
-\newlabel{tab:EIE}{{5.2}{73}{\footnotesize 与EIE的性能比较 \emph {(microsecond)}.\relax }{table.caption.50}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3}减少的不规则度}{82}{subsubsection.6.2.4.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4}类似粗粒度稀疏的方法}{82}{subsubsection.6.2.4.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5}其他稀疏神经网络加速器}{82}{subsubsection.6.2.4.5}}
 \citation{angshuman2017scnn}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces \relax \fontsize  {9\bp@ }{15\bp@ }\selectfont  \abovedisplayskip 9\bp@ plus2\bp@ minus5\bp@ \abovedisplayshortskip \z@ plus3\bp@ \belowdisplayshortskip 6\bp@ plus3\bp@ minus3\bp@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\bp@ plus2\bp@ minus2\bp@ \parsep 3\bp@ plus2\bp@ minus\bp@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Cambricon-S与EIE的性能比较 \emph  {(microsecond)}.\relax }}{83}{table.caption.58}}
+\newlabel{tab:EIE}{{6.2}{83}{\footnotesize Cambricon-S与EIE的性能比较 \emph {(microsecond)}.\relax }{table.caption.58}{}}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{\numberline {第6章\hspace  {0.3em}}总结和展望}{75}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第7章\hspace  {0.3em}}总结和展望}{84}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}本文工作总结}{75}{section.6.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}未来研究展望}{76}{section.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}本文工作总结}{84}{section.7.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}未来研究展望}{85}{section.7.2}}
 \bibdata{bib/ustc}
 \FN@pp@footnotehinttrue 
 \bibcite{mcculloch1943logical}{{1}{1943}{{McCulloch\ et~al.}}{{McCulloch and Pitts}}}
@@ -504,7 +560,7 @@
 \bibcite{hindmarsh1984model}{{15}{1984}{{Hindmarsh\ et~al.}}{{Hindmarsh and Rose}}}
 \bibcite{ackley1985learning}{{16}{1985}{{Ackley\ et~al.}}{{Ackley, Hinton, and Sejnowski}}}
 \bibcite{kirkpatrick1983optimization}{{17}{1983}{{Kirkpatrick\ et~al.}}{{Kirkpatrick, Gelatt, and Vecchi}}}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{78}{chapter*.51}}
+\@writefile{toc}{\contentsline {chapter}{参考文献}{87}{chapter*.59}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
@@ -539,100 +595,104 @@
 \bibcite{lecun1989optimal}{{46}{1989}{{LeCun\ et~al.}}{{LeCun, Denker, Solla, Howard, and Jackel}}}
 \bibcite{miche2010op}{{47}{2010}{{Miche\ et~al.}}{{Miche, Sorjamaa, Bas, Simula, Jutten, and Lendasse}}}
 \bibcite{han2015learning}{{48}{2015{}}{{Han\ et~al.}}{{Han, Pool, Tran, and Dally}}}
-\bibcite{denton2014exploiting}{{49}{2014}{{Denton\ et~al.}}{{Denton, Zaremba, Bruna, LeCun, and Fergus}}}
-\bibcite{lebedev2014speeding}{{50}{2014}{{Lebedev\ et~al.}}{{Lebedev, Ganin, Rakhuba, Oseledets, and Lempitsky}}}
-\bibcite{chakradhar2010dynamically}{{51}{2010}{{Chakradhar\ et~al.}}{{Chakradhar, Sankaradas, Jakkula, and Cadambi}}}
-\bibcite{vanhoucke2011improving}{{52}{2011}{{Vanhoucke\ et~al.}}{{Vanhoucke, Senior, and Mao}}}
-\bibcite{farabet2009cnp}{{53}{2009}{{Farabet\ et~al.}}{{Farabet, Poulet, Han, and LeCun}}}
-\bibcite{scherer2010accelerating}{{54}{2010}{{Scherer\ et~al.}}{{Scherer, Schulz, and Behnke}}}
-\bibcite{ciresan2011flexible}{{55}{2011}{{Ciresan\ et~al.}}{{Ciresan, Meier, Masci, Maria~Gambardella, and Schmidhuber}}}
-\bibcite{coates2013deep}{{56}{2013}{{Coates\ et~al.}}{{Coates, Huval, Wang, Wu, Catanzaro, and Andrew}}}
-\bibcite{jia2014caffe}{{57}{2014}{{Jia\ et~al.}}{{Jia, Shelhamer, Donahue, Karayev, Long, Girshick, Guadarrama, and Darrell}}}
-\bibcite{abadi2016tensorflow}{{58}{2016}{{Abadi\ et~al.}}{{Abadi, Barham, Chen, Chen, Davis, Dean, Devin, Ghemawat, Irving, Isard, et~al.}}}
-\bibcite{chen2015mxnet}{{59}{2015}{{Chen\ et~al.}}{{Chen, Li, Li, Lin, Wang, Wang, Xiao, Xu, Zhang, and Zhang}}}
-\bibcite{dean2012large}{{60}{2012}{{Dean\ et~al.}}{{Dean, Corrado, Monga, Chen, Devin, Mao, Senior, Tucker, Yang, Le, et~al.}}}
-\bibcite{oh2004gpu}{{61}{2004}{{Oh\ et~al.}}{{Oh and Jung}}}
-\bibcite{le2013building}{{62}{2013}{{Le}}{{}}}
-\bibcite{farabet2011neuflow}{{63}{2011}{{Farabet\ et~al.}}{{Farabet, Martini, Corda, Akselrod, Culurciello, and LeCun}}}
-\bibcite{gokhale2014240}{{64}{2014}{{Gokhale\ et~al.}}{{Gokhale, Jin, Dundar, Martini, and Culurciello}}}
-\bibcite{zhang2015optimizing}{{65}{2015}{{Zhang\ et~al.}}{{Zhang, Li, Sun, Guan, Xiao, and Cong}}}
-\bibcite{suda2016throughput}{{66}{2016}{{Suda\ et~al.}}{{Suda, Chandra, Dasika, Mohanty, Ma, Vrudhula, Seo, and Cao}}}
-\bibcite{qiu2016going}{{67}{2016}{{Qiu\ et~al.}}{{Qiu, Wang, Yao, Guo, Li, Zhou, Yu, Tang, Xu, Song, et~al.}}}
-\bibcite{rice2009scaling}{{68}{2009}{{Rice\ et~al.}}{{Rice, Taha, and Vutsinas}}}
-\bibcite{kim2009highly}{{69}{2009}{{Kim\ et~al.}}{{Kim, McAfee, McMahon, and Olukotun}}}
-\bibcite{lee1987parallel}{{70}{1987}{{Lee\ et~al.}}{{Lee and Aggarwal}}}
-\bibcite{stearns1988reconfigurable}{{71}{1988}{{Stearns\ et~al.}}{{Stearns, Luthi, Ruetz, and Ang}}}
-\bibcite{kamp1990programmable}{{72}{1990}{{Kamp\ et~al.}}{{Kamp, Kunemund, Soldner, and Hofer}}}
-\bibcite{hecht1991advanced}{{73}{1991}{{Hecht\ et~al.}}{{Hecht and Ronner}}}
-\bibcite{lee2006super}{{74}{2006}{{Lee\ et~al.}}{{Lee and Song}}}
-\bibcite{chen2016diannao}{{75}{2016{}}{{Chen\ et~al.}}{{Chen, Chen, Xu, Sun, and Temam}}}
-\bibcite{chen2014diannao}{{76}{2014{}}{{Chen\ et~al.}}{{Chen, Du, Sun, Wang, Wu, Chen, and Temam}}}
-\bibcite{liu2015pudiannao}{{77}{2015}{{Liu\ et~al.}}{{Liu, Chen, Liu, Zhou, Zhou, Teman, Feng, Zhou, and Chen}}}
-\bibcite{du2015shidiannao}{{78}{2015}{{Du\ et~al.}}{{Du, Fasthuber, Chen, Ienne, Li, Luo, Feng, Chen, and Temam}}}
-\bibcite{chen2016eyeriss}{{79}{2016{}}{{Chen\ et~al.}}{{Chen, Emer, and Sze}}}
-\bibcite{jouppi2017tpu}{{80}{2017}{{Jouppi\ et~al.}}{{Jouppi, Young, Patil, Patterson, Agrawal, Bajwa, Bates, Bhatia, Boden, Borchers, et~al.}}}
-\bibcite{zhang2016cambricon}{{81}{2016}{{Zhang\ et~al.}}{{Zhang, Du, Zhang, Lan, Liu, Li, Guo, Chen, and Chen}}}
-\bibcite{chen2017eyeriss}{{82}{2017}{{Chen\ et~al.}}{{Chen, Krishna, Emer, and Sze}}}
-\bibcite{albericio2016cnvlutin}{{83}{2016}{{Albericio\ et~al.}}{{Albericio, Judd, Hetherington, Aamodt, Jerger, and Moshovos}}}
-\bibcite{han2016eie}{{84}{2016}{{Han\ et~al.}}{{Han, Liu, Mao, Pu, Pedram, Horowitz, and Dally}}}
-\bibcite{han2017ese}{{85}{2017}{{Han\ et~al.}}{{Han, Kang, Mao, Hu, Li, Li, Xie, Luo, Yao, Wang, et~al.}}}
-\bibcite{angshuman2017scnn}{{86}{2017}{{Angshuman\ et~al.}}{{Angshuman, Minsoo, Anurag, Antonio, Rangharajan, Brucek, Joe, Stephen, and William}}}
-\bibcite{han2015deep}{{87}{2015{}}{{Han\ et~al.}}{{Han, Mao, and Dally}}}
-\bibcite{wang2016cnnpack}{{88}{2016}{{Wang\ et~al.}}{{Wang, Xu, You, Tao, and Xu}}}
-\bibcite{ioffe2015batch}{{89}{2015}{{Ioffe\ et~al.}}{{Ioffe and Szegedy}}}
-\bibcite{ba2016layer}{{90}{2016}{{Ba\ et~al.}}{{Ba, Kiros, and Hinton}}}
-\bibcite{dmitry2016instance}{{91}{2016}{{Dmitry\ et~al.}}{{Dmitry, Andrea, and Victor}}}
-\bibcite{wu2018group}{{92}{2018}{{Wu\ et~al.}}{{Wu and He}}}
-\bibcite{goodfellow2016deep}{{93}{2016}{{Goodfellow\ et~al.}}{{Goodfellow, Bengio, Courville, and Bengio}}}
-\bibcite{koster2017flexpoint}{{94}{2017}{{K{\"o}ster\ et~al.}}{{K{\"o}ster, Webb, Wang, Nassar, Bansal, Constable, Elibol, Gray, Hall, Hornof, et~al.}}}
-\bibcite{hu2018hashing}{{95}{2018}{{Hu\ et~al.}}{{Hu, Wang, and Cheng}}}
-\bibcite{russakovsky2015imagenet}{{96}{2015}{{Russakovsky\ et~al.}}{{Russakovsky, Deng, Su, Krause, Satheesh, Ma, Huang, Karpathy, Khosla, Bernstein, et~al.}}}
-\bibcite{li2016ternary}{{97}{2016{}}{{Li\ et~al.}}{{Li and Liu}}}
-\bibcite{zhu2016trained}{{98}{2016}{{Zhu\ et~al.}}{{Zhu, Han, Mao, and Dally}}}
-\bibcite{wang2017fixed}{{99}{2017}{{Wang\ et~al.}}{{Wang and Cheng}}}
-\bibcite{hubara2016binarized}{{100}{2016}{{Hubara\ et~al.}}{{Hubara, Courbariaux, Soudry, El-Yaniv, and Bengio}}}
-\bibcite{zhou2016dorefa}{{101}{2016}{{Zhou\ et~al.}}{{Zhou, Wu, Ni, Zhou, Wen, and Zou}}}
-\bibcite{cai2017deep}{{102}{2017}{{Cai\ et~al.}}{{Cai, He, Sun, and Vasconcelos}}}
-\bibcite{he2014reshaping}{{103}{2014{}}{{He\ et~al.}}{{He, Fan, Qian, Tan, and Yu}}}
-\bibcite{srinivas2015data}{{104}{2015}{{Srinivas\ et~al.}}{{Srinivas and Babu}}}
-\bibcite{hu2016network}{{105}{2016}{{Hu\ et~al.}}{{Hu, Peng, Tai, and Tang}}}
-\bibcite{mariet2015diversity}{{106}{2015}{{Mariet\ et~al.}}{{Mariet and Sra}}}
-\bibcite{jaderberg2014speeding}{{107}{2014}{{Jaderberg\ et~al.}}{{Jaderberg, Vedaldi, and Zisserman}}}
-\bibcite{chen2014dadiannao}{{108}{2014{}}{{Chen\ et~al.}}{{Chen, Luo, Liu, Zhang, He, Wang, Li, Chen, Xu, Sun, et~al.}}}
-\bibcite{liu2016cambricon}{{109}{2016}{{Liu\ et~al.}}{{Liu, Du, Tao, Han, Luo, Xie, Chen, and Chen}}}
-\bibcite{srivastava2014dropout}{{110}{2014{}}{{Srivastava\ et~al.}}{{Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov}}}
-\bibcite{holi1993finite}{{111}{1993}{{Holi\ et~al.}}{{Holi and Hwang}}}
-\bibcite{venkataramani2014axnn}{{112}{2014}{{Venkataramani\ et~al.}}{{Venkataramani, Ranjan, Roy, and Raghunathan}}}
-\bibcite{pillai2001real}{{113}{2001}{{Pillai\ et~al.}}{{Pillai and Shin}}}
-\bibcite{olshausen1996emergence}{{114}{1996}{{Olshausen\ et~al.}}{{Olshausen and Field}}}
-\bibcite{boureau2008sparse}{{115}{2008}{{Boureau\ et~al.}}{{Boureau, Cun, et~al.}}}
-\bibcite{lee2008sparse}{{116}{2008}{{Lee\ et~al.}}{{Lee, Ekanadham, and Ng}}}
-\bibcite{lee2007efficient}{{117}{2007}{{Lee\ et~al.}}{{Lee, Battle, Raina, and Ng}}}
-\bibcite{henneaux1992quantization}{{118}{1992}{{Henneaux\ et~al.}}{{Henneaux and Teitelboim}}}
-\bibcite{mackay2003information}{{119}{2003}{{MacKay}}{{}}}
-\bibcite{huffman1952method}{{120}{1952}{{Huffman}}{{}}}
-\bibcite{witten1987arithmetic}{{121}{1987}{{Witten\ et~al.}}{{Witten, Neal, and Cleary}}}
-\bibcite{jbig}{{122}{1993}{{jbi}}{{}}}
-\bibcite{lecun1998gradient}{{123}{1998}{{LeCun\ et~al.}}{{LeCun, Bottou, Bengio, and Haffner}}}
-\bibcite{Srivastava2014}{{124}{2014{}}{{Srivastava\ et~al.}}{{Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov}}}
-\bibcite{krizhevsky2012cuda}{{125}{2012}{{Krizhevsky}}{{}}}
-\bibcite{sak2014long}{{126}{2014}{{Sak\ et~al.}}{{Sak, Senior, and Beaufays}}}
-\bibcite{muralimanohar2007optimizing}{{127}{2007}{{Muralimanohar\ et~al.}}{{Muralimanohar, Balasubramonian, and Jouppi}}}
-\bibcite{duff2002overview}{{128}{2002}{{Duff\ et~al.}}{{Duff, Heroux, and Pozo}}}
-\bibcite{yu2017scalpel}{{129}{2017}{{Yu\ et~al.}}{{Yu, Lukefahr, Palframan, Dasika, Das, and Mahlke}}}
-\bibcite{hill2017deftnn}{{130}{2017}{{Hill\ et~al.}}{{Hill, Jain, Hill, Zamirai, Hsu, Laurenzano, Mahlke, Tang, and Mars}}}
-\bibcite{wen2016learning}{{131}{2016}{{Wen\ et~al.}}{{Wen, Wu, Wang, Chen, and Li}}}
-\bibcite{lebedev2016fast}{{132}{2016}{{Lebedev\ et~al.}}{{Lebedev and Lempitsky}}}
-\bibcite{li2016pruning}{{133}{2016{}}{{Li\ et~al.}}{{Li, Kadav, Durdanovic, Samet, and Graf}}}
-\bibcite{mao2017exploring}{{134}{2017}{{Mao\ et~al.}}{{Mao, Han, Pool, Li, Liu, Wang, and Dally}}}
+\bibcite{guo2016dynamic}{{49}{2016}{{Guo\ et~al.}}{{Guo, Yao, and Chen}}}
+\bibcite{denton2014exploiting}{{50}{2014}{{Denton\ et~al.}}{{Denton, Zaremba, Bruna, LeCun, and Fergus}}}
+\bibcite{lebedev2014speeding}{{51}{2014}{{Lebedev\ et~al.}}{{Lebedev, Ganin, Rakhuba, Oseledets, and Lempitsky}}}
+\bibcite{chakradhar2010dynamically}{{52}{2010}{{Chakradhar\ et~al.}}{{Chakradhar, Sankaradas, Jakkula, and Cadambi}}}
+\bibcite{vanhoucke2011improving}{{53}{2011}{{Vanhoucke\ et~al.}}{{Vanhoucke, Senior, and Mao}}}
+\bibcite{farabet2009cnp}{{54}{2009}{{Farabet\ et~al.}}{{Farabet, Poulet, Han, and LeCun}}}
+\bibcite{scherer2010accelerating}{{55}{2010}{{Scherer\ et~al.}}{{Scherer, Schulz, and Behnke}}}
+\bibcite{ciresan2011flexible}{{56}{2011}{{Ciresan\ et~al.}}{{Ciresan, Meier, Masci, Maria~Gambardella, and Schmidhuber}}}
+\bibcite{coates2013deep}{{57}{2013}{{Coates\ et~al.}}{{Coates, Huval, Wang, Wu, Catanzaro, and Andrew}}}
+\bibcite{jia2014caffe}{{58}{2014}{{Jia\ et~al.}}{{Jia, Shelhamer, Donahue, Karayev, Long, Girshick, Guadarrama, and Darrell}}}
+\bibcite{abadi2016tensorflow}{{59}{2016}{{Abadi\ et~al.}}{{Abadi, Barham, Chen, Chen, Davis, Dean, Devin, Ghemawat, Irving, Isard, et~al.}}}
+\bibcite{chen2015mxnet}{{60}{2015}{{Chen\ et~al.}}{{Chen, Li, Li, Lin, Wang, Wang, Xiao, Xu, Zhang, and Zhang}}}
+\bibcite{dean2012large}{{61}{2012}{{Dean\ et~al.}}{{Dean, Corrado, Monga, Chen, Devin, Mao, Senior, Tucker, Yang, Le, et~al.}}}
+\bibcite{oh2004gpu}{{62}{2004}{{Oh\ et~al.}}{{Oh and Jung}}}
+\bibcite{le2013building}{{63}{2013}{{Le}}{{}}}
+\bibcite{farabet2011neuflow}{{64}{2011}{{Farabet\ et~al.}}{{Farabet, Martini, Corda, Akselrod, Culurciello, and LeCun}}}
+\bibcite{gokhale2014240}{{65}{2014}{{Gokhale\ et~al.}}{{Gokhale, Jin, Dundar, Martini, and Culurciello}}}
+\bibcite{zhang2015optimizing}{{66}{2015}{{Zhang\ et~al.}}{{Zhang, Li, Sun, Guan, Xiao, and Cong}}}
+\bibcite{suda2016throughput}{{67}{2016}{{Suda\ et~al.}}{{Suda, Chandra, Dasika, Mohanty, Ma, Vrudhula, Seo, and Cao}}}
+\bibcite{qiu2016going}{{68}{2016}{{Qiu\ et~al.}}{{Qiu, Wang, Yao, Guo, Li, Zhou, Yu, Tang, Xu, Song, et~al.}}}
+\bibcite{rice2009scaling}{{69}{2009}{{Rice\ et~al.}}{{Rice, Taha, and Vutsinas}}}
+\bibcite{kim2009highly}{{70}{2009}{{Kim\ et~al.}}{{Kim, McAfee, McMahon, and Olukotun}}}
+\bibcite{lee1987parallel}{{71}{1987}{{Lee\ et~al.}}{{Lee and Aggarwal}}}
+\bibcite{stearns1988reconfigurable}{{72}{1988}{{Stearns\ et~al.}}{{Stearns, Luthi, Ruetz, and Ang}}}
+\bibcite{kamp1990programmable}{{73}{1990}{{Kamp\ et~al.}}{{Kamp, Kunemund, Soldner, and Hofer}}}
+\bibcite{hecht1991advanced}{{74}{1991}{{Hecht\ et~al.}}{{Hecht and Ronner}}}
+\bibcite{lee2006super}{{75}{2006}{{Lee\ et~al.}}{{Lee and Song}}}
+\bibcite{chen2016diannao}{{76}{2016{}}{{Chen\ et~al.}}{{Chen, Chen, Xu, Sun, and Temam}}}
+\bibcite{chen2014diannao}{{77}{2014{}}{{Chen\ et~al.}}{{Chen, Du, Sun, Wang, Wu, Chen, and Temam}}}
+\bibcite{liu2015pudiannao}{{78}{2015}{{Liu\ et~al.}}{{Liu, Chen, Liu, Zhou, Zhou, Teman, Feng, Zhou, and Chen}}}
+\bibcite{du2015shidiannao}{{79}{2015}{{Du\ et~al.}}{{Du, Fasthuber, Chen, Ienne, Li, Luo, Feng, Chen, and Temam}}}
+\bibcite{chen2016eyeriss}{{80}{2016{}}{{Chen\ et~al.}}{{Chen, Emer, and Sze}}}
+\bibcite{jouppi2017tpu}{{81}{2017}{{Jouppi\ et~al.}}{{Jouppi, Young, Patil, Patterson, Agrawal, Bajwa, Bates, Bhatia, Boden, Borchers, et~al.}}}
+\bibcite{zhang2016cambricon}{{82}{2016}{{Zhang\ et~al.}}{{Zhang, Du, Zhang, Lan, Liu, Li, Guo, Chen, and Chen}}}
+\bibcite{chen2017eyeriss}{{83}{2017}{{Chen\ et~al.}}{{Chen, Krishna, Emer, and Sze}}}
+\bibcite{albericio2016cnvlutin}{{84}{2016}{{Albericio\ et~al.}}{{Albericio, Judd, Hetherington, Aamodt, Jerger, and Moshovos}}}
+\bibcite{han2016eie}{{85}{2016}{{Han\ et~al.}}{{Han, Liu, Mao, Pu, Pedram, Horowitz, and Dally}}}
+\bibcite{han2017ese}{{86}{2017}{{Han\ et~al.}}{{Han, Kang, Mao, Hu, Li, Li, Xie, Luo, Yao, Wang, et~al.}}}
+\bibcite{angshuman2017scnn}{{87}{2017}{{Angshuman\ et~al.}}{{Angshuman, Minsoo, Anurag, Antonio, Rangharajan, Brucek, Joe, Stephen, and William}}}
+\bibcite{han2015deep}{{88}{2015{}}{{Han\ et~al.}}{{Han, Mao, and Dally}}}
+\bibcite{wang2016cnnpack}{{89}{2016}{{Wang\ et~al.}}{{Wang, Xu, You, Tao, and Xu}}}
+\bibcite{ioffe2015batch}{{90}{2015}{{Ioffe\ et~al.}}{{Ioffe and Szegedy}}}
+\bibcite{ba2016layer}{{91}{2016}{{Ba\ et~al.}}{{Ba, Kiros, and Hinton}}}
+\bibcite{dmitry2016instance}{{92}{2016}{{Dmitry\ et~al.}}{{Dmitry, Andrea, and Victor}}}
+\bibcite{wu2018group}{{93}{2018}{{Wu\ et~al.}}{{Wu and He}}}
+\bibcite{goodfellow2016deep}{{94}{2016}{{Goodfellow\ et~al.}}{{Goodfellow, Bengio, Courville, and Bengio}}}
+\bibcite{koster2017flexpoint}{{95}{2017}{{K{\"o}ster\ et~al.}}{{K{\"o}ster, Webb, Wang, Nassar, Bansal, Constable, Elibol, Gray, Hall, Hornof, et~al.}}}
+\bibcite{hu2018hashing}{{96}{2018}{{Hu\ et~al.}}{{Hu, Wang, and Cheng}}}
+\bibcite{russakovsky2015imagenet}{{97}{2015}{{Russakovsky\ et~al.}}{{Russakovsky, Deng, Su, Krause, Satheesh, Ma, Huang, Karpathy, Khosla, Bernstein, et~al.}}}
+\bibcite{li2016ternary}{{98}{2016{}}{{Li\ et~al.}}{{Li and Liu}}}
+\bibcite{zhu2016trained}{{99}{2016}{{Zhu\ et~al.}}{{Zhu, Han, Mao, and Dally}}}
+\bibcite{wang2017fixed}{{100}{2017}{{Wang\ et~al.}}{{Wang and Cheng}}}
+\bibcite{hubara2016binarized}{{101}{2016}{{Hubara\ et~al.}}{{Hubara, Courbariaux, Soudry, El-Yaniv, and Bengio}}}
+\bibcite{zhou2016dorefa}{{102}{2016}{{Zhou\ et~al.}}{{Zhou, Wu, Ni, Zhou, Wen, and Zou}}}
+\bibcite{cai2017deep}{{103}{2017}{{Cai\ et~al.}}{{Cai, He, Sun, and Vasconcelos}}}
+\bibcite{he2014reshaping}{{104}{2014{}}{{He\ et~al.}}{{He, Fan, Qian, Tan, and Yu}}}
+\bibcite{srinivas2015data}{{105}{2015}{{Srinivas\ et~al.}}{{Srinivas and Babu}}}
+\bibcite{hu2016network}{{106}{2016}{{Hu\ et~al.}}{{Hu, Peng, Tai, and Tang}}}
+\bibcite{mariet2015diversity}{{107}{2015}{{Mariet\ et~al.}}{{Mariet and Sra}}}
+\bibcite{jaderberg2014speeding}{{108}{2014}{{Jaderberg\ et~al.}}{{Jaderberg, Vedaldi, and Zisserman}}}
+\bibcite{chen2014dadiannao}{{109}{2014{}}{{Chen\ et~al.}}{{Chen, Luo, Liu, Zhang, He, Wang, Li, Chen, Xu, Sun, et~al.}}}
+\bibcite{liu2016cambricon}{{110}{2016}{{Liu\ et~al.}}{{Liu, Du, Tao, Han, Luo, Xie, Chen, and Chen}}}
+\bibcite{srivastava2014dropout}{{111}{2014{}}{{Srivastava\ et~al.}}{{Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov}}}
+\bibcite{holi1993finite}{{112}{1993}{{Holi\ et~al.}}{{Holi and Hwang}}}
+\bibcite{venkataramani2014axnn}{{113}{2014}{{Venkataramani\ et~al.}}{{Venkataramani, Ranjan, Roy, and Raghunathan}}}
+\bibcite{pillai2001real}{{114}{2001}{{Pillai\ et~al.}}{{Pillai and Shin}}}
+\bibcite{olshausen1996emergence}{{115}{1996}{{Olshausen\ et~al.}}{{Olshausen and Field}}}
+\bibcite{boureau2008sparse}{{116}{2008}{{Boureau\ et~al.}}{{Boureau, Cun, et~al.}}}
+\bibcite{lee2008sparse}{{117}{2008}{{Lee\ et~al.}}{{Lee, Ekanadham, and Ng}}}
+\bibcite{lee2007efficient}{{118}{2007}{{Lee\ et~al.}}{{Lee, Battle, Raina, and Ng}}}
+\bibcite{henneaux1992quantization}{{119}{1992}{{Henneaux\ et~al.}}{{Henneaux and Teitelboim}}}
+\bibcite{mackay2003information}{{120}{2003}{{MacKay}}{{}}}
+\bibcite{huffman1952method}{{121}{1952}{{Huffman}}{{}}}
+\bibcite{witten1987arithmetic}{{122}{1987}{{Witten\ et~al.}}{{Witten, Neal, and Cleary}}}
+\bibcite{jbig}{{123}{1993}{{jbi}}{{}}}
+\bibcite{lecun1998gradient}{{124}{1998}{{LeCun\ et~al.}}{{LeCun, Bottou, Bengio, and Haffner}}}
+\bibcite{Srivastava2014}{{125}{2014{}}{{Srivastava\ et~al.}}{{Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov}}}
+\bibcite{krizhevsky2012cuda}{{126}{2012}{{Krizhevsky}}{{}}}
+\bibcite{sak2014long}{{127}{2014}{{Sak\ et~al.}}{{Sak, Senior, and Beaufays}}}
+\bibcite{Volder1959The}{{128}{1959}{{Volder}}{{}}}
+\bibcite{Walther1971A}{{129}{1971}{{Walther}}{{}}}
+\bibcite{Temam2012A}{{130}{2012}{{Temam}}{{}}}
+\bibcite{muralimanohar2007optimizing}{{131}{2007}{{Muralimanohar\ et~al.}}{{Muralimanohar, Balasubramonian, and Jouppi}}}
+\bibcite{duff2002overview}{{132}{2002}{{Duff\ et~al.}}{{Duff, Heroux, and Pozo}}}
+\bibcite{yu2017scalpel}{{133}{2017}{{Yu\ et~al.}}{{Yu, Lukefahr, Palframan, Dasika, Das, and Mahlke}}}
+\bibcite{hill2017deftnn}{{134}{2017}{{Hill\ et~al.}}{{Hill, Jain, Hill, Zamirai, Hsu, Laurenzano, Mahlke, Tang, and Mars}}}
+\bibcite{wen2016learning}{{135}{2016}{{Wen\ et~al.}}{{Wen, Wu, Wang, Chen, and Li}}}
+\bibcite{lebedev2016fast}{{136}{2016}{{Lebedev\ et~al.}}{{Lebedev and Lempitsky}}}
+\bibcite{li2016pruning}{{137}{2016{}}{{Li\ et~al.}}{{Li, Kadav, Durdanovic, Samet, and Graf}}}
+\bibcite{mao2017exploring}{{138}{2017}{{Mao\ et~al.}}{{Mao, Han, Pool, Li, Liu, Wang, and Dally}}}
 \FN@pp@footnotehinttrue 
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{致谢}{88}{chapter*.52}}
+\@writefile{toc}{\contentsline {chapter}{致谢}{97}{chapter*.60}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{在读期间发表的学术论文与取得的研究成果}{89}{chapter*.53}}
+\@writefile{toc}{\contentsline {chapter}{在读期间发表的学术论文与取得的研究成果}{98}{chapter*.61}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}

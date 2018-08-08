@@ -1,97 +1,121 @@
 \contentsline {chapter}{\numberline {第1章\hspace {0.3em}}绪论}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}神经网络算法发展历程}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}第一个时期（1940年代到50年代）}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}第一个时期（1940年代到50年代）}{2}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}第二个时期 (1960年代到70年代)}{2}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}第三个时期（1980年代到90年代）}{2}{subsection.1.1.3}
 \contentsline {subsection}{\numberline {1.1.4}第四个时期（2000年代至今）}{3}{subsection.1.1.4}
 \contentsline {subsubsection}{\numberline {1}神经网络在图像分类领域的应用}{4}{subsubsection.1.1.4.1}
-\contentsline {subsubsection}{\numberline {2}神经网络在目标检测领域的应用}{4}{subsubsection.1.1.4.2}
+\contentsline {subsubsection}{\numberline {2}神经网络在目标检测领域的应用}{5}{subsubsection.1.1.4.2}
 \contentsline {subsubsection}{\numberline {3}神经网络的低能耗技术}{5}{subsubsection.1.1.4.3}
 \contentsline {section}{\numberline {1.2}神经网络计算平台发展}{6}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}通用处理器CPU和GPU}{6}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}FPGA}{7}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}ASIC}{8}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}主要研究内容及贡献}{9}{section.1.3}
+\contentsline {section}{\numberline {1.3}主要研究内容及贡献}{10}{section.1.3}
 \contentsline {section}{\numberline {1.4}论文的组织结构}{11}{section.1.4}
-\contentsline {chapter}{\numberline {第2章\hspace {0.3em}}神经网络简介}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}神经网络算法基础}{12}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}全连接层}{12}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}卷积层}{13}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}池化层}{14}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}归一化层}{15}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}激活层}{16}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}LSTM}{17}{subsection.2.1.6}
-\contentsline {subsection}{\numberline {2.1.7}GRU}{18}{subsection.2.1.7}
-\contentsline {section}{\numberline {2.2}神经网络低能耗的技术}{19}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}神经网络的低精度计算}{19}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}神经网络压缩模型}{20}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}神经网络加速器}{21}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}现有神经网络加速器架构}{21}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}基于向量算子的神经网络处理器}{23}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}基于乘加算子空间数据流的神经网络处理器}{25}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}稀疏神经网络处理器}{26}{subsection.2.3.4}
-\contentsline {chapter}{\numberline {第3章\hspace {0.3em}}一种新的神经网络压缩方法}{28}{chapter.3}
-\contentsline {section}{\numberline {3.1}背景}{28}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}神经网络中的稀疏特性}{29}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}权值编码}{30}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {1}量化}{30}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {2}熵编码}{31}{subsubsection.3.1.2.2}
-\contentsline {subsection}{\numberline {3.1.3}不规则性}{32}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}局部收敛 (local convergence)}{33}{section.3.2}
-\contentsline {section}{\numberline {3.3}压缩神经网络}{34}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}粗粒度剪枝}{34}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {1}剪枝策略}{34}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {2}剪枝块大小}{35}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3}最大值剪枝 vs. 平均值剪枝}{36}{subsubsection.3.3.1.3}
-\contentsline {subsubsection}{\numberline {4}不规则性的评估方法}{37}{subsubsection.3.3.1.4}
-\contentsline {subsubsection}{\numberline {5}神经元稀疏}{38}{subsubsection.3.3.1.5}
-\contentsline {subsection}{\numberline {3.3.2}局部量化}{38}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}熵编码}{39}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}压缩实验结果}{39}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {第4章\hspace {0.3em}}粗粒度稀疏神经网络加速器}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}设计原则}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}加速器架构}{45}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}稀疏处理单元}{46}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {1}Indexing}{46}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {2}NSM}{47}{subsubsection.4.2.1.2}
-\contentsline {subsubsection}{\numberline {3}NFU}{48}{subsubsection.4.2.1.3}
-\contentsline {subsubsection}{\numberline {4}Encoder}{49}{subsubsection.4.2.1.4}
-\contentsline {subsection}{\numberline {4.2.2}存储模块}{50}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}控制}{51}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}片上互联}{52}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}编程模型}{53}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}基于库的编程模型}{53}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}编译器}{54}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}loop tiling}{55}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {第5章\hspace {0.3em}}性能验证和实验结果}{58}{chapter.5}
-\contentsline {section}{\numberline {5.1}新型加速器性能验证}{58}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}背景}{58}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}加速器专用性能模拟器}{59}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {1}加速器的高层次抽象}{59}{subsubsection.5.1.2.1}
-\contentsline {subsubsection}{\numberline {2}事件分类}{61}{subsubsection.5.1.2.2}
-\contentsline {subsubsection}{\numberline {3}事件执行时间}{62}{subsubsection.5.1.2.3}
-\contentsline {subsubsection}{\numberline {4}事件的依赖关系}{63}{subsubsection.5.1.2.4}
-\contentsline {subsubsection}{\numberline {5}模拟过程}{63}{subsubsection.5.1.2.5}
-\contentsline {section}{\numberline {5.2}实验方法}{65}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Baseline}{65}{subsection.5.2.1}
-\contentsline {subsubsection}{\numberline {1}CPU}{65}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {2}GPU}{65}{subsubsection.5.2.1.2}
-\contentsline {subsubsection}{\numberline {3}硬件加速器}{65}{subsubsection.5.2.1.3}
-\contentsline {subsection}{\numberline {5.2.2}Benchmark}{66}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}实验结果}{66}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}硬件属性}{66}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}性能}{66}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}能耗}{69}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}讨论}{71}{subsection.5.3.4}
-\contentsline {subsubsection}{\numberline {1}熵编码和熵解码模块}{71}{subsubsection.5.3.4.1}
-\contentsline {subsubsection}{\numberline {2}稀疏度与性能}{71}{subsubsection.5.3.4.2}
-\contentsline {subsubsection}{\numberline {3}减少的不规则度}{72}{subsubsection.5.3.4.3}
-\contentsline {subsubsection}{\numberline {4}类似粗粒度稀疏的方法}{73}{subsubsection.5.3.4.4}
-\contentsline {subsubsection}{\numberline {5}其他稀疏神经网络加速器}{73}{subsubsection.5.3.4.5}
-\contentsline {chapter}{\numberline {第6章\hspace {0.3em}}总结和展望}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}本文工作总结}{75}{section.6.1}
-\contentsline {section}{\numberline {6.2}未来研究展望}{76}{section.6.2}
-\contentsline {chapter}{参考文献}{78}{chapter*.51}
-\contentsline {chapter}{致谢}{88}{chapter*.52}
-\contentsline {chapter}{在读期间发表的学术论文与取得的研究成果}{89}{chapter*.53}
+\contentsline {chapter}{\numberline {第2章\hspace {0.3em}}神经网络简介}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}神经网络算法基础}{13}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}全连接层}{13}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}卷积层}{14}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}池化层}{15}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}归一化层}{16}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}激活层}{17}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}LSTM}{18}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}GRU}{20}{subsection.2.1.7}
+\contentsline {section}{\numberline {2.2}神经网络低能耗的技术}{20}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}神经网络的低精度计算}{21}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}神经网络裁剪技术}{22}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}权值矩阵变换}{23}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}神经网络加速器}{24}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}现有神经网络加速器架构}{24}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}基于向量算子的神经网络处理器}{26}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}基于乘加算子空间数据流的神经网络处理器}{28}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}稀疏神经网络处理器}{28}{subsection.2.3.4}
+\contentsline {chapter}{\numberline {第3章\hspace {0.3em}}一种新的神经网络压缩方法}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}背景}{31}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}稀疏神经网络}{31}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}权值编码}{33}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {1}量化}{33}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {2}熵编码}{34}{subsubsection.3.1.2.2}
+\contentsline {subsection}{\numberline {3.1.3}不规则性}{35}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}局部收敛}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}压缩神经网络}{37}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}粗粒度剪枝}{38}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {1}剪枝策略}{38}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {2}剪枝块规模}{40}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3}最大值剪枝 vs. 平均值剪枝}{41}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {4}不规则性的评估方法}{42}{subsubsection.3.3.1.4}
+\contentsline {subsubsection}{\numberline {5}神经元稀疏}{42}{subsubsection.3.3.1.5}
+\contentsline {subsection}{\numberline {3.3.2}局部量化}{43}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}熵编码}{44}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}压缩实验结果}{44}{subsection.3.3.4}
+\contentsline {subsubsection}{\numberline {1}压缩比}{44}{subsubsection.3.3.4.1}
+\contentsline {subsubsection}{\numberline {2}精度}{45}{subsubsection.3.3.4.2}
+\contentsline {subsubsection}{\numberline {3}不规则度}{45}{subsubsection.3.3.4.3}
+\contentsline {subsubsection}{\numberline {4}AlexNet网络详细压缩特性}{46}{subsubsection.3.3.4.4}
+\contentsline {chapter}{\numberline {第4章\hspace {0.3em}}粗粒度稀疏神经网络加速器}{48}{chapter.4}
+\contentsline {section}{\numberline {4.1}设计原则}{48}{section.4.1}
+\contentsline {section}{\numberline {4.2}Cambricon-S的架构}{50}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}稀疏处理}{51}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {1}Indexing}{52}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {2}NSM}{52}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {3}NFU}{53}{subsubsection.4.2.1.3}
+\contentsline {subsubsection}{\numberline {4}Encoder}{55}{subsubsection.4.2.1.4}
+\contentsline {subsection}{\numberline {4.2.2}存储模块}{56}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {1}NBin}{56}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {2}NBout}{56}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {3}SB}{57}{subsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4}NIBin和SIB}{57}{subsubsection.4.2.2.4}
+\contentsline {subsubsection}{\numberline {5}缓存大小}{57}{subsubsection.4.2.2.5}
+\contentsline {subsection}{\numberline {4.2.3}控制}{58}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {1}状态机}{58}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {2}多发射控制器}{58}{subsubsection.4.2.3.2}
+\contentsline {subsection}{\numberline {4.2.4}片上互联}{59}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}编程模型}{60}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}基于库的编程模型}{60}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}编译器}{61}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}loop tiling}{62}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {第5章\hspace {0.3em}}针对新型加速器性能模拟器}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}背景}{65}{section.5.1}
+\contentsline {section}{\numberline {5.2}加速器专用性能模拟器}{66}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}加速器的高层次抽象}{66}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {1}Main Block}{67}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {2}Sub Block}{68}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {3}Off-chip}{68}{subsubsection.5.2.1.3}
+\contentsline {subsubsection}{\numberline {4}数据通路}{68}{subsubsection.5.2.1.4}
+\contentsline {subsection}{\numberline {5.2.2}事件分类}{68}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {1}Load事件}{69}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {2}Compute事件}{69}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {3}Store事件}{69}{subsubsection.5.2.2.3}
+\contentsline {subsubsection}{\numberline {4}Synchronize事件}{69}{subsubsection.5.2.2.4}
+\contentsline {subsection}{\numberline {5.2.3}事件执行时间}{69}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {1}对Load事件进行建模}{70}{subsubsection.5.2.3.1}
+\contentsline {subsubsection}{\numberline {2}对Compute事件进行建模}{70}{subsubsection.5.2.3.2}
+\contentsline {subsubsection}{\numberline {3}对Store事件进行建模}{70}{subsubsection.5.2.3.3}
+\contentsline {subsection}{\numberline {5.2.4}事件的依赖关系}{71}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}模拟过程}{71}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}优化模拟器的性能和误差}{73}{section.5.3}
+\contentsline {chapter}{\numberline {第6章\hspace {0.3em}}实验方法和实验结果}{74}{chapter.6}
+\contentsline {section}{\numberline {6.1}实验方法}{74}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Baseline}{74}{subsection.6.1.1}
+\contentsline {subsubsection}{\numberline {1}CPU}{74}{subsubsection.6.1.1.1}
+\contentsline {subsubsection}{\numberline {2}GPU}{74}{subsubsection.6.1.1.2}
+\contentsline {subsubsection}{\numberline {3}硬件加速器}{75}{subsubsection.6.1.1.3}
+\contentsline {subsection}{\numberline {6.1.2}Benchmark}{75}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}实验结果}{75}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}硬件属性}{75}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}性能}{76}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}能耗}{78}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}讨论}{80}{subsection.6.2.4}
+\contentsline {subsubsection}{\numberline {1}熵编码和熵解码模块}{80}{subsubsection.6.2.4.1}
+\contentsline {subsubsection}{\numberline {2}稀疏度与性能}{80}{subsubsection.6.2.4.2}
+\contentsline {subsubsection}{\numberline {3}减少的不规则度}{82}{subsubsection.6.2.4.3}
+\contentsline {subsubsection}{\numberline {4}类似粗粒度稀疏的方法}{82}{subsubsection.6.2.4.4}
+\contentsline {subsubsection}{\numberline {5}其他稀疏神经网络加速器}{82}{subsubsection.6.2.4.5}
+\contentsline {chapter}{\numberline {第7章\hspace {0.3em}}总结和展望}{84}{chapter.7}
+\contentsline {section}{\numberline {7.1}本文工作总结}{84}{section.7.1}
+\contentsline {section}{\numberline {7.2}未来研究展望}{85}{section.7.2}
+\contentsline {chapter}{参考文献}{87}{chapter*.59}
+\contentsline {chapter}{致谢}{97}{chapter*.60}
+\contentsline {chapter}{在读期间发表的学术论文与取得的研究成果}{98}{chapter*.61}
 \contentsfinish 
