@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.7.4)  6 AUG 2018 22:24
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.7.4)  9 AUG 2018 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1970,37 +1970,37 @@ Package: xeCJK-listings 2016/02/10 v3.3.4 xeCJK patch file for listings
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 29.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 28.
+LaTeX Info: Redefining \selectfont on input line 29.
 \AtBeginShipoutBox=\box81
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2010,9 +2010,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -2066,7 +2066,7 @@ Package caption Info: End \AtBeginDocument code.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \Pifont with sig. 'm' on line 28.
+. Redefining command \Pifont with sig. 'm' on line 29.
 .................................................
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
@@ -2119,13 +2119,13 @@ Package caption Info: End \AtBeginDocument code.
 . <->"[FandolFang-Regular.otf]/OT:embolden=4;"
 . - 'bold small caps'  (bx/sc) with NFSS spec.: 
 .................................................
-LaTeX Font Info:    Calculating math sizes for size <12.04486> on input line 30
+LaTeX Font Info:    Calculating math sizes for size <12.04486> on input line 31
 .
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2153,7 +2153,7 @@ File: figures/ustc_logo_text.pdf Graphic file (type QTm)
 .................................................
 File: figures/ustc_logo_fig.pdf Graphic file (type QTm)
 <use  "figures/ustc_logo_fig.pdf" >
-LaTeX Font Info:    Calculating math sizes for size <16.05981> on input line 30
+LaTeX Font Info:    Calculating math sizes for size <16.05981> on input line 31
 .
  [1
 
@@ -2169,12 +2169,12 @@ File: figures/ustc_logo_fig.pdf Graphic file (type QTm)
 ] [2
 
 ]
-Overfull \hbox (29.31076pt too wide) in paragraph at lines 30--30
+Overfull \hbox (29.31076pt too wide) in paragraph at lines 31--31
 [][] 
  []
 
 
-Overfull \hbox (29.31076pt too wide) in paragraph at lines 30--30
+Overfull \hbox (29.31076pt too wide) in paragraph at lines 31--31
 [][][] 
  []
 
@@ -2205,11 +2205,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-[5])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [6] (./chapters/introduction.tex
+
+[6] (./chapters/introduction.tex
 第1章
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2343,19 +2346,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: figures/sparse_network.pdf Graphic file (type QTm)
 
-<use  "figures/sparse_network.pdf" > [32]
+<use  "figures/sparse_network.pdf" >
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+ [32]
 File: figures/WE.pdf Graphic file (type QTm)
- <use  "figures/WE.pdf" > [33]
+
+<use  "figures/WE.pdf" > [33] [34]
 File: figures/huffman.pdf Graphic file (type QTm)
-
-<use  "figures/huffman.pdf" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[34]
-Underfull \vbox (badness 5504) has occurred while \output is active []
-
- [35]
+ <use  "figures/huffman.pdf" > [35]
 File: figures/local_convergence.pdf Graphic file (type QTm)
 
 <use  "figures/local_convergence.pdf" > [36]
@@ -2363,53 +2362,70 @@ File: figures/CDF.eps Graphic file (type eps)
  <figures/CDF.eps>
 File: figures/compression_flow.pdf Graphic file (type QTm)
 
-<use  "figures/compression_flow.pdf" > [37]
-File: figures/fc_pruning.pdf Graphic file (type QTm)
- <use  "figures/fc_pruning.pdf" >
-File: figures/conv_pruning.pdf Graphic file (type QTm)
+<use  "figures/compression_flow.pdf" >
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+File: figures/fc_pruning.pdf Graphic file (type QTm)
+
+<use  "figures/fc_pruning.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/conv_pruning.pdf Graphic file (type QTm)
 <use  "figures/conv_pruning.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (27.28929pt too wide) in paragraph at lines 168--169
+Overfull \hbox (27.28929pt too wide) in paragraph at lines 172--173
 \EU1/FandolSong-Regular(0)/m/n/12.04486 中 的 神 经 元。|  因 此，|  卷 积 层 中 的 权 值 可 以 表
  示 为 一 个 四 维 张 量，|  即 $\OT1/cmr/m/n/12.04486 (\OML/cmm/m/it/12.04486 N[]; N[]; 
 K[]; K[]\OT1/cmr/m/n/12.04486 )$\EU1/FandolSong-Regular(0)/m/n/12.04486 ，|
  []
 
-[38]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
 File: figures/index_saving.pdf Graphic file (type QTm)
- <use  "figures/index_saving.pdf" > [39]
+
+<use  "figures/index_saving.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 7907) has occurred while \output is active []
 
  [40]
 File: figures/avg_max.eps Graphic file (type eps)
 
-<figures/avg_max.eps> [41]
+<figures/avg_max.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 2671) has occurred while \output is active []
-
- [42]
+[41] [42]
 File: figures/LQ.pdf Graphic file (type QTm)
+ <use  "figures/LQ.pdf" >
 
-<use  "figures/LQ.pdf" > [43]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1924) has occurred while \output is active []
 
  [44]
-LaTeX Font Info:    Calculating math sizes for size <7.52803> on input line 319
+LaTeX Font Info:    Calculating math sizes for size <7.52803> on input line 324
 .
 
 
@@ -2419,7 +2435,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
-[46]) (./chapters/acc.tex [47]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46])
+(./chapters/acc.tex [47]
 第4章
 File: figures/connection.pdf Graphic file (type QTm)
 <use  "figures/connection.pdf" >
@@ -2456,10 +2479,7 @@ File: figures/encoder.pdf Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 3872) has occurred while \output is active []
-
- [55]
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
@@ -2470,43 +2490,35 @@ File: figures/FSM.pdf Graphic file (type QTm)
 
 <use  "figures/FSM.pdf" > [58]
 File: figures/Htree.pdf Graphic file (type QTm)
- <use  "figures/Htree.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
+ <use  "figures/Htree.pdf" > [59]
 File: figures/framework.pdf Graphic file (type QTm)
 
-<use  "figures/framework.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60]
+<use  "figures/framework.pdf" > [60]
 File: figures/compiler.pdf Graphic file (type QTm)
-
-<use  "figures/compiler.pdf" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+ <use  "figures/compiler.pdf" > [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
-[62]
+ [62]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 241.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 241.
+LaTeX Font Warning: Command \small invalid in math mode on input line 245.
 
 
-Overfull \hbox (68.03705pt too wide) in paragraph at lines 241--241
+LaTeX Font Warning: Command \small invalid in math mode on input line 245.
+
+
+Overfull \hbox (68.03705pt too wide) in paragraph at lines 245--245
 [] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (11.57127pt too wide) in paragraph at lines 247--248
+[]\EU1/FandolSong-Regular(0)/m/n/12.04486 最 终，|  输 入 重 用、|  输 出 重 用 和 突 触 重 用 策
+ 略 需 要 的 片 外 访 存 量 分 别 是 $\OT1/cmr/m/n/12.04486 69\OML/cmm/m/it/12.04486 :\OT1/
+cmr/m/n/12.04486 59\OML/cmm/m/it/12.04486 MB$\EU1/FandolSong-Regular(0)/m/n/12.
+04486 、|
+ []
 
- [63])
-(./chapters/simulator.tex [64]
+[63]) (./chapters/simulator.tex [64]
 第5章
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2519,10 +2531,15 @@ File: figures/event.pdf Graphic file (type QTm)
 <use  "figures/event.pdf" >
 File: figures/simulator.pdf Graphic file (type QTm)
  <use  "figures/simulator.pdf" >
+Underfull \vbox (badness 6542) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ [66]
+Overfull \hbox (3.76544pt too wide) in paragraph at lines 40--41
+[]\EU1/FandolSong-Regular(0)/m/n/12.04486 为 了 简 化 模 拟 器 的 设 计，|  加 快 模 拟 器 的 模 
+拟 速 度，|  我 们 首 先 需 要 对 \EU1/TimesNewRoman(0)/m/n/12.04486 Cambricon-
+ []
 
-[66]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [67]
@@ -2532,7 +2549,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [69]
-Overfull \hbox (0.33606pt too wide) in paragraph at lines 109--111
+Overfull \hbox (0.33606pt too wide) in paragraph at lines 112--114
 \EU1/FandolSong-Regular(0)/m/n/12.04486 其 中 $\OML/cmm/m/it/12.04486 t[]$ \EU1/F
 andolSong-Regular(0)/m/n/12.04486 是 \EU1/TimesNewRoman(0)/m/n/12.04486 Store \E
 U1/FandolSong-Regular(0)/m/n/12.04486 事 件 执 行 事 件，| $\OML/cmm/m/it/12.04486 t[]
@@ -2544,6 +2561,13 @@ Off-chip Memory \EU1/FandolSong-Regular(0)/m/n/12.04486 的 启 动 时 间，| 
 [70]
 File: figures/simulation.pdf Graphic file (type QTm)
  <use  "figures/simulation.pdf" > [71]
+Overfull \hbox (15.81229pt too wide) in paragraph at lines 153--154
+[]\EU1/FandolSong-Regular(0)/m/n/12.04486 我 们 为 \EU1/TimesNewRoman(0)/m/n/12.04
+486 Cambricon-S \EU1/FandolSong-Regular(0)/m/n/12.04486 设 计 两 个 性 能 模 拟 器，|  分 
+别 是 周 期 精 确 的 模 拟 器  |（\EU1/TimesNewRoman(0)/m/n/12.04486 Simulator-
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [72]
@@ -2566,69 +2590,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [75]
 File: figures/total_performance.eps Graphic file (type eps)
 
-<figures/total_performance.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76]
+<figures/total_performance.eps> [76]
 File: figures/conv_performance.eps Graphic file (type eps)
-
-<figures/conv_performance.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ <figures/conv_performance.eps>
 File: figures/fc_performance.eps Graphic file (type eps)
+
 <figures/fc_performance.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [77]
+[77]
 File: figures/energy.eps Graphic file (type eps)
-
-<figures/energy.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ <figures/energy.eps>
 File: figures/energy_breakdown.eps Graphic file (type eps)
-<figures/energy_breakdown.eps>
-Underfull \vbox (badness 6741) has occurred while \output is active []
-
- [78]
-File: figures/energy_breakdown2.eps Graphic file (type eps)
-
-<figures/energy_breakdown2.eps> [79]
-File: figures/sensitivity.eps Graphic file (type eps)
- <figures/sensitivity.eps>
+ <figures/energy_breakdown.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+File: figures/energy_breakdown2.eps Graphic file (type eps)
+<figures/energy_breakdown2.eps>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81]
-Overfull \hbox (0.75885pt too wide) in paragraph at lines 158--159
+[78] [79]
+File: figures/sensitivity.eps Graphic file (type eps)
+ <figures/sensitivity.eps> [80]
+Overfull \hbox (0.75885pt too wide) in paragraph at lines 157--158
 []\EU1/FandolSong-Regular(0)/m/n/12.04486 最 近 有 不 少 类 似 于 粗 粒 度 稀 疏 的 研 究，|  例 
 如 \EU1/TimesNewRoman(0)/m/n/12.04486 SIMD-aware weight pruning [[]]\EU1/FandolS
 ong-Regular(0)/m/n/12.04486 ，|
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82])
-(./chapters/conclusion.tex [83]
+ [81]
+[82]) (./chapters/conclusion.tex [83]
 第7章
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2693,18 +2690,22 @@ ng group-wise brain damage[C]//
 [98
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 68.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 69.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 43430 strings out of 493638
- 852630 string characters out of 6146797
- 835545 words of memory out of 5000000
- 46120 multiletter control sequences out of 15000+600000
+ 43429 strings out of 493638
+ 852496 string characters out of 6146797
+ 835537 words of memory out of 5000000
+ 46119 multiletter control sequences out of 15000+600000
  42658 words of font info for 234 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  70i,16n,107p,10499b,1109s stack positions out of 5000i,500n,10000p,200000b,80000s
