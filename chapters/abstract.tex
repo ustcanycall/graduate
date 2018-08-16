@@ -2,13 +2,13 @@
 
 \begin{abstract}
 
-神经网络已经在图像识别、目标检测、语音识别和自然语言处理等诸多领域受到广泛应用，并逐渐成为主导算法。然而，随着神经网络的拓扑结构朝着规模不断扩大，层数不断加深的方向发展，庞大的数据和计算量给传统计算平台带来巨大的挑战。虽然稀疏（包括神经元和权值稀疏）能够有效减少神经网络的参数，从而减少数据访问和计算量，但是同时会将稠密网络规则的拓扑结构转化为稀疏不规则的形式，从而阻碍处理平台，包括CPU、GPU和加速器充分利用稀疏特性获得性能的提升。
+神经网络已经在图像识别、目标检测、语音识别和自然语言处理等诸多领域受到广泛应用，并逐渐成为主导算法。然而，随着神经网络模型的拓扑结构朝着规模不断扩大，层数不断加深的方向发展，庞大的数据和计算量给传统计算平台带来巨大的挑战。虽然采用稀疏技术（包括神经元和权值稀疏）能够有效减少神经网络的参数，从而减少数据访问和计算量，但是它同时会将稠密网络规则的拓扑结构转化为稀疏不规则的形式，从而阻碍处理平台（包括CPU、GPU和专用加速器）充分利用神经网络稀疏特性获得性能的提升。
 
-在本文中，我们提出了一个软硬件结合的方法来有效处理稀疏神经网络不规则的问题。
+在本文中，我们提出了一种软硬件结合的方法来有效处理稀疏神经网络不规则的问题。
 
-首先，基于大量的实验，我们观察到了局部收敛的现象，即在训练过程中，权值的分布并不是随机的，大的权重往往会聚集成簇。基于这个关键的观察，我们提出粗粒度的剪枝，大幅降低稀疏神经网络的不规则性。我们提出的粗粒度剪枝将多个突触作为一个整体进行裁剪，而不是裁剪单个突触。我们首先将突触分为多个块，当某个块满足特定条件时，该块中的所有突触将从网络拓扑中永久剪除。然后，我们对经过粗粒度剪枝的神经网络进行重训练保证网络的精度。值得注意的是，我们对神经网络迭代使用粗粒度剪枝和重训练，从而获得理想的稀疏度和精度。粗粒度剪枝可以将稀疏神经网络的不规则度平均减少20.13倍。同时我们提出了一种新的神经网络压缩算法，算法包括粗粒度剪枝，局部量化和熵编码三个步骤，在AlexNet和VGG16上分别获得了79倍和98倍的压缩比，远高于现有的两个最先进的神经网络压缩方法，即Deep Compression（35倍和49倍）和CNNPack（39倍和46倍）。
+首先，基于大量的实验，我们观察到了局部收敛的现象，即在训练过程中，权值的分布并不是随机的，较大的权重往往会聚集成簇。基于这个关键的观察，我们提出粗粒度剪枝大幅降低稀疏神经网络的不规则性。我们提出的粗粒度剪枝将多个突触作为一个整体进行裁剪，而不是裁剪单个突触。我们首先将突触分为多个块，当某个块满足特定条件时，该块中的所有突触将从网络拓扑中永久剪除。我们对经过粗粒度剪枝的神经网络进行重训练来保证网络的精度。值得注意的是，我们对神经网络迭代使用粗粒度剪枝和重训练，从而获得理想的稀疏度和精度。粗粒度剪枝可以将稀疏神经网络的不规则度平均减少20.13倍。同时我们提出了一种新的神经网络压缩算法，该算法包括粗粒度剪枝，局部量化和熵编码三个步骤，在AlexNet和VGG16上分别获得了79倍和98倍的压缩比，远高于现有的两个最先进的神经网络压缩方法，即Deep Compression（35倍和49倍）和CNNPack（39倍和46倍）。
 
-我们进一步设计了一个新型硬件加速器Cambricon-S，用于有效处理剩余的稀疏神经元和突触的不规则性。新型加速器中最重要的特征是一个中枢神经元选择模块（NSM），它能够有效处理粗粒度突触稀疏。同时，加速器中的突触选择器模块（SSM）,Encoder和权值解码模块（WDM）能够分别利用神经元稀疏，动态压缩神经元和利用局部量化。与最先进的稀疏的神经网络加速器Cambricon-X相比，我们的加速器能够获得1.71倍的性能提升，同时减少1.75倍能耗。为了减轻程序员的编程负担，我们还提出一个基于库的编程框架。编程框架中的编译器能够应用loop tiling和数据重用策略生成高效的加速器指令。
+我们进一步设计了一个新型硬件加速器，Cambricon-S，用于有效处理剩余的稀疏神经元和突触的不规则性。新型加速器中最重要的特征是其中枢神经元选择模块（NSM）能够有效处理粗粒度突触稀疏。同时，加速器中的突触选择器模块（SSM）,Encoder和权值解码模块（WDM）能够分别利用神经元稀疏，动态压缩神经元和局部量化。与最先进的稀疏的神经网络加速器Cambricon-X相比，我们的加速器能够获得1.71倍的性能提升，同时减少1.75倍能耗。为了减轻程序员的编程负担，我们还提出一个基于库的编程框架。编程框架中的编译器能够应用循环分块（loop tiling）和数据重用（data reuse）策略生成高效的加速器指令。
 
   \keywords{神经网络，稀疏，压缩，加速器}
 \end{abstract}
@@ -16,7 +16,7 @@
 \begin{enabstract}
 Neural networks have become the dominant algorithms rapidly as they achieve state-of-the-art performance in a broad range of applications such as image recognition, object detection, speech recognition and natural language processing. However, neural networks keep moving towards deeper and larger architectures, posing a great challenge to the huge amount of data and computations. Although sparsity has emerged as an effective solution for reducing the intensity of computation and memory accesses directly, irregularity caused by sparsity (including sparse synapses and neurons) prevents processing platforms, including CPU, GPU and accelerators from completely leveraging the benefits. 
 
-In this paper, we propose a cooperative software/hardware approach to address the irregularity of sparse neural networks efficiently. 
+In this dissertation, we propose a cooperative software/hardware approach to address the irregularity of sparse neural networks efficiently. 
 
 Initially, based on a wide range of experiments, we observe the local convergence, namely larger weights tend to gather into small clusters during training rather than randomly distributed. Based on that key observation, we propose a software-based coarse-grained pruning technique to reduce the irregularity of sparse synapses drastically. Instead of pruning synapses independently, our proposed coarse-grained pruning prunes several synapses together. The synapses are firstly divided into blocks; a block of synapses will be permanently removed from the network topology if it meets specific criteria. We then employ the fine-tuning approach to retain the network accuracy. Note that we apply the coarse-grained pruning iteratively in training to achieve better sparsity and avoid the accuracy loss. The coarse-grained pruning can reduce the irregularity by $20.13\times$ on average. Then we introduce a novel compression algorithm, a three stage pipeline: coarse-grained pruning, local quantization and entropy encoding, that work together to reduce the storage requirement of AlexNet and VGG16 by $79\times$ and $98\times$, respectively. The compression ratio is much higher than that achieved by two existing state-of-the-art neural network compression methods, i.e., Deep Compression ($35\times$ and $49\times$) and CNNPack ($39\times$ and $46\times$).
 

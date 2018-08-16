@@ -1,4 +1,4 @@
-\begin{thebibliography}{138}
+\begin{thebibliography}{162}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{\url{#2}}
@@ -254,86 +254,165 @@ REDMON J, DIVVALA S, GIRSHICK R, et~al.
   computer vision and pattern recognition.
 \newblock 2016: 779-788.
 
-\bibitem[Gupta\ et~al.(2015)Gupta, Agrawal, Gopalakrishnan, and
-  Narayanan]{gupta2015deep}
-GUPTA S, AGRAWAL A, GOPALAKRISHNAN K, et~al.
-\newblock Deep learning with limited numerical
-  precision\allowbreak[C]//\allowbreak{}International Conference on Machine
-  Learning.
-\newblock 2015: 1737-1746.
+\bibitem[Graves\ et~al.(2005)Graves and Schmidhuber]{graves2005framewise}
+GRAVES A, SCHMIDHUBER J.
+\newblock Framewise phoneme classification with bidirectional lstm and other
+  neural network architectures\allowbreak[J].
+\newblock Neural Networks, 2005, 18\penalty0 (5-6): 602-610.
 
-\bibitem[Dettmers(2015)]{dettmers20158}
-DETTMERS T.
-\newblock 8-bit approximations for parallelism in deep learning\allowbreak[J].
-\newblock arXiv preprint arXiv:1511.04561, 2015.
+\bibitem[Graves\ et~al.(2013{\natexlab{a}})Graves, Mohamed, and
+  Hinton]{graves2013speech}
+GRAVES A, MOHAMED A~R, HINTON G.
+\newblock Speech recognition with deep recurrent neural
+  networks\allowbreak[C]//\allowbreak{}Acoustics, speech and signal processing
+  (icassp), 2013 ieee international conference on.
+\newblock IEEE, 2013{\natexlab{a}}: 6645-6649.
 
-\bibitem[Courbariaux\ et~al.(2015)Courbariaux, Bengio, and
-  David]{courbariaux2015binaryconnect}
-COURBARIAUX M, BENGIO Y, DAVID J~P.
-\newblock Binaryconnect: Training deep neural networks with binary weights
-  during propagations\allowbreak[C]//\allowbreak{}Advances in neural
+\bibitem[Graves\ et~al.(2013{\natexlab{b}})Graves, Jaitly, and
+  Mohamed]{graves2013hybrid}
+GRAVES A, JAITLY N, MOHAMED A~R.
+\newblock Hybrid speech recognition with deep bidirectional
+  lstm\allowbreak[C]//\allowbreak{}Automatic Speech Recognition and
+  Understanding (ASRU), 2013 IEEE Workshop on.
+\newblock IEEE, 2013{\natexlab{b}}: 273-278.
+
+\bibitem[Abdel-Hamid\ et~al.(2012)Abdel-Hamid, Mohamed, Jiang, and
+  Penn]{abdel2012applying}
+ABDEL-HAMID O, MOHAMED A~R, JIANG H, et~al.
+\newblock Applying convolutional neural networks concepts to hybrid nn-hmm
+  model for speech recognition\allowbreak[C]//\allowbreak{}Acoustics, Speech
+  and Signal Processing (ICASSP), 2012 IEEE International Conference on.
+\newblock IEEE, 2012: 4277-4280.
+
+\bibitem[Zhang\ et~al.(2017)Zhang, Pezeshki, Brakel, Zhang, Bengio, and
+  Courville]{zhang2017towards}
+ZHANG Y, PEZESHKI M, BRAKEL P, et~al.
+\newblock Towards end-to-end speech recognition with deep convolutional neural
+  networks\allowbreak[J].
+\newblock arXiv preprint arXiv:1701.02720, 2017.
+
+\bibitem[Xiong\ et~al.(2017)Xiong, Droppo, Huang, Seide, Seltzer, Stolcke, Yu,
+  and Zweig]{xiong2017microsoft}
+XIONG W, DROPPO J, HUANG X, et~al.
+\newblock The microsoft 2016 conversational speech recognition
+  system\allowbreak[C]//\allowbreak{}Acoustics, Speech and Signal Processing
+  (ICASSP), 2017 IEEE International Conference on.
+\newblock IEEE, 2017: 5255-5259.
+
+\bibitem[Kim(2014)]{kim2014convolutional}
+KIM Y.
+\newblock Convolutional neural networks for sentence
+  classification\allowbreak[J].
+\newblock arXiv preprint arXiv:1408.5882, 2014.
+
+\bibitem[Denil\ et~al.(2014)Denil, Demiraj, Kalchbrenner, Blunsom, and
+  de~Freitas]{denil2014modelling}
+DENIL M, DEMIRAJ A, KALCHBRENNER N, et~al.
+\newblock Modelling, visualising and summarising documents with a single
+  convolutional neural network\allowbreak[J].
+\newblock arXiv preprint arXiv:1406.3830, 2014.
+
+\bibitem[Yih\ et~al.(2014)Yih, He, and Meek]{yih2014semantic}
+YIH W~T, HE X, MEEK C.
+\newblock Semantic parsing for single-relation question
+  answering\allowbreak[C]//\allowbreak{}Proceedings of the 52nd Annual Meeting
+  of the Association for Computational Linguistics (Volume 2: Short Papers):
+  volume~2.
+\newblock 2014: 643-648.
+
+\bibitem[Lample\ et~al.(2016)Lample, Ballesteros, Subramanian, Kawakami, and
+  Dyer]{lample2016neural}
+LAMPLE G, BALLESTEROS M, SUBRAMANIAN S, et~al.
+\newblock Neural architectures for named entity recognition\allowbreak[J].
+\newblock arXiv preprint arXiv:1603.01360, 2016.
+
+\bibitem[Graves(2013)]{graves2013generating}
+GRAVES A.
+\newblock Generating sequences with recurrent neural networks\allowbreak[J].
+\newblock arXiv preprint arXiv:1308.0850, 2013.
+
+\bibitem[Sundermeyer\ et~al.(2015)Sundermeyer, Ney, and
+  Schl{\"u}ter]{sundermeyer2015feedforward}
+SUNDERMEYER M, NEY H, SCHL{\"U}TER R.
+\newblock From feedforward to recurrent lstm neural networks for language
+  modeling\allowbreak[J].
+\newblock IEEE Transactions on Audio, Speech, and Language Processing, 2015,
+  23\penalty0 (3): 517-529.
+
+\bibitem[Wang\ et~al.(2015)Wang, Liu, Chengjie, Wang, and
+  Wang]{wang2015predicting}
+WANG X, LIU Y, CHENGJIE S, et~al.
+\newblock Predicting polarities of tweets by composing word embeddings with
+  long short-term memory\allowbreak[C]//\allowbreak{}Proceedings of the 53rd
+  Annual Meeting of the Association for Computational Linguistics and the 7th
+  International Joint Conference on Natural Language Processing (Volume 1: Long
+  Papers): volume~1.
+\newblock 2015: 1343-1353.
+
+\bibitem[Lowe\ et~al.(2015)Lowe, Pow, Serban, and Pineau]{lowe2015ubuntu}
+LOWE R, POW N, SERBAN I, et~al.
+\newblock The ubuntu dialogue corpus: A large dataset for research in
+  unstructured multi-turn dialogue systems\allowbreak[J].
+\newblock arXiv preprint arXiv:1506.08909, 2015.
+
+\bibitem[Vinyals\ et~al.(2015)Vinyals and Le]{vinyals2015neural}
+VINYALS O, LE Q.
+\newblock A neural conversational model\allowbreak[J].
+\newblock arXiv preprint arXiv:1506.05869, 2015.
+
+\bibitem[Li\ et~al.(2016{\natexlab{a}})Li, Galley, Brockett, Spithourakis, Gao,
+  and Dolan]{li2016persona}
+LI J, GALLEY M, BROCKETT C, et~al.
+\newblock A persona-based neural conversation model\allowbreak[J].
+\newblock arXiv preprint arXiv:1603.06155, 2016.
+
+\bibitem[Socher\ et~al.(2011)Socher, Lin, Manning, and Ng]{socher2011parsing}
+SOCHER R, LIN C~C, MANNING C, et~al.
+\newblock Parsing natural scenes and natural language with recursive neural
+  networks\allowbreak[C]//\allowbreak{}Proceedings of the 28th international
+  conference on machine learning (ICML-11).
+\newblock 2011: 129-136.
+
+\bibitem[Ranzato\ et~al.(2015)Ranzato, Chopra, Auli, and
+  Zaremba]{ranzato2015sequence}
+RANZATO M, CHOPRA S, AULI M, et~al.
+\newblock Sequence level training with recurrent neural networks\allowbreak[J].
+\newblock arXiv preprint arXiv:1511.06732, 2015.
+
+\bibitem[Li\ et~al.(2016{\natexlab{b}})Li, Monroe, Ritter, Galley, Gao, and
+  Jurafsky]{li2016deep}
+LI J, MONROE W, RITTER A, et~al.
+\newblock Deep reinforcement learning for dialogue generation\allowbreak[J].
+\newblock arXiv preprint arXiv:1606.01541, 2016.
+
+\bibitem[Kiros\ et~al.(2015)Kiros, Zhu, Salakhutdinov, Zemel, Urtasun,
+  Torralba, and Fidler]{kiros2015skip}
+KIROS R, ZHU Y, SALAKHUTDINOV R~R, et~al.
+\newblock Skip-thought vectors\allowbreak[C]//\allowbreak{}Advances in neural
   information processing systems.
-\newblock 2015: 3123-3131.
+\newblock 2015: 3294-3302.
 
-\bibitem[Rastegari\ et~al.(2016)Rastegari, Ordonez, Redmon, and
-  Farhadi]{rastegari2016xnor}
-RASTEGARI M, ORDONEZ V, REDMON J, et~al.
-\newblock Xnor-net: Imagenet classification using binary convolutional neural
-  networks\allowbreak[C]//\allowbreak{}European Conference on Computer Vision.
-\newblock Springer, 2016: 525-542.
+\bibitem[Dai\ et~al.(2015)Dai and Le]{dai2015semi}
+DAI A~M, LE Q~V.
+\newblock Semi-supervised sequence
+  learning\allowbreak[C]//\allowbreak{}Advances in neural information
+  processing systems.
+\newblock 2015: 3079-3087.
 
-\bibitem[Zhou\ et~al.(2017)Zhou, Yao, Guo, Xu, and Chen]{zhou2017incremental}
-ZHOU A, YAO A, GUO Y, et~al.
-\newblock Incremental network quantization: Towards lossless cnns with
-  low-precision weights\allowbreak[J].
-\newblock arXiv preprint arXiv:1702.03044, 2017.
+\bibitem[Kumar\ et~al.(2016)Kumar, Irsoy, Ondruska, Iyyer, Bradbury, Gulrajani,
+  Zhong, Paulus, and Socher]{kumar2016ask}
+KUMAR A, IRSOY O, ONDRUSKA P, et~al.
+\newblock Ask me anything: Dynamic memory networks for natural language
+  processing\allowbreak[C]//\allowbreak{}International Conference on Machine
+  Learning.
+\newblock 2016: 1378-1387.
 
-\bibitem[Reed(1993)]{reed1993pruning}
-REED R.
-\newblock Pruning algorithms-a survey\allowbreak[J].
-\newblock IEEE transactions on Neural Networks, 1993, 4\penalty0 (5): 740-747.
-
-\bibitem[LeCun\ et~al.(1989)LeCun, Denker, Solla, Howard, and
-  Jackel]{lecun1989optimal}
-LECUN Y, DENKER J~S, SOLLA S~A, et~al.
-\newblock Optimal brain damage.\allowbreak[C]//\allowbreak{}NIPs: volume~2.
-\newblock 1989: 598-605.
-
-\bibitem[Miche\ et~al.(2010)Miche, Sorjamaa, Bas, Simula, Jutten, and
-  Lendasse]{miche2010op}
-MICHE Y, SORJAMAA A, BAS P, et~al.
-\newblock Op-elm: optimally pruned extreme learning machine\allowbreak[J].
-\newblock IEEE transactions on neural networks, 2010, 21\penalty0 (1): 158-162.
-
-\bibitem[Han\ et~al.(2015{\natexlab{a}})Han, Pool, Tran, and
-  Dally]{han2015learning}
-HAN S, POOL J, TRAN J, et~al.
-\newblock Learning both weights and connections for efficient neural
-  network\allowbreak[C]//\allowbreak{}Advances in Neural Information Processing
-  Systems.
-\newblock 2015{\natexlab{a}}: 1135-1143.
-
-\bibitem[Guo\ et~al.(2016)Guo, Yao, and Chen]{guo2016dynamic}
-GUO Y, YAO A, CHEN Y.
-\newblock Dynamic network surgery for efficient
-  dnns\allowbreak[C]//\allowbreak{}Advances In Neural Information Processing
-  Systems.
-\newblock 2016: 1379-1387.
-
-\bibitem[Denton\ et~al.(2014)Denton, Zaremba, Bruna, LeCun, and
-  Fergus]{denton2014exploiting}
-DENTON E~L, ZAREMBA W, BRUNA J, et~al.
-\newblock Exploiting linear structure within convolutional networks for
-  efficient evaluation\allowbreak[C]//\allowbreak{}Advances in Neural
-  Information Processing Systems.
-\newblock 2014: 1269-1277.
-
-\bibitem[Lebedev\ et~al.(2014)Lebedev, Ganin, Rakhuba, Oseledets, and
-  Lempitsky]{lebedev2014speeding}
-LEBEDEV V, GANIN Y, RAKHUBA M, et~al.
-\newblock Speeding-up convolutional neural networks using fine-tuned
-  cp-decomposition\allowbreak[J].
-\newblock arXiv preprint arXiv:1412.6553, 2014.
+\bibitem[Sukhbaatar\ et~al.(2015)Sukhbaatar, Weston, Fergus,
+  et~al.]{sukhbaatar2015end}
+SUKHBAATAR S, WESTON J, FERGUS R, et~al.
+\newblock End-to-end memory networks\allowbreak[C]//\allowbreak{}Advances in
+  neural information processing systems.
+\newblock 2015: 2440-2448.
 
 \bibitem[Chakradhar\ et~al.(2010)Chakradhar, Sankaradas, Jakkula, and
   Cadambi]{chakradhar2010dynamically}
@@ -477,6 +556,13 @@ KIM S~K, MCAFEE L~C, MCMAHON P~L, et~al.
   Applications, 2009. FPL 2009. International Conference on.
 \newblock IEEE, 2009: 367-372.
 
+\bibitem[Putnam\ et~al.(2014)Putnam, Caulfield, Chung, Chiou, Constantinides,
+  Demme, Esmaeilzadeh, Fowers, Gopal, Gray, et~al.]{putnam2014reconfigurable}
+PUTNAM A, CAULFIELD A~M, CHUNG E~S, et~al.
+\newblock A reconfigurable fabric for accelerating large-scale datacenter
+  services\allowbreak[J].
+\newblock ACM SIGARCH Computer Architecture News, 2014, 42\penalty0 (3): 13-24.
+
 \bibitem[Lee\ et~al.(1987)Lee and Aggarwal]{lee1987parallel}
 LEE S~Y, AGGARWAL J~K.
 \newblock Parallel 2-d convolution on a mesh connected array
@@ -545,13 +631,6 @@ DU Z, FASTHUBER R, CHEN T, et~al.
   volume~43.
 \newblock ACM, 2015: 92-104.
 
-\bibitem[Chen\ et~al.(2016{\natexlab{b}})Chen, Emer, and Sze]{chen2016eyeriss}
-CHEN Y~H, EMER J, SZE V.
-\newblock Eyeriss: A spatial architecture for energy-efficient dataflow for
-  convolutional neural networks\allowbreak[C]//\allowbreak{}ACM SIGARCH
-  Computer Architecture News: volume~44.
-\newblock IEEE Press, 2016{\natexlab{b}}: 367-379.
-
 \bibitem[Jouppi\ et~al.(2017)Jouppi, Young, Patil, Patterson, Agrawal, Bajwa,
   Bates, Bhatia, Boden, Borchers, et~al.]{jouppi2017tpu}
 JOUPPI N~P, YOUNG C, PATIL N, et~al.
@@ -559,6 +638,45 @@ JOUPPI N~P, YOUNG C, PATIL N, et~al.
   unit\allowbreak[C]//\allowbreak{}Proceedings of the 44th Annual International
   Symposium on Computer Architecture.
 \newblock ACM, 2017: 1-12.
+
+\bibitem[Chen\ et~al.(2016{\natexlab{b}})Chen, Emer, and Sze]{chen2016eyeriss}
+CHEN Y~H, EMER J, SZE V.
+\newblock Eyeriss: A spatial architecture for energy-efficient dataflow for
+  convolutional neural networks\allowbreak[C]//\allowbreak{}ACM SIGARCH
+  Computer Architecture News: volume~44.
+\newblock IEEE Press, 2016{\natexlab{b}}: 367-379.
+
+\bibitem[Reed(1993)]{reed1993pruning}
+REED R.
+\newblock Pruning algorithms-a survey\allowbreak[J].
+\newblock IEEE transactions on Neural Networks, 1993, 4\penalty0 (5): 740-747.
+
+\bibitem[LeCun\ et~al.(1989)LeCun, Denker, Solla, Howard, and
+  Jackel]{lecun1989optimal}
+LECUN Y, DENKER J~S, SOLLA S~A, et~al.
+\newblock Optimal brain damage.\allowbreak[C]//\allowbreak{}NIPs: volume~2.
+\newblock 1989: 598-605.
+
+\bibitem[Miche\ et~al.(2010)Miche, Sorjamaa, Bas, Simula, Jutten, and
+  Lendasse]{miche2010op}
+MICHE Y, SORJAMAA A, BAS P, et~al.
+\newblock Op-elm: optimally pruned extreme learning machine\allowbreak[J].
+\newblock IEEE transactions on neural networks, 2010, 21\penalty0 (1): 158-162.
+
+\bibitem[Han\ et~al.(2015{\natexlab{a}})Han, Pool, Tran, and
+  Dally]{han2015learning}
+HAN S, POOL J, TRAN J, et~al.
+\newblock Learning both weights and connections for efficient neural
+  network\allowbreak[C]//\allowbreak{}Advances in Neural Information Processing
+  Systems.
+\newblock 2015{\natexlab{a}}: 1135-1143.
+
+\bibitem[Guo\ et~al.(2016)Guo, Yao, and Chen]{guo2016dynamic}
+GUO Y, YAO A, CHEN Y.
+\newblock Dynamic network surgery for efficient
+  dnns\allowbreak[C]//\allowbreak{}Advances In Neural Information Processing
+  Systems.
+\newblock 2016: 1379-1387.
 
 \bibitem[Zhang\ et~al.(2016)Zhang, Du, Zhang, Lan, Liu, Li, Guo, Chen, and
   Chen]{zhang2016cambricon}
@@ -618,6 +736,12 @@ WANG Y, XU C, YOU S, et~al.
   Systems.
 \newblock 2016: 253-261.
 
+\bibitem[Zhou\ et~al.(2017)Zhou, Yao, Guo, Xu, and Chen]{zhou2017incremental}
+ZHOU A, YAO A, GUO Y, et~al.
+\newblock Incremental network quantization: Towards lossless cnns with
+  low-precision weights\allowbreak[J].
+\newblock arXiv preprint arXiv:1702.03044, 2017.
+
 \bibitem[Ioffe\ et~al.(2015)Ioffe and Szegedy]{ioffe2015batch}
 IOFFE S, SZEGEDY C.
 \newblock Batch normalization: Accelerating deep network training by reducing
@@ -640,6 +764,14 @@ WU Y, HE K.
 \newblock Group normalization\allowbreak[J].
 \newblock arXiv preprint arXiv:1803.08494, 2018.
 
+\bibitem[Gupta\ et~al.(2015)Gupta, Agrawal, Gopalakrishnan, and
+  Narayanan]{gupta2015deep}
+GUPTA S, AGRAWAL A, GOPALAKRISHNAN K, et~al.
+\newblock Deep learning with limited numerical
+  precision\allowbreak[C]//\allowbreak{}International Conference on Machine
+  Learning.
+\newblock 2015: 1737-1746.
+
 \bibitem[Goodfellow\ et~al.(2016)Goodfellow, Bengio, Courville, and
   Bengio]{goodfellow2016deep}
 GOODFELLOW I, BENGIO Y, COURVILLE A, et~al.
@@ -654,11 +786,31 @@ K{\"O}STER U, WEBB T, WANG X, et~al.
   Information Processing Systems.
 \newblock 2017: 1742-1752.
 
+\bibitem[Dettmers(2015)]{dettmers20158}
+DETTMERS T.
+\newblock 8-bit approximations for parallelism in deep learning\allowbreak[J].
+\newblock arXiv preprint arXiv:1511.04561, 2015.
+
+\bibitem[Courbariaux\ et~al.(2015)Courbariaux, Bengio, and
+  David]{courbariaux2015binaryconnect}
+COURBARIAUX M, BENGIO Y, DAVID J~P.
+\newblock Binaryconnect: Training deep neural networks with binary weights
+  during propagations\allowbreak[C]//\allowbreak{}Advances in neural
+  information processing systems.
+\newblock 2015: 3123-3131.
+
 \bibitem[Hu\ et~al.(2018)Hu, Wang, and Cheng]{hu2018hashing}
 HU Q, WANG P, CHENG J.
 \newblock From hashing to cnns: Training binaryweight networks via
   hashing\allowbreak[J].
 \newblock arXiv preprint arXiv:1802.02733, 2018.
+
+\bibitem[Rastegari\ et~al.(2016)Rastegari, Ordonez, Redmon, and
+  Farhadi]{rastegari2016xnor}
+RASTEGARI M, ORDONEZ V, REDMON J, et~al.
+\newblock Xnor-net: Imagenet classification using binary convolutional neural
+  networks\allowbreak[C]//\allowbreak{}European Conference on Computer Vision.
+\newblock Springer, 2016: 525-542.
 
 \bibitem[Russakovsky\ et~al.(2015)Russakovsky, Deng, Su, Krause, Satheesh, Ma,
   Huang, Karpathy, Khosla, Bernstein, et~al.]{russakovsky2015imagenet}
@@ -667,7 +819,7 @@ RUSSAKOVSKY O, DENG J, SU H, et~al.
 \newblock International Journal of Computer Vision, 2015, 115\penalty0 (3):
   211-252.
 
-\bibitem[Li\ et~al.(2016{\natexlab{a}})Li and Liu]{li2016ternary}
+\bibitem[Li\ et~al.(2016{\natexlab{c}})Li and Liu]{li2016ternary}
 LI F, LIU B.
 \newblock Ternary weight networks.(2016)\allowbreak[J].
 \newblock arXiv preprint arXiv:1605.04711, 2016.
@@ -726,12 +878,27 @@ MARIET Z, SRA S.
 \newblock Diversity networks\allowbreak[J].
 \newblock arXiv preprint arXiv:1511.05077, 2015.
 
+\bibitem[Denton\ et~al.(2014)Denton, Zaremba, Bruna, LeCun, and
+  Fergus]{denton2014exploiting}
+DENTON E~L, ZAREMBA W, BRUNA J, et~al.
+\newblock Exploiting linear structure within convolutional networks for
+  efficient evaluation\allowbreak[C]//\allowbreak{}Advances in Neural
+  Information Processing Systems.
+\newblock 2014: 1269-1277.
+
 \bibitem[Jaderberg\ et~al.(2014)Jaderberg, Vedaldi, and
   Zisserman]{jaderberg2014speeding}
 JADERBERG M, VEDALDI A, ZISSERMAN A.
 \newblock Speeding up convolutional neural networks with low rank
   expansions\allowbreak[J].
 \newblock arXiv preprint arXiv:1405.3866, 2014.
+
+\bibitem[Lebedev\ et~al.(2014)Lebedev, Ganin, Rakhuba, Oseledets, and
+  Lempitsky]{lebedev2014speeding}
+LEBEDEV V, GANIN Y, RAKHUBA M, et~al.
+\newblock Speeding-up convolutional neural networks using fine-tuned
+  cp-decomposition\allowbreak[J].
+\newblock arXiv preprint arXiv:1412.6553, 2014.
 
 \bibitem[Chen\ et~al.(2014{\natexlab{b}})Chen, Luo, Liu, Zhang, He, Wang, Li,
   Chen, Xu, Sun, et~al.]{chen2014dadiannao}
@@ -923,7 +1090,7 @@ LEBEDEV V, LEMPITSKY V.
   Computer Vision and Pattern Recognition.
 \newblock 2016: 2554-2564.
 
-\bibitem[Li\ et~al.(2016{\natexlab{b}})Li, Kadav, Durdanovic, Samet, and
+\bibitem[Li\ et~al.(2016{\natexlab{d}})Li, Kadav, Durdanovic, Samet, and
   Graf]{li2016pruning}
 LI H, KADAV A, DURDANOVIC I, et~al.
 \newblock Pruning filters for efficient convnets\allowbreak[J].

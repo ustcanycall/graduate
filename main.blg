@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: ustcthesis-numerical.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: bib/ustc.bib
+Warning--empty author in jbig
+You've used 162 entries,
+            3610 wiz_defined-function locations,
+            1615 strings with 37144 characters,
+and the built_in function-call counts, 991942 in all, are:
+= -- 10779
+> -- 118237
+< -- 155624
++ -- 42384
+- -- 1440
+* -- 6009
+:= -- 137808
+add.period$ -- 486
+call.type$ -- 162
+change.case$ -- 731
+chr.to.int$ -- 38455
+cite$ -- 164
+duplicate$ -- 3457
+empty$ -- 8747
+format.name$ -- 2982
+if$ -- 254570
+int.to.chr$ -- 10
+int.to.str$ -- 163
+missing$ -- 0
+newline$ -- 819
+num.names$ -- 483
+pop$ -- 56432
+preamble$ -- 1
+purify$ -- 162
+quote$ -- 0
+skip$ -- 100745
+stack$ -- 0
+substring$ -- 42827
+swap$ -- 523
+text.length$ -- 1684
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1493
+warning$ -- 1
+while$ -- 2218
+width$ -- 0
+write$ -- 2346
+(There was 1 warning)
