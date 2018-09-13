@@ -7,19 +7,19 @@
 \citestyle{numbers}
 
 \section{神经网络模型基础}
-目前在图像处理应用最广泛的网络是卷积神经网络（convolutional neural networks, CNNs）和深度神经网络（deep neural networks, DNNs），它们由卷积层，池化层，归一化层，激活层和全连接层等组成。递归神经网络（recurrent neural networks，简称RNNs）是一类重要的机器学习技术，专门用于处理顺序数据序列和可变长度数据序列。RNN在语音识别，自然语言处理，场景语义理解和时间序列分析等方面有着广泛的应用。其中应用最广泛，性能最高的两种类型的RNNs是长短时记忆网络（long short term memory,简称LSTM）和门控循环单元(gated recurrent unit,简称GRU）。下面将为大家介绍神经网络中几种常见的神经网络层类型。
+目前在图像处理应用最广泛的网络是卷积神经网络（convolutional neural networks, CNNs）和深度神经网络（deep neural networks, DNNs），它们由卷积层，池化层，归一化层，激活层和全连接层等组成。递归神经网络（recurrent neural networks，简称RNNs）是一类重要的机器学习技术，专门用于处理顺序数据序列和可变长度数据序列。RNN在语音识别，自然语言处理，场景语义理解和时间序列分析等方面有着广泛的应用。其中应用最广泛，性能最高的两种类型的RNNs是长短时记忆网络（long short term memory,简称LSTM）和门控循环单元(gated recurrent unit,简称GRU）。
 
 \subsection{全连接层}
 全连接层（fully connected layers）是神经网络模型中常见的一种层类型，主要用来将上一层提取的特征进行组合，综合以及分类，在整个神经网络中起到“分类器”的作用。全连接层的结构如图~\ref{fig:fc_layer}所示，输入层神经元为m个，输出层的神经元为n个，其中每一个输出神经元与所有输入神经元相连，其结构相当于n个m输入的感知机，因此全连接层也可以看成是感知机扩展。 
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\columnwidth]{fc.pdf}
+  \includegraphics[width=0.6\columnwidth]{fc.pdf}
   \caption{\footnotesize 全连接层}
   \label{fig:fc_layer}
 \end{figure}
 
 
-全连接层的核心操作操作是矩阵向量乘积,
+全连接层的核心操作是矩阵向量乘积。
 \begin{equation}
 y=W*x+b
 \end{equation}
@@ -28,7 +28,7 @@ y=W*x+b
 \subsection{卷积层}
 \begin{figure}[b]
   \centering
-  \includegraphics[width=0.8\columnwidth]{conv.pdf}
+  \includegraphics[width=0.6\columnwidth]{conv.pdf}
   \caption{\footnotesize 卷积层}
   \label{fig:conv_layer}
 \end{figure}
@@ -53,7 +53,7 @@ for n=0 to N
 卷积层的计算由N，K，W，H，C，R和S这七个变量形成嵌套循环完成，而且这七个变量的所有排列都是合法的。算法~\ref{list:convcode}展示了其中一种循环嵌套方式，我们可以用$N->W_{out}->H_{out}->C->S->R$来描述这种循环，其中$sw$和$sh$表示卷积操作的步长。不同的循环方式决定了数据的复用形式和数据流的方式，最终将影响神经网络加速器的设计~\cite{angshuman2017scnn}。
 
 \subsection{池化层}
-池化层（pooling layer）是神经网络中一个重要的层。池化层一般是在卷积层之后，对输入进行非线性降采样，常用的池化做法是对每个滤波器的输出求最大值，平均值，中位数等。
+池化层（pooling layer）是神经网络中一个重要的层。池化层一般是在卷积层之后，对输入进行降采样，常用的池化做法是对每个滤波器的输出求最大值，平均值，中位数等。
 池化层的意义主要体现在两个方面：第一，池化层通过对特征图像进行降维操作，能够在保留显著特征的情况下，有效减少整个神经网络所需要的参数量和计算量。第二，池化层能够保证输入的平移不变性（translation invariant），这意味着即使图像的像素在邻域发生微小位移时，池化层的输出能够保持不变，从而增强神经网络的鲁棒性，有一定的抗扰动能力。常用的池化层包括最大池化层，平均池化层，ROI（Regions of interest）池化层.
 
 最大池化层的基本思想是在一个特定的数据区域内选择一个最大值作为输出。其计算公式是
@@ -122,7 +122,7 @@ ReLU是目前非常流行的激活函数，它是分段线性函数，所有的�
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\columnwidth]{lstm.pdf}
+\includegraphics[width=0.6\columnwidth]{lstm.pdf}
 \caption{\footnotesize LSTM}
 \label{fig:lstm}
 \end{figure}
@@ -131,7 +131,7 @@ ReLU是目前非常流行的激活函数，它是分段线性函数，所有的�
 一个经典的LSTM模型如图~\ref{fig:lstm} 所示。
 LSTM模型包含特殊存储单元（图~\ref{fig:lstm}中的$cell$）和三个特殊的门（图~\ref{fig:lstm}中的$i$，$o$，$f$），其中$cell$用于存储网络的时间状态信息，门用于执行特殊的乘法运算，包括输入门（input gate）、输出门（output gate）和遗忘门（forget gate）。输入门$i$控制输入到存储单元中的输入量；输出门$o$控制输出值；遗忘门$f$自适应地遗忘$cell$中存储的信息，从而控制前一状态对现状态的影响。除了基本的三个众所周知的门和$cell$之外，该LSTM模型还引入了窥视孔（peephole）和投影层（projection layer），以便更好地学习。窥视孔将缩放后的$cell$状态添加到三个门，其中缩放尺度由三个对角矩阵决定。投影层线性地将输出转换为低维形式。
 
-LSTM模型的接收一个输入序列$X=(x_1;x_2;x_3;...;x_T)$（其中$x_t$是t时刻的输入向量）和上一个状态的输出序列$Y^{T-1}=(y_0;y_1;y_2;...;y_{T-1})i$（其中$y_{t-1}$是t-1时刻的输出向量）。利用下列公式从t=1到T计算输出序列$Y=(y1;y2;y3;...;y_T)$:
+LSTM模型接收一个输入序列$X=(x_1;x_2;x_3;...;x_T)$（其中$x_t$是t时刻的输入向量）和上一个状态的输出序列$Y^{T-1}=(y_0;y_1;y_2;...;y_{T-1})i$（其中$y_{t-1}$是t-1时刻的输出向量）。利用下列公式从t=1到T计算输出序列$Y=(y1;y2;y3;...;y_T)$:
 \begin{gather}
 i_t=\delta (W_{ix}x_t + W_{ir}y_{t-1} + W_{ic}c_{t-1} + b_i), \\
 i_t=\delta (W_{ix}x_t + W_{ir}y_{t-1} + W_{ic}c_{t-1} + b_i), \\
@@ -148,7 +148,7 @@ y_t=W_{ym}m_t
 \subsection{GRU}
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\columnwidth]{gru.pdf}
+\includegraphics[width=0.5\columnwidth]{gru.pdf}
 \caption{\footnotesize GRU}
 \label{fig:gru}
 \end{figure}
@@ -169,7 +169,7 @@ c_t=(1-z_t) \odot c_{t-1} + z_t \odot \tilde{c_t}
 
 最近研究~\cite{gupta2015deep}表明，在深度神经网络的训练中，不需要全精度的数据。使用低比特的权值表示，可以显著减少网络存储需求和运算能耗，特别是当使用极低比特位，如二进制/三元权值时。研究显示，非精确的计算（在神经元和权重中加入噪音）具有正则化的效果，从而减少泛化误差~\cite{goodfellow2016deep}。~\citet{gupta2015deep}使用16位定点数字表示来训练网络。~\citet{koster2017flexpoint}提出了动态数据格式（FlexPoint），用来完全替代32位浮点格式。Flexpoint具有一个可动态调整的共享指数，以最小化溢出和最大化可用动态范围。在训练过程中，数据范围会随着训练轮数的增长而连续变化，其中共享指数部分可以根据历史数据进行预测。实验结果显示，采用16位尾数和5位共享指数的Flexpoint格式数据在训练神经网络时，能够获得32位浮点类似的精度，并且远远超过16位浮点获得的精度。~\citet{dettmers20158}使用8比特量化神经网络，在保持性能的情况下，加快神经网络训练速度。在~\cite{courbariaux2015binaryconnect}和~\cite{hu2018hashing}中，作者表明，深度神经网络可以通过二进制权值进行训练，在某些情况下，它的精度可能超过使用浮点数进行训练的结果。~\citet{rastegari2016xnor}首先提出了三元权值网络（Ternary Weight Network, TWN），并在ImageNet~\cite{russakovsky2015imagenet}数据集上取得良好的效果。三元权值网络在~\cite{li2016ternary,zhu2016trained}等工作中被不断深入研究，其中~\cite{zhu2016trained}提出了学习三元值和三元赋值的方法。~\citet{zhou2017incremental}提出了INQ（Incremental Network Quantization），在不降低网络精度的情况下，将神经网络的权值量化为$2^{-n}$的形式。~\citet{wang2017fixed}提出了定点分解网络（Fixed-point Factorized Network, FFN），使用定点分解的方式对神经网络权值进行三元化。这些方法可以在ImageNet上达到与全精度相当的精度，但是，这些工作只对权值进行量化，而使激活保持浮点格式。
 
-除了对神经网络权值进行量化外，也有许多研究对激活进行量化。通过将权重和激活转换为低比特格式，网络计算需要使用定点操作，从而更有效地节约资源。~\citet{hubara2016binarized}中提出的二值神经网络（binarized neural network, BNN），在CIFAR-10这样的小数据集上达到了跟浮点数类似的精度。~\citet{rastegari2016xnor}提出了xnor-net网络模型，该网络将权值和激活都进行了二值化，在像ImageNet这样的大数据集上，xnor-net比BNN更精确，但是，它的精度对比浮点数的情况仍然有很大的下降。~\citet{zhou2016dorefa}提出了doref-net，研究了量化时比特位长度对权值、激活和梯度的影响。~\citet{cai2017deep}提出了HWGQ（Half-wave Gaussian Quantization）的方法对权值和激活同时进行量化。与权值量化相比，激活量化通常会导致更大幅度的精度下降。对AlexNet和VGG16这样的大型网络进行量化，这些方法会导致精确度下降$5\% - 10\%$。因此，如何用低比特位来量化权值和激活仍然是一个具有挑战性的问题。
+除了对神经网络权值进行量化外，也有许多研究对激活进行量化。将权值和激活转换为低比特格式，能够有效地节约资源。~\citet{hubara2016binarized}提出的二值神经网络（binarized neural network, BNN），在CIFAR-10这样的小数据集上达到了与浮点数类似的精度。~\citet{rastegari2016xnor}提出了xnor-net网络模型，该网络将权值和激活都进行了二值化，在像ImageNet这样的大数据集上，xnor-net比BNN更精确，但是，它的精度对比浮点数的情况仍然有很大的下降。~\citet{zhou2016dorefa}提出了doref-net，研究了量化时比特位长度对权值、激活和梯度的影响。~\citet{cai2017deep}提出了HWGQ（Half-wave Gaussian Quantization）的方法对权值和激活同时进行量化。与权值量化相比，激活量化通常会导致更大幅度的精度下降。对AlexNet和VGG16这样的大型网络进行量化，这些方法会导致精确度下降$5\% - 10\%$。因此，如何用低比特位来量化权值和激活仍然是一个具有挑战性的问题。
 
 
 \subsection{神经网络裁剪技术}
@@ -177,9 +177,9 @@ c_t=(1-z_t) \odot c_{t-1} + z_t \odot \tilde{c_t}
 
 \citet{han2015learning}提出了剪枝的策略来减少神经网络中权值的数量，在不影响神经网络准确性的前提下，能够将神经网络所需要的存储量和计算量减少一个数量级。如图~\ref{fig:pruning}（a）所示，剪枝策略分为三个步骤：第一步，对神经网络进行训练，找出那些重要的连接；第二步，修剪不必要的连接，即当权值的绝对值小于某个阈值时，该连接将被永久从神经网络的拓扑结构中剪除；第三步，对神经网络进行重训练，微调剩余连接的权值。同时，我们需要迭代执行第二步和第三步，在不影响精度的情况下尽可能提高神经网络的稀疏度。稀疏神经网络的拓扑结构如图~\ref{fig:pruning}（b）所示，值得注意的是，当某个神经元没有与上一层神经元或者与下一层神经元相连时，该神经元将会被剪除。实验显示，剪枝策略能够将AlexNet网络的权值数量减少9倍，将VGG16网络的权值数量减少13倍。
 
-在此基础上，~\citet{han2015deep}进一步提出了Deep Compression用来深度压缩神经网络。Deep Comression由三个阶段组成：剪枝（Pruning），量化（quantization）和霍夫曼编码（Huffman Coding），最终在不影响神经网络的精度的前提下将神经网络压缩了35倍到49倍。Deep Compression首先通过剪枝阶段学习网络中重要的连接，删除不必要的连接，这个步骤能够减少9倍到13倍的权值。其次通过聚类算法将权值进行聚类，然后量化权值实现权值的共享，这个步骤能够减少表示每个权值的比特数，从32比特减少到到5比特。最后采用霍夫曼编码进一步无损压缩神经网络，这个步骤能够节省$20\%-30\%$的网络存储开销。在ImageNet数据集上，Deep Compression能够将AlexNet网络压缩35倍，将网络规模从$240MB$压缩到$6.9MB$。同时，Deep Compression将VGG16网络压缩了49倍，将网络规模从$552MB$压缩到$11.3MB$。Deep Compression将允许网络模型存储在加速器的片上SRAM缓存中，而不需要在片上和片外之间反复搬运权值，从而减少片外访存开销。
+在此基础上，~\citet{han2015deep}进一步提出了Deep Compression用来深度压缩神经网络。Deep Compression由三个阶段组成：剪枝（Pruning），量化（quantization）和霍夫曼编码（Huffman Coding），最终在不影响神经网络的精度的前提下将神经网络压缩了35倍到49倍。Deep Compression首先通过剪枝阶段学习网络中重要的连接，删除不必要的连接，这个步骤能够减少9倍到13倍的权值。其次通过聚类算法将权值进行聚类，然后量化权值实现权值的共享，这个步骤能够减少表示每个权值的比特数，从32比特减少到到5比特。最后采用霍夫曼编码进一步无损压缩神经网络，这个步骤能够节省$20\%-30\%$的网络存储开销。在ImageNet数据集上，Deep Compression能够将AlexNet网络压缩35倍，将网络规模从$240MB$压缩到$6.9MB$。同时，Deep Compression将VGG16网络压缩了49倍，将网络规模从$552MB$压缩到$11.3MB$。Deep Compression将允许网络模型存储在加速器的片上SRAM缓存中，而不需要在片上和片外之间反复搬运权值，从而减少片外访存开销。
 
-\citet{wang2016cnnpack}提出了一种新的有效的CNN压缩方法CNNpack，它在频域对神经网络进行剪枝操作，因此它不仅能够关注小的权值，同时关注所有潜在的对计算结果影响小的连接。CNNpack借助离散余弦变换（Discrete Cosine Transform，DCT）将空间域的权值变换到频域，然后采用聚类的方法将频域中的权重分解为公共部分和私有部分（残差）。在这两部分中，采用剪枝的策略丢弃大量的低能级的频率系数，能够在不显著降低精度的情况下产生高压缩比。在此基础上，CNNpack接着采用量化，霍夫曼编码和CSR存储的方法进一步压缩神经网络。最终实验实验显示，CNNpack能够对AlexNet和VGG16分别压缩35倍和49倍。
+\citet{wang2016cnnpack}提出了一种新的有效的CNN压缩方法CNNpack，它在频域对神经网络进行剪枝操作，因此它不仅能够关注小的权值，同时关注所有潜在的对计算结果影响小的连接。CNNpack借助离散余弦变换（Discrete Cosine Transform，DCT）将空间域的权值变换到频域，然后采用聚类的方法将频域中的权重分解为公共部分和私有部分（残差）。在这两部分中，采用剪枝的策略丢弃大量的低能级的频率系数，能够在不显著降低精度的情况下产生高压缩比。在此基础上，CNNpack接着采用量化，霍夫曼编码和CSR存储的方法进一步压缩神经网络。最终实验显示，CNNpack能够对AlexNet和VGG16分别压缩35倍和49倍。
 
 不同于~\cite{han2015learning, han2015deep,wang2016cnnpack}中的静态裁剪的技术，即符合条件的权值将被用永久从拓扑连接中剪除，\citet{guo2016dynamic}提出了一种动态裁剪神经网络的算法（dynamic network surgery），这种算法包含两个不同的操作，即剪枝（pruning）和粘接（splicing）。Splicing能够在训练稀疏神经网络过程中重新连接被剪除的突触，从而实现动态裁剪。实验结果显示，Dynamic Network Surgery能够将LeNet-5和AlexNet的突触数量分别减少108倍和17.7倍。
 
@@ -197,29 +197,12 @@ c_t=(1-z_t) \odot c_{t-1} + z_t \odot \tilde{c_t}
 
 \subsection{现有神经网络加速器架构}
 由于严峻的能耗约束和高性能要求，定制加速器成为CPU和GPU等传统处理平台的替代品。近几年出现了数据流和结构各异的神经网络加速器。神经网络加速器按照数据流的形式可以分为两类，分别是基于向量算子（vector operator）数据流的加速器和基于乘加算子（multiply-and-accumulate，MAC）空间数据流的加速器。
-
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.7\columnwidth]{dataflow.pdf}
   \caption{\footnotesize 现有的加速器架构.}
   \label{fig:dataflow}
 \end{figure}
-
-基于向量算子的加速器将神经网络的运算转化为向量运算，主要是将矩阵操作转化为一系列的向量操作（通常是内积操作）。如图~\ref{fig:dataflow} (a) 所示的结构中，$n$个乘法器和一个$n$输入的加法树就能够完成两个$n$维向量的内积操作。
-
-基于乘加算子空间数据流加速器（如图~\ref{fig:dataflow}（b））通常具有一系列规则分布的处理单元，其中每一个处理单元能够完成一次MAC操作。处理单元之间采用一种规律的方式进行连接（如二维矩阵），神经元和权值采用某种规律的方式在处理单元之间进行移动，如经典的脉动阵列形式（systolic design），因此这种形式又称为空间数据流形式。
-
-脉动阵列，本身的核心概念就是让数据在运算单元的阵列中进行流动，减少访存的次数，并且使得结构更加规整，布线更加统一，提高频率。图~\ref{fig:systolic}描述了是一个规模为$3\times 3$的脉动阵列完成两个规模为$3\times 3$的矩阵乘法的过程。阵列中的每一个处理单元（processing element, PE）由一个乘加器（MAC unit）和寄存器组成，其中乘加器执行两个数的乘法操作，将相乘结果与寄存器中存储的数进行累加，并将计算结果写回寄存器中。值得注意的是，在使用脉动矩阵进行矩阵计算的时候需要对数据调整好形式，按照一定顺序，分时进入脉动阵列。如图~\ref{fig:systolic}所示，PE之间存在规则的数据通路，其中$PE_{i,j}$能够从$PE_{i-1,j}$（即上方邻居）获得矩阵B的第$j$列的输入，并在下一个cycle将该输入发送给$PE_{i+1,j}$（即下方邻居）；同时$PE_{i,j}$能够从$PE_{i,j-1}$（即左方邻居）获得A矩阵的第$i$行的输入，并在下一个cycle将该输入发送给$PE_{i,j+1}$（即右方邻居）。
-
-在第一个cycle，$a_{11}$和$b_{11}$分别从左方和上方流入$PE_{1,1}$，同时$PE_{1,1}$完成$a_{11}*b_{11}$的操作。第二个cycle，$a_{11}$和$b_{11}$分别沿着水平向右和竖直向下的方向流入$PE_{1,2}$和$PE_{2,1}$，同时$a_{12}$，$a_{21}$，$b_{21}$和$b_{12}$分别流入$PE_{1,1}$，$PE_{2,1}$，$PE_{1,1}$和$PE_{1,2}$；然后$PE_{1,1}$中完成$a_{12}*b_{21}$，同时将结果与$a_{11}*b_{11}$累加，即$PE_{i,1}$中寄存器的结果为$a_{11}*b_{11}+a_{12}*b_{21}$，同时$PE_{1,2}$和$PE_{2,1}$寄存器中的结果分别为$a_{11}*b_{12}$和$a_{21}*b_{11}$。随着两个矩阵的输入不断流入脉动阵列中，最终两个规模为$3\times 3$的矩阵乘法能够在个七周期内完成。
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\columnwidth]{systolic.pdf}
-  \caption{\footnotesize 脉动阵列完成矩阵乘法操作}
-  \label{fig:systolic}
-\end{figure}
-
 
 表~\ref{tab:dataflow}总结了近年来出现的神经网络加速器和它们的数据流形式。
 基于向量算子的神经网络加速器包括DianNao~\cite{chen2014diannao}, DaDianNao~\cite{chen2014dadiannao}, PuDianNao~\cite{liu2015pudiannao}, Cambricon~\cite{liu2016cambricon}, Cambricon-X~\cite{zhang2016cambricon}, Cnvlutin~\cite{albericio2016cnvlutin}, EIE~\cite{han2016eie}和ESE~\cite{han2017ese}。基于乘加算子空间数据流的加速器包括ShiDianNao~\cite{du2015shidiannao}, Eyeriss~\cite{chen2017eyeriss}, TPU~\cite{jouppi2017tpu}, Neuflow~\cite{farabet2011neuflow}和SCNN~\cite{angshuman2017scnn}。下面我们将对两类神经网络加速器分别进行介绍。
@@ -241,6 +224,21 @@ c_t=(1-z_t) \odot c_{t-1} + z_t \odot \tilde{c_t}
 \bottomrule
 \end{tabular}
 \end{table}
+
+基于向量算子的加速器将神经网络的运算转化为向量运算，主要是将矩阵操作转化为一系列的向量操作（通常是内积操作）。如图~\ref{fig:dataflow} (a) 所示的结构中，$n$个乘法器和一个$n$输入的加法树就能够完成两个$n$维向量的内积操作。
+
+基于乘加算子空间数据流加速器（如图~\ref{fig:dataflow}（b））通常具有一系列规则分布的处理单元，其中每一个处理单元能够完成一次MAC操作。处理单元之间采用一种规律的方式进行连接（如二维矩阵），神经元和权值采用某种规律的方式在处理单元之间进行移动，如经典的脉动阵列形式（systolic design），因此这种形式又称为空间数据流形式。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\columnwidth]{systolic.pdf}
+  \caption{\footnotesize 脉动阵列完成矩阵乘法操作}
+  \label{fig:systolic}
+\end{figure}
+
+脉动阵列，本身的核心概念就是让数据在运算单元的阵列中进行流动，减少访存的次数，并且使得结构更加规整，布线更加统一，提高频率。图~\ref{fig:systolic}描述了是一个规模为$3\times 3$的脉动阵列完成两个规模为$3\times 3$的矩阵乘法的过程。阵列中的每一个处理单元（processing element, PE）由一个乘加器（MAC unit）和寄存器组成，其中乘加器执行两个数的乘法操作，将相乘结果与寄存器中存储的数进行累加，并将计算结果写回寄存器中。值得注意的是，在使用脉动矩阵进行矩阵计算的时候需要对数据调整好形式，按照一定顺序，分时进入脉动阵列。如图~\ref{fig:systolic}所示，PE之间存在规则的数据通路，其中$PE_{i,j}$能够从$PE_{i-1,j}$（即上方邻居）获得矩阵B的第$j$列的输入，并在下一个cycle将该输入发送给$PE_{i+1,j}$（即下方邻居）；同时$PE_{i,j}$能够从$PE_{i,j-1}$（即左方邻居）获得A矩阵的第$i$行的输入，并在下一个cycle将该输入发送给$PE_{i,j+1}$（即右方邻居）。
+
+在第一个cycle，$a_{11}$和$b_{11}$分别从左方和上方流入$PE_{1,1}$，同时$PE_{1,1}$完成$a_{11}*b_{11}$的操作。第二个cycle，$a_{11}$和$b_{11}$分别沿着水平向右和竖直向下的方向流入$PE_{1,2}$和$PE_{2,1}$，同时$a_{12}$，$a_{21}$，$b_{21}$和$b_{12}$分别流入$PE_{1,1}$，$PE_{2,1}$，$PE_{1,1}$和$PE_{1,2}$；然后$PE_{1,1}$中完成$a_{12}*b_{21}$，同时将结果与$a_{11}*b_{11}$累加，即$PE_{i,1}$中寄存器的结果为$a_{11}*b_{11}+a_{12}*b_{21}$，同时$PE_{1,2}$和$PE_{2,1}$寄存器中的结果分别为$a_{11}*b_{12}$和$a_{21}*b_{11}$。随着两个矩阵的输入不断流入脉动阵列中，最终两个规模为$3\times 3$的矩阵乘法能够在个七周期内完成。
 
 
 \subsection{基于向量算子的神经网络处理器}
@@ -283,7 +281,7 @@ Eyeriss~\cite{chen2017eyeriss}应用游程压缩方法（run-length-compression,
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\columnwidth,height=6.0cm]{IM.pdf}
+  \includegraphics[width=0.7\columnwidth,height=6.0cm]{IM.pdf}
   \caption{\footnotesize Cambricon-X中的IM模块}
   \label{fig:IM}
 \end{figure}
@@ -301,10 +299,10 @@ ESE~\cite{han2017ese}是实现在FPGA上的加速器，它面向的是稀疏的L
 SCNN~\cite{angshuman2017scnn}能够同时利用神经元稀疏性和权值稀疏性。SCNN中的计算单元构成了一个二维网格的形式，每个计算单元执行非零神经元和非零权值的乘法操作，同时计算非零乘积的坐标。非零乘积通过坐标在二维计算网络进行路由，最终被分配给对应的累加器阵列，每个非零乘积通过读取修改写入操作对包含部分和的本地RAM执行累加，最终获得输出神经元。但是这种架构需要不断计算坐标，大大增加了计算成本和存储成本。因此SCNN在处理稠密神经网络时的会损失$21\%$的性能，同时增加$33\%$的能耗；在处理稀疏神经网络时仅仅能够增加2.7倍的性能，减少2.3倍的能耗。同时SCNN对全连接层和规模为1x1的卷积层支持并不理想，在这两种类型的层时时只能利用$20\%$的乘法器资源。
  
 \section{本章小结}
-\zadd{本章简要介绍了神经网络的技术。}
+\zadd{本章我们简要介绍了神经网络的技术。}
 
 \zadd{首先我们介绍了神经网络模型基础，即常见的神经网络层类型的结构和运算方法，包括全连接层、卷积层、池化层、归一化层、激活层、LSTM层和GRU等。}
 
 \zadd{然后我们介绍了神经网络模型的低能耗优化技术。神经网络模型的低能耗技术主要包括低精度计算、裁剪技术和权值矩阵变换。其中裁剪技术被认为是当前能够减少神经网络存储量、运算量最好的方法之一。}
 
-\zadd{最后我们介绍了神经网络加速器。现有的神经网络器架构按照数据流的形式可以分为两类，分别是基于向量算子的加速器和基于乘加算子的加速器。基于向量算子的加速器将神经网络的运算转化为一系列的向量操作，加速器的运算单元能够完成二维向量的内积操作。基于乘加算子的加速器通常采用二维网格的形式排列运算单元，每一个运算单元能够完成一次MAC操作，神经元和权值采用某种规律的方式在运算单元之间进行流动，最终完成神经网络的运算。为了利用神经网络的稀疏特性，研究者提出了不少支持稀疏技术的神经网络加速器，包括Eyeriss、Cambricon-X、Cnvlutin、ESE、EIE、SCNN等。}
+\zadd{最后我们介绍了神经网络加速器。现有的神经网络器架构按照数据流的形式可以分为两类，分别是基于向量算子的加速器和基于乘加算子的加速器。基于向量算子的加速器将神经网络的运算转化为一系列的向量操作，加速器的运算单元能够完成二维向量的内积操作。基于乘加算子的加速器通常采用二维网格的形式排列运算单元，每一个运算单元能够完成一次MAC操作，神经元和权值采用某种规律的方式在运算单元之间进行流动，最终完成神经网络的运算。为了利用神经网络的稀疏特性，研究者提出了多种支持稀疏技术的神经网络加速器，包括Eyeriss、Cambricon-X、Cnvlutin、ESE、EIE、SCNN等。}

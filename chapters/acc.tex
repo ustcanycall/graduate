@@ -1,9 +1,6 @@
 \chapter{粗粒度稀疏神经网络加速器}
 
-我们的压缩方法能够对神经网络进行深度压缩，其中粗粒度稀疏能够充分利用神经网络局部收敛的特征，寻找最能够表征神经网络特征的权值簇，从而有效减少稀疏权值的不规则性（平均减少20.13倍）;局部量化进一步
-利用局部收敛的特性，减少表示每个权值的比特数;最后熵编码对神经网络进行进一步的无损压缩。深度压缩的神经网络能够减少数据存储需求、计算量、数据传输量，最终提高计算性能，减少计算能耗。
-
-\zadd{由于传统的计算平台如CPU和GPU等不能充分利用深度压缩的神经网络的优秀特性，如粗粒度稀疏，量化等；因此我们设计专用的硬件加速器，Cambricon-S，充分挖掘深度压缩神经网络的优秀特性。} Cambricon-S最主要的特征是两个选数逻辑:神经元选择模块 (neuron selector module, NSM) 和突触选择模块(synapse selector module, SSM)，分别用来处理静态稀疏和动态稀疏，过滤不必要的神经元和权值，筛选出需要进行计算的神经元和权值。除了两个选数模块，我们设计了WDM（weight decoding module）和Encoder分别支持局部量化和动态压缩神经元。同时，我们设计了一个多发射的控制器，能够同时发射没有依赖关系的指令，从而挖掘IO与计算之间的并行性，进一步提高加速器的性能。
+深度压缩的神经网络能够减少数据存储需求、计算量、数据传输量，最终提高计算性能，减少计算能耗。\zadd{由于传统的计算平台如CPU和GPU等不能充分利用深度压缩的神经网络的优秀特性，如粗粒度稀疏，量化等；因此我们设计专用的硬件加速器，Cambricon-S，充分挖掘深度压缩神经网络的优秀特性。} Cambricon-S最主要的特征是两个选数逻辑:神经元选择模块 (neuron selector module, NSM) 和突触选择模块(synapse selector module, SSM)，分别用来处理静态稀疏和动态稀疏，过滤不必要的神经元和权值，筛选出需要进行计算的神经元和权值。除了两个选数模块，我们设计了WDM（weight decoding module）和Encoder分别支持局部量化和动态压缩神经元。同时，我们设计了一个多发射的控制器，能够同时发射没有依赖关系的指令，从而挖掘IO与计算之间的并行性，进一步提高加速器的性能。
 
 
 \zadd{本章中我们首先以一个粗粒度稀疏的全连接神经网络为驱动实例，充分分析神经网络加速器的设计原则。然后我们根据这些设计原则设计对应的神经网络加速器。最后我们为加速器设计了一套基于库的编程框架以减轻用户的编程负担。
@@ -12,16 +9,17 @@
 \section{设计原则}
 \label{sec:principle}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1.0\columnwidth]{connection.pdf}
-\caption{粗粒度稀疏的全连接层}
-\label{fig:connection}
-\end{figure}
 
 我们首先使用一个经过粗粒度稀疏的全连接层作为示例(参见图~\ref{fig:connection})，分析粗粒度稀疏神经网络的特性，进而分析出神经网络加速器的设计原则。在图中，我们只关注其中规模为$8\times 3$的部分连接，我们使用$2\times 3$的剪枝块对全连接层进行剪枝。由于粗粒度剪枝，输入神经元$n1, n2$与输出神经元$o1, o2, o3$之间的连接被完全裁剪；输入神经元$n5, n6$与输出神经元$o1, o2, o3$之间的连接也被完全裁剪。由于ReLU激励函数，输入神经元$n4, n6, n8$的激活为“0”。我们采用直接索引的方式标志非零权值的信息，
 即我们使用\emph{“00110011”}比特串标志与输出神经元$o1, o2, o3$对应的突触，其中“0”表示对应的突触被裁剪，“1”表示对应的突触存在。
 通过观察，我们发现了以下四个粗粒度稀疏神经网络的特性。
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\columnwidth]{connection.pdf}
+\caption{粗粒度稀疏的全连接层}
+\label{fig:connection}
+\end{figure}
 
 首先，多个输出神经元之间共享索引信息。如图~\ref{fig:connection}所示，输入神经元$n1$，$n2$，$n5$， $n6$与输出神经元$o1, o2, o3$之间的连接被同时剪除，因此输出神经元之间共享相同的连接拓扑，也就是说它们共享相同的权值索引表示~\emph{“00110011”}(图中的“Synapse Indexes”)。尽管输出神经元之间不共享相同的权值，但所选权重的位置是相同的，因此是一种部分共享。
 
@@ -37,7 +35,7 @@
 \section{Cambricon-S的架构}
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\columnwidth]{ACC.pdf}
+\includegraphics[width=0.8\columnwidth]{ACC.pdf}
 \caption{Cambricon-S整体架构}
 \label{fig:acc}
 \end{figure}
@@ -59,7 +57,7 @@
 \subsubsection{NSM}
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\columnwidth]{NSM.pdf}
+\includegraphics[width=0.8\columnwidth]{NSM.pdf}
 \caption{NSM结构}
 \label{fig:NSM}
 \end{figure}
@@ -84,17 +82,15 @@ NFU可以高效地处理神经网络中的所有运算，NFU包含$T_n$个同构
 
 \textbf{WDM.} WDM用来解码经过局部量化的权值。WDM中集成了一个查找表（look-up table, LUT），查找表中存储了权值密码本，查找表的输入为权值字典，最终通过查表操作解码出实际的权值。
 
-\textbf{SSM.} \zadd{SSM接收突触和突触标志，处理动态稀疏，最终筛选出需要进行计算的突触（如图~\ref{fig:SSM}）。我们利用图~\ref{fig:connection}作为实例来描述SSM筛选突触的流程。在图~\ref{fig:connection}的实例中，对于每个输出神经元$o1, o2, o3$，第一个和第四个突触 ($S_{T_{i}1}$ ，$S_{T_{i}4}$) 是计算所需的两个突触。SSM接收来自NSM的突触标志筛选突触，其中突触标志中包含所需突触位置索引信息（\emph{“14”}）。如图~\ref{fig:SSM}所示，SSM在突触与突触标志之间执行 “MUX” 操作，最终筛选出需要进行计算的突触，即$S_{T_{i}1}$ 和$S_{T_{i}4}$。由于每个PE接收不同的突触，并且处理不同的输出神经元，我们在每个PE内部局部集成SSM，从而避免高带宽和长延迟。
-}
-
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\columnwidth]{SSM.pdf}
+\includegraphics[width=0.8\columnwidth]{SSM.pdf}
 \caption{SSM结构}
 \label{fig:SSM}
 \end{figure}
 
-\textbf{PEFU.} PEFU用来完成神经网络的核心运算。如图~\ref{fig:PEFU}所示，PEFU由三段流水结构，分别完成乘法，累加和非线性的运算。每个PEFU由$T_m$乘法单元，一个$T_m$输入的加法器树和一个非线性函数模块组成。我们使用分时复用的方法将神经网络映射到PE，即每个PE计算一个输出神经元。理想情况下，如果一个输出神经元需要$M$个乘法操作，那么PE需要$\lceil M/T_{m} \rceil$个时钟周期（cycle）完成计算元，因为PEFU可以在一个周期内完成$T_m$次乘法。最后，NFU将从$T_n$个PE中收集$T_n$个输出神经元的部分和，传输到NBout中。 
+\textbf{SSM.} \zadd{SSM接收突触和突触标志，处理动态稀疏，最终筛选出需要进行计算的突触（如图~\ref{fig:SSM}）。我们利用图~\ref{fig:connection}作为实例来描述SSM筛选突触的流程。在图~\ref{fig:connection}的实例中，对于每个输出神经元$o1, o2, o3$，第一个和第四个突触 ($S_{T_{i}1}$ ，$S_{T_{i}4}$) 是计算所需的两个突触。SSM接收来自NSM的突触标志筛选突触，其中突触标志中包含所需突触位置索引信息（\emph{“14”}）。如图~\ref{fig:SSM}所示，SSM在突触与突触标志之间执行 “MUX” 操作，最终筛选出需要进行计算的突触，即$S_{T_{i}1}$ 和$S_{T_{i}4}$。由于每个PE接收不同的突触，并且处理不同的输出神经元，我们在每个PE内部局部集成SSM，从而避免高带宽和长延迟。
+}
 
 \begin{figure}[h]
 \centering
@@ -102,6 +98,9 @@ NFU可以高效地处理神经网络中的所有运算，NFU包含$T_n$个同构
 \caption{PEFU结构}
 \label{fig:PEFU}
 \end{figure}
+
+\textbf{PEFU.} PEFU用来完成神经网络的核心运算。如图~\ref{fig:PEFU}所示，PEFU由三段流水结构，分别完成乘法，累加和非线性的运算。每个PEFU由$T_m$乘法单元，一个$T_m$输入的加法器树和一个非线性函数模块组成。我们使用分时复用的方法将神经网络映射到PE，即每个PE计算一个输出神经元。理想情况下，如果一个输出神经元需要$M$个乘法操作，那么PE需要$\lceil M/T_{m} \rceil$个时钟周期（cycle）完成计算元，因为PEFU可以在一个周期内完成$T_m$次乘法。最后，NFU将从$T_n$个PE中收集$T_n$个输出神经元的部分和，传输到NBout中。 
+
 
 PEFU中的非线性运算主要是指超越函数（Transcendental Functions）。超越函数是变量之间的关系不能用有限次加、减、乘、除、乘方、开方运算表示的函数。常见的超越函数包括三角函数，指数函数，对数函数，双曲函数等。目前运算超越函数的方法主要有差值查表和迭代两种。其中迭代方法中最有效的方法是CORDIC算法。
 
@@ -119,7 +118,7 @@ Encoder模块与Nbout直接相连，用于对输出神经元进行压缩，消�
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\columnwidth]{encoder.pdf}
+\includegraphics[width=0.8\columnwidth]{encoder.pdf}
 \caption{Encoder架构}
 \label{fig:encoder}
 \end{figure}
@@ -166,6 +165,9 @@ CP用于控制加速器的整个执行流程。它从内部指令缓存中读取
 
 \subsection{片上互联}
 
+
+如图~\ref{fig:Htree}所示，我们采用H树的拓扑结构连接NSM与NFU中的$T_n$个PE。由于NSM筛选产生的神经元和突触标志被所有PE共享，而且PE之间的负载是一种均衡的状态，因此NSM通过H树将这些信息通过广播的形式传送给PE，从而避免NSM和PE之间由于距离差异引起的不平衡延迟的问题；同时H树拥有非常良好的可扩展性，能够非常方便地对PE进行扩展，在不改变整体拓扑结构的情况下通过增加PE的数量增加加速器的计算能力，从而应对更大规模的神经网络。
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\columnwidth]{Htree.pdf}
@@ -173,15 +175,14 @@ CP用于控制加速器的整个执行流程。它从内部指令缓存中读取
 \label{fig:Htree}
 \end{figure}
 
-如图~\ref{fig:Htree}所示，我们采用H树的拓扑结构连接NSM与NFU中的$T_n$个PE。由于NSM筛选产生的神经元和突触标志被所有PE共享，而且PE之间的负载是一种均衡的状态，因此NSM通过H树将这些信息通过广播的形式传送给PE，从而避免NSM和PE之间由于距离差异引起的不平衡延迟的问题；同时H树拥有非常良好的可扩展性，能够非常方便地对PE进行扩展，在不改变整体拓扑结构的情况下通过增加PE的数量增加加速器的计算能力，从而应对更大规模的神经网络。
-
-
 \section{编程模型}
 
 \subsection{基于库的编程模型}
 考虑到实际应用场景和开发效率，高级编程模型（如Caffe~\cite{jia2014caffe}、Tensorflow~\cite{abadi2016tensorflow}、MXNet~\cite{chen2015mxnet}等）为用户提供了一系列C++的库函数接口，使得用户能够方便地调用这些接口，从而控制CPU或者GPU完成神经网络的运算。高级编程模型能够大幅度增加用户或者开发人员的编程效率，特别是算法和应用程序开发人员。因此，专用的加速器必须为用户提供类似于高级编程框架的接口，以减轻用户的编程负担。为此，我们提供了基于库的编程模型，其基本思想是为用户提供一系列C++的高级库函数接口，每一个函数对应了神经网络中一个基本操作，如卷积运算，内积，池化等操作。
 
 代码~\ref{list:conv}是卷积层库函数的接口，卷积库接口分为两部分，分别是数据定义和操作定义。用户首先通过TensorDescriptor和FilterDescriptor定义卷积操作所涉及输入/输出和权值;同时分别使用setTensorDescriptor和setFilterDescriptor分别描述输入/输出和权值的特性，如稀疏、规模、地址等。然后用户通过ConvDescriptor和setConvDescriptor分别定义卷积操作描述符和卷积操作的特性，如输入/输入/权值规模，步长，补白（padding）等。最后用户调用convForward执行卷积操作。用户通过调用这个库函数接口能够非常方便地最终驱动加速器完成卷积操作。
+
+\newpage
 
 \begin{lstlisting}[language=C, frame=single, basicstyle=\footnotesize, caption=卷积层库函数接口, label=list:conv, captionpos=b]
   // Data Declaration
@@ -198,9 +199,9 @@ CP用于控制加速器的整个执行流程。它从内部指令缓存中读取
 
 我们将库嵌入到深度学习框架Caffe中，如图~\ref{fig:framework}所示，这一套编程框架对用户完全透明，使得用户能够无缝使用加速器。值得注意的是我们需要为Cambricon-S设计专用的编译器（compiler），使其能够将C++源码编译成为加速器中的可执行指令。
 
-\begin{figure}
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.6\columnwidth]{framework.pdf}
+\includegraphics[width=0.7\columnwidth]{framework.pdf}
 \caption{编程框架}
 \label{fig:framework}
 \end{figure}
@@ -215,7 +216,7 @@ CP用于控制加速器的整个执行流程。它从内部指令缓存中读取
 \begin{figure}[h]
 
 \centering
-\includegraphics[width=1.0\columnwidth]{compiler.pdf}
+\includegraphics[width=0.8\columnwidth]{compiler.pdf}
 \caption{源文件编译成为加速器可执行代码的过程}
 \label{fig:compiler}
 \end{figure}
@@ -234,20 +235,19 @@ CP用于控制加速器的整个执行流程。它从内部指令缓存中读取
 
 不失一般性的，我们以VGG16网络的\emph{conv4\_2}卷积层为例，来计算不同的数据重用策略对片外访存的需求。具体来说，\emph{conv4\_2}的输入规模为$30\times 30\times 512$（考虑到输入需要进行补白），权值的规模为$32\times 32\times 512\times 512$， 输出的规模为$28\times 28\times 512$，其中输入神经元和权值的稠密度分别是$40.52\%$（稀疏度为$59.48\%$）和$34.20\%$（稀疏度为$65.80\%$）（如表~\ref{tab:sparsities}所示)，权值和神经元均为16比特定点。加速器中NBin，SB和NBout的大小分别是$8KB$，$32KB$和$8KB$。在循环分块过程中，我们将数据且分为$SegN$块，其中每一块数据量为$SegSize$。为了尽可能提高片上缓存的利用率，我们将输出的$C$维度按照$4\times 128$（$SegN\times SegSize$）的方式进行切分，在$H$维度按照$28\times 1$的方式进行切分；同时我们将输入的$C$方向按照$16\times 32$的方式进行切分。经过循环分块后，输入、权值、输出d的每一个数据块的大小分别为$SegSize_{in} = 30\times 3\times 32\times 40.52\%$， $SegSize_{syn} = 3\times 3\times 32\times 128\times 34.20\%$ 和 $SegSize_{out} = 28\times 1\times 128$。值得注意的是，我们对输入数据块和权值数据块分别乘以网络的稠密度来进行近似。因此，使用输入重用，输出重用和突触重用策略，所需要的片外访存的开销可以按照如下公式进行计算：
 
-\begin{gather*}
-\small
-MEM_{i} = 16 \times 1 \times 28 \times (SegSize_{in} + SegSize_{syn} \times 4 + SegSize_{out} \times 4 \times 2)\times 2 
-        = 68.59MB \\
-MEM_{o} = 4 \times 28 \times 1 \times (SegSize_{out} + SegSize_{in} \times 16 + SegSize_{syn} \times 16)\times 2 
-        = 47.85MB \\
-MEM_{s} = 16 \times 4 \times (SegSize_{syn} + SegSize_{in} \times 28 \times 1 + SegSize_{out} \times 28 \times 2)\times 2 
-        = 30.03MB 
-\end{gather*}
+\begin{align*}
+MEM_{i} & = 16 \times 1 \times 28 \times (SegSize_{in} + SegSize_{syn} \times 4 + SegSize_{out} \times 4 \times 2)\times 2 \\
+      & = 68.59MB \\
+MEM_{o} & = 4 \times 28 \times 1 \times (SegSize_{out} + SegSize_{in} \times 16 + SegSize_{syn} \times 16)\times 2 \\
+      & = 47.85MB \\
+MEM_{s} & = 16 \times 4 \times (SegSize_{syn} + SegSize_{in} \times 28 \times 1 + SegSize_{out} \times 28 \times 2)\times 2 \\
+      & = 30.03MB 
+\end{align*}
 
 最终，输入重用、输出重用和突触重用策略需要的片外访存量分别是$69.59MB$、$47.85MB$和$30.03MB$，因此我们在~\emph{conv4\_2}卷积层上选择突触重用的策略。
 
 \section{本章小结}
-\zadd{在本章，我们提出了一个粗粒度稀疏神经网络加速器，Cambricon-S，来充分挖掘深度压缩神经网络的特性，包括粗粒度稀疏和局部量化。}
+\zadd{本章我们提出了一个粗粒度稀疏神经网络加速器Cambricon-S。该加速器能充分挖掘深度压缩神经网络的特性，包括粗粒度稀疏和局部量化。}
 
 \zadd{我们首先充分分析粗粒度稀疏神经网络的特性，提出对应的设计原则来指导加速器的设计。我们发现，在粗粒度稀疏神经网络中，多个输出神经元能够共享输入神经元和突触索引，同时多个输出神经元之间负载均衡。这些特性能够大大简化加速器的设计复杂度。}
 
